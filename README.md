@@ -1,6 +1,12 @@
 # DIYGuideGen - DoItYourself.com Crawler
 
-A Python web crawler designed to extract "How-to" guide information from DoItYourself.com. The crawler fetches guide data including titles, authors, supplies, steps, and images, then validates and saves the data to individual JSON files.
+A Python web crawler designed- `title`: The title of the guide.
+- `author`: The author of the guide.
+- `additional_text_boxes`: Text segments like introductions or conclusions.
+- `supplies`: A list of required items or tools.
+- `steps`: A list of [headline, content] tuples.
+- `image_urls`: Links to images found in the guide.
+- `url`: The source URL of the article.s.
 
 ## Features
 - 🔍 **Web Scraping**: Fetches "How-to" articles from DoItYourself.com categories

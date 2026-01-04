@@ -21,7 +21,7 @@ class Guide(BaseModel):
     """
     title: str
     author: str
-    content: str
+    additional_text_boxes: List[str]
     supplies: List[str]
     steps: List[List[str]] # List of [headline, content] tuples
     image_urls: List[str]
@@ -172,60 +172,156 @@ def parse_html(html_content: str, base_url: str) -> Optional[dict]:
         if author_tag:
             author = author_tag.get_text(strip=True)
 
-        # --- Extract Content (Intro) ---
-        # Strategy: Text between title and first header (Supplies or Steps)
-        content_text = []
+        # --- Extract Additional Text Boxes ---
+        # Strategy: capture all significant text paragraphs that are NOT part of supplies or steps
+        additional_text_boxes = []
         
-        # Start from title or author
+        article_body = soup.find(class_='article-body') or soup.find(id='article-body')
+        
+        if article_body:
+            # We iterate through direct children or all elements?
+            # Safer to iterate all elements and skip those we know are steps/supplies?
+            # Or just grab all 'p' and filter? 
+            # Given structure, let's grab all text immediately in 'p' tags inside article body
+            
+            # Helper to check if text belongs to a step or supply
+            # This is hard because steps parsing is dynamic.
+            
+            # Alternative Strategy:
+            # We already have logical sections for Supplies and Steps.
+            # We can traverse the siblings again and classify them.
+            
+            # Let's try a scan of the article body.
+            
+            for elem in article_body.descendants:
+                if elem.name == 'p':
+                    text = elem.get_text(strip=True)
+                    if len(text) > 20: 
+                        # Heuristic: Check if this text is already in supplies or steps?
+                        # This might be slow if steps are huge.
+                        
+                        # Better: The previous parsers (supplies/steps) extracted specific parts.
+                        # Maybe we can just extract everything not "Step X" or "Things Needed"
+                        
+                        # Let's assume additional text matches 'p' content that doesn't start with "Step"
+                        # and isn't in a list <ul>/<ol>
+                        
+                        is_step = re.match(r"^Step\s+\d+", text, re.I)
+                        if not is_step:
+                             # Check if it's a list item (parent is li)
+                             if elem.parent.name != 'li':
+                                  additional_text_boxes.append(text)
+        
+        # Deduplication might be needed if traversal is recursive
+        
+        # Refined Strategy (simpler):
+        # Intro text: between Title and first header
+        # Outro text: after last step?
+        
+        # Let's stick to the "Intro" logic but expand it to any non-header non-list text blocks?
+        # Re-using the "Content" logic but making it a list
+        
+        content_candidates = []
         start_elem = author_tag if author_tag else title_tag
-        
         if start_elem:
             curr = start_elem.next_sibling
             while curr:
-                # Stop if we hit a header that looks like Supplies or Steps
-                if hasattr(curr, 'name') and curr.name in ['h2', 'h3', 'h4']:
-                    header_text = curr.get_text(strip=True).lower()
-                    if any(x in header_text for x in ['supplies', 'thing', 'need', 'step']):
-                        break
-                
-                if hasattr(curr, 'name') and curr.name == 'p':
-                    text = curr.get_text(strip=True)
-                    if len(text) > 20: # Filter short/empty
-                        content_text.append(text)
-                
+                if hasattr(curr, 'name'):
+                    if curr.name in ['h2', 'h3', 'h4']:
+                         # If it's a Step header or Supplies header, we skip it and its content?
+                         # Wait, we want to capture text "before and after".
+                         pass
+                    
+                    if curr.name == 'p':
+                         text = curr.get_text(strip=True)
+                         if len(text) > 30: # Filter small
+                             # Exclude if it looks like a step starter
+                             if not re.match(r"^Step\s+\d+", text, re.I):
+                                 content_candidates.append(text)
+                                 
                 curr = curr.next_sibling
-        
-        content = "\n\n".join(content_text)
+                
+        if content_candidates:
+            additional_text_boxes = content_candidates
 
         # --- Extract Supplies ---
-        # Look for "Things You'll Need" header
         supplies = []
+        supplies_elem_attr = None # Initialize to avoid UnboundLocalError
         
-        # Find header - include "What You Will Need" and "Supplies"
-        supplies_header = soup.find(['h2', 'h3', 'h4'], string=re.compile(r"Things You'll Need|Supplies|What You Will Need", re.I))
-        
-        if supplies_header:
-            # Usually followed by a list <ul> or <div>
-            # Get next sibling that is a list or container
-            curr = supplies_header.find_next_sibling()
-            # aggressive search for list
-            found_list = False
-            while curr and not found_list:
-                if curr.name in ['ul', 'ol']:
-                    supplies = [li.get_text(strip=True) for li in curr.find_all('li') if li.get_text(strip=True)]
-                    found_list = True
-                elif curr.name in ['div', 'section']:
-                     # Check if list inside
-                     ul = curr.find('ul')
+        # Strategy 1: Specific Class Structure (tool-and-material__content)
+        # Look for div with class 'tool-and-material__content' and inside 'col-12'
+        tools_container = soup.find('div', class_='tool-and-material__content')
+        if tools_container:
+            # Find all col-12 divs inside
+            items = tools_container.find_all('div', class_='col-12')
+            for item in items:
+                text = item.get_text(strip=True)
+                if text and text not in supplies:
+                    supplies.append(text)
+
+        if not supplies:
+            # Strategy 2: Look for specific attribute 'click0label'
+            # User mentioned: click0label="what You'll Need"
+            supplies_elem_attr = soup.find(attrs={"click0label": re.compile(r"what you'll need|supplies|things you'll need", re.I)})
+            
+            if supplies_elem_attr:
+                # This element might be the header or the container
+                # If it's a header (h2, div), look for siblings
+                # If it contains ul/ol, extract directly
+                
+                if supplies_elem_attr.name in ['ul', 'ol']:
+                     supplies = [li.get_text(strip=True) for li in supplies_elem_attr.find_all('li') if li.get_text(strip=True)]
+                else:
+                     # Check children first
+                     ul = supplies_elem_attr.find('ul')
                      if ul:
                          supplies = [li.get_text(strip=True) for li in ul.find_all('li') if li.get_text(strip=True)]
-                         found_list = True
-                
-                if hasattr(curr, 'name') and curr.name in ['h2', 'h3', 'h4']:
-                    # Hit next section
-                    break
+                     
+                     if not supplies:
+                         # Check next siblings like before
+                         curr = supplies_elem_attr.find_next_sibling()
+                         found_list = False
+                         while curr and not found_list:
+                            if curr.name in ['ul', 'ol']:
+                                supplies = [li.get_text(strip=True) for li in curr.find_all('li') if li.get_text(strip=True)]
+                                found_list = True
+                            elif curr.name in ['div', 'section']:
+                                 ul = curr.find('ul')
+                                 if ul:
+                                     supplies = [li.get_text(strip=True) for li in ul.find_all('li') if li.get_text(strip=True)]
+                                     found_list = True
+                            
+                            if hasattr(curr, 'name') and curr.name in ['h2', 'h3', 'h4']:
+                                break
+                            curr = curr.next_sibling
+
+        if not supplies:
+            # Strategy 3: Fallback to text header search
+            # Find header - include "What You Will Need" and "Supplies"
+            supplies_header = soup.find(['h2', 'h3', 'h4'], string=re.compile(r"Things You'll Need|Supplies|What You Will Need", re.I))
+            
+            if supplies_header:
+                # Usually followed by a list <ul> or <div>
+                # Get next sibling that is a list or container
+                curr = supplies_header.find_next_sibling()
+                # aggressive search for list
+                found_list = False
+                while curr and not found_list:
+                    if curr.name in ['ul', 'ol']:
+                        supplies = [li.get_text(strip=True) for li in curr.find_all('li') if li.get_text(strip=True)]
+                        found_list = True
+                    elif curr.name in ['div', 'section']:
+                         # Check if list inside
+                         ul = curr.find('ul')
+                         if ul:
+                             supplies = [li.get_text(strip=True) for li in ul.find_all('li') if li.get_text(strip=True)]
+                             found_list = True
                     
-                curr = curr.next_sibling
+                    if hasattr(curr, 'name') and curr.name in ['h2', 'h3', 'h4']:
+                        # Hit next section
+                        break
+                        
+                    curr = curr.next_sibling
         
         # --- Extract Steps and Images ---
         steps_data = [] # List of [headline, text]
@@ -315,7 +411,7 @@ def parse_html(html_content: str, base_url: str) -> Optional[dict]:
         data = {
             "title": title,
             "author": author,
-            "content": content,
+            "additional_text_boxes": additional_text_boxes,
             "supplies": supplies,
             "steps": steps_data,
             "image_urls": image_urls,
