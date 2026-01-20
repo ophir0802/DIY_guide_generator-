@@ -7,11 +7,12 @@ in normalized 0-1000 coordinate system.
 import os
 import json
 import logging
-from typing import List, Optional
+from typing import List, Optional, Dict, Any
 from io import BytesIO
 
 import requests
-import google.generativeai as genai
+from google import genai
+from google.genai import types
 from pydantic import BaseModel, Field, field_validator, ValidationError
 from PIL import Image
 
@@ -106,14 +107,55 @@ class ToolLocator:
                 "Please set it using: export GOOGLE_API_KEY='your-api-key'"
             )
         
-        # Configure Gemini API
-        genai.configure(api_key=api_key)
+        # Initialize the Gemini client
+        self.client = genai.Client(api_key=api_key)
         
-        # Initialize the model
-        # Using gemini-1.5-flash as it's free tier and supports multimodal input
-        self.model = genai.GenerativeModel("gemini-1.5-flash")
+        # Model name - using gemini-flash-latest (best performer: 2.28s, quality 3/3)
+        # Note: Use full model path with "models/" prefix
+        self.model_name = "models/gemini-flash-latest"
         
         logging.info("ToolLocator initialized successfully")
+    
+    def _clean_json_schema(self, schema: Dict[str, Any]) -> Dict[str, Any]:
+        """
+        Recursively remove unsupported fields from JSON schema for Gemini API.
+        
+        Gemini API doesn't support fields like $defs, $schema, title that Pydantic generates.
+        This function recursively removes them from the entire schema tree.
+        
+        Args:
+            schema: JSON schema dictionary from Pydantic
+            
+        Returns:
+            Cleaned schema dictionary without unsupported fields
+        """
+        if not isinstance(schema, dict):
+            return schema
+        
+        # Create a copy to avoid modifying the original
+        cleaned = {}
+        
+        # Fields to remove at any level
+        unsupported_fields = {'$defs', '$schema', 'title', 'description', 'examples', 'default'}
+        
+        for key, value in schema.items():
+            # Skip unsupported fields
+            if key in unsupported_fields:
+                continue
+            
+            # Recursively clean nested dictionaries
+            if isinstance(value, dict):
+                cleaned[key] = self._clean_json_schema(value)
+            # Recursively clean lists of dictionaries
+            elif isinstance(value, list):
+                cleaned[key] = [
+                    self._clean_json_schema(item) if isinstance(item, dict) else item
+                    for item in value
+                ]
+            else:
+                cleaned[key] = value
+        
+        return cleaned
     
     def _download_image(self, image_url: str) -> Optional[Image.Image]:
         """
@@ -218,18 +260,25 @@ Coordinate system explanation:
 - xmax: Right edge of bounding box (0-1000, must be > xmin)
 """
             
-            # Convert Pydantic model to JSON schema for Gemini structured output
-            # Gemini expects a JSON schema format
-            response_schema = DetectionResult.model_json_schema()
-            
             # Generate content with structured output
             logging.info(f"Analyzing image for tools: {tool_list}")
             
-            response = self.model.generate_content(
-                [prompt, image],
-                generation_config=genai.types.GenerationConfig(
+            # Convert PIL Image to bytes
+            img_byte_arr = BytesIO()
+            image.save(img_byte_arr, format='PNG')
+            img_bytes = img_byte_arr.getvalue()
+            
+            # Use the new API - pass Pydantic model directly instead of JSON schema
+            # The new SDK can handle Pydantic models natively
+            response = self.client.models.generate_content(
+                model=self.model_name,
+                contents=[
+                    types.Part.from_text(text=prompt),
+                    types.Part.from_bytes(data=img_bytes, mime_type='image/png')
+                ],
+                config=types.GenerateContentConfig(
                     response_mime_type="application/json",
-                    response_schema=response_schema
+                    response_schema=DetectionResult  # Pass the Pydantic model class directly
                 )
             )
             

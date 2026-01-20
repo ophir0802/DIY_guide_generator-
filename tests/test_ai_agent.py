@@ -198,11 +198,12 @@ class TestStepProcessing:
     
     @patch.dict('os.environ', {'GOOGLE_API_KEY': 'test-key'})
     @patch('ai_agent.ToolLocator')
-    @patch('ai_agent.genai.GenerativeModel')
-    def test_process_step_success(self, mock_model_class, mock_tool_locator_class):
+    @patch('ai_agent.genai.Client')
+    def test_process_step_success(self, mock_client_class, mock_tool_locator_class):
         """Test successful step processing."""
         # Mock LLM response
-        mock_model = Mock()
+        mock_client = Mock()
+        mock_models = Mock()
         mock_response = Mock()
         mock_response.text = json.dumps({
             "description": "Remove the screws",
@@ -211,8 +212,9 @@ class TestStepProcessing:
             "part": "Bottom screws",
             "hands": 2
         })
-        mock_model.generate_content.return_value = mock_response
-        mock_model_class.return_value = mock_model
+        mock_models.generate_content.return_value = mock_response
+        mock_client.models = mock_models
+        mock_client_class.return_value = mock_client
         
         # Mock ToolLocator
         mock_tool_locator = Mock()
@@ -222,7 +224,7 @@ class TestStepProcessing:
         mock_tool_locator_class.return_value = mock_tool_locator
         
         agent = InstructionSynthesisAgent()
-        agent.model = mock_model
+        agent.client = mock_client
         agent.tool_locator = mock_tool_locator
         
         step_data = ["Step 1 - Remove Screws", "Locate and remove the bottom screws."]
@@ -244,11 +246,12 @@ class TestGuideSynthesis:
     
     @patch.dict('os.environ', {'GOOGLE_API_KEY': 'test-key'})
     @patch('ai_agent.ToolLocator')
-    @patch('ai_agent.genai.GenerativeModel')
-    def test_synthesize_guide(self, mock_model_class, mock_tool_locator_class):
+    @patch('ai_agent.genai.Client')
+    def test_synthesize_guide(self, mock_client_class, mock_tool_locator_class):
         """Test synthesizing a complete guide."""
         # Mock LLM responses
-        mock_model = Mock()
+        mock_client = Mock()
+        mock_models = Mock()
         
         # Header response
         header_response = Mock()
@@ -267,8 +270,9 @@ class TestGuideSynthesis:
             "hands": 2
         })
         
-        mock_model.generate_content.side_effect = [header_response, step_response]
-        mock_model_class.return_value = mock_model
+        mock_models.generate_content.side_effect = [header_response, step_response]
+        mock_client.models = mock_models
+        mock_client_class.return_value = mock_client
         
         # Mock ToolLocator
         mock_tool_locator = Mock()
@@ -278,7 +282,7 @@ class TestGuideSynthesis:
         mock_tool_locator_class.return_value = mock_tool_locator
         
         agent = InstructionSynthesisAgent()
-        agent.model = mock_model
+        agent.client = mock_client
         agent.tool_locator = mock_tool_locator
         
         raw_guide = {

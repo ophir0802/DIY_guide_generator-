@@ -11,7 +11,9 @@ import time
 from typing import List, Optional, Dict, Any
 from pathlib import Path
 
-import google.generativeai as genai
+from google import genai
+from google.genai import types
+from google.genai.errors import ServerError, APIError as GenAIAPIError
 from pydantic import BaseModel, Field, ValidationError
 
 from tool_locator import ToolLocator
@@ -19,6 +21,13 @@ from crawler import Guide
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+
+
+# --- Custom Exceptions ---
+
+class AgentAbortError(Exception):
+    """Raised when the agent should abort due to too many consecutive failures."""
+    pass
 
 
 # --- Pydantic Models for Standardized Format ---
@@ -65,6 +74,11 @@ class InstructionSynthesisAgent:
     location inference from images.
     """
     
+    # Abort thresholds
+    MAX_CONSECUTIVE_FAILURES = 5  # Abort after this many consecutive API failures
+    MAX_TOTAL_FAILURES = 10  # Abort after this many total failures in a single guide
+    SERVER_OVERLOAD_DELAY = 30  # Seconds to wait when server is overloaded (503)
+    
     def __init__(self):
         """
         Initialize the agent with Gemini API and ToolLocator.
@@ -79,16 +93,68 @@ class InstructionSynthesisAgent:
                 "Please set it using: export GOOGLE_API_KEY='your-api-key'"
             )
         
-        # Configure Gemini API
-        genai.configure(api_key=api_key)
+        # Initialize the Gemini client
+        self.client = genai.Client(api_key=api_key)
         
-        # Initialize the model (using gemini-1.5-flash for cost efficiency)
-        self.model = genai.GenerativeModel("gemini-1.5-flash")
+        # Model name - using gemini-flash-latest (best performer: 2.28s, quality 3/3)
+        # Note: Use full model path with "models/" prefix
+        self.model_name = "models/gemini-flash-latest"
         
         # Initialize ToolLocator for geometric location inference
         self.tool_locator = ToolLocator()
         
+        # Failure tracking for abort mechanism
+        self._consecutive_failures = 0
+        self._total_failures = 0
+        
         logging.info("InstructionSynthesisAgent initialized successfully")
+    
+    def _reset_failure_counts(self):
+        """Reset failure counters (call at start of new guide processing)."""
+        self._consecutive_failures = 0
+        self._total_failures = 0
+    
+    def _record_success(self):
+        """Record a successful API call."""
+        self._consecutive_failures = 0
+    
+    def _record_failure(self, error: Exception) -> None:
+        """
+        Record an API failure and check if abort threshold is reached.
+        
+        Args:
+            error: The exception that caused the failure
+            
+        Raises:
+            AgentAbortError: If abort threshold is reached
+        """
+        self._consecutive_failures += 1
+        self._total_failures += 1
+        
+        # Check for server overload (503) - needs longer wait
+        is_server_overload = (
+            isinstance(error, ServerError) or 
+            (hasattr(error, 'args') and '503' in str(error))
+        )
+        
+        if is_server_overload:
+            logging.warning(
+                f"Server overloaded (503). Consecutive failures: {self._consecutive_failures}/"
+                f"{self.MAX_CONSECUTIVE_FAILURES}, Total: {self._total_failures}/{self.MAX_TOTAL_FAILURES}"
+            )
+        
+        # Check abort thresholds
+        if self._consecutive_failures >= self.MAX_CONSECUTIVE_FAILURES:
+            raise AgentAbortError(
+                f"Aborting: {self._consecutive_failures} consecutive API failures. "
+                f"The API appears to be unavailable. Please try again later."
+            )
+        
+        if self._total_failures >= self.MAX_TOTAL_FAILURES:
+            raise AgentAbortError(
+                f"Aborting: {self._total_failures} total API failures in this guide. "
+                f"Too many errors encountered. Please check your API key and try again later."
+            )
     
     def _convert_bbox_format(self, bbox_2d: List[int]) -> GeometricLocation:
         """
@@ -177,12 +243,20 @@ class InstructionSynthesisAgent:
             if not tool:
                 continue
             
-            # Remove common prefixes/suffixes
-            tool = tool.replace("Replacement ", "").replace(" replacement", "")
-            tool = tool.replace("Clean ", "").replace(" clean", "")
+            # Remove common prefixes (only at start of string, case-insensitive)
+            tool_lower = tool.lower()
+            if tool_lower.startswith("replacement "):
+                tool = tool[len("replacement "):].strip()
+            elif tool_lower.startswith("clean ") and len(tool.split()) > 1:
+                # Only remove "Clean " prefix if there are multiple words
+                # This prevents removing "clean" from words like "cleaner"
+                tool = tool[len("clean "):].strip()
             
             # Normalize case (title case)
             tool = tool.title()
+            
+            # Clean up any double spaces
+            tool = " ".join(tool.split())
             
             # Deduplicate
             tool_lower = tool.lower()
@@ -252,9 +326,10 @@ Rules:
         
         for attempt in range(max_retries):
             try:
-                response = self.model.generate_content(
-                    prompt,
-                    generation_config=genai.types.GenerationConfig(
+                response = self.client.models.generate_content(
+                    model=self.model_name,
+                    contents=prompt,
+                    config=types.GenerateContentConfig(
                         response_mime_type="application/json"
                     )
                 )
@@ -266,6 +341,9 @@ Rules:
                     toolbox = result["toolbox"]
                 
                 description = result.get("description", f"This guide teaches how to {title.lower()}.")
+                
+                # Record success
+                self._record_success()
                 
                 return GuideHeader(
                     title=title,
@@ -280,6 +358,25 @@ Rules:
                     continue
                 else:
                     logging.error("Failed to parse JSON after retries, using fallback")
+                    break
+            except (ServerError, GenAIAPIError) as e:
+                # Record failure and check abort threshold
+                self._record_failure(e)
+                
+                # Check if it's a server overload error (503)
+                is_overload = '503' in str(e) or 'overloaded' in str(e).lower()
+                delay = self.SERVER_OVERLOAD_DELAY if is_overload else retry_delay * (2 ** attempt)
+                
+                logging.warning(
+                    f"API error generating header (attempt {attempt + 1}/{max_retries}): {e}. "
+                    f"Waiting {delay}s before retry..."
+                )
+                
+                if attempt < max_retries - 1:
+                    time.sleep(delay)
+                    continue
+                else:
+                    logging.error("Failed after retries, using fallback")
                     break
             except Exception as e:
                 logging.warning(f"Error generating header (attempt {attempt + 1}/{max_retries}): {e}")
@@ -357,9 +454,10 @@ IMPORTANT RULES:
         
         for attempt in range(max_retries):
             try:
-                response = self.model.generate_content(
-                    prompt,
-                    generation_config=genai.types.GenerationConfig(
+                response = self.client.models.generate_content(
+                    model=self.model_name,
+                    contents=prompt,
+                    config=types.GenerateContentConfig(
                         response_mime_type="application/json"
                     )
                 )
@@ -379,6 +477,9 @@ IMPORTANT RULES:
                 # Get geometric location using ToolLocator
                 geometric_location = self._get_geometric_location_from_image(tool, image_urls)
                 
+                # Record success
+                self._record_success()
+                
                 return StandardizedStep(
                     step_id=step_number,
                     description=description,
@@ -396,6 +497,25 @@ IMPORTANT RULES:
                     continue
                 else:
                     logging.error(f"Failed to parse JSON for step {step_number} after retries, using fallback")
+                    break
+            except (ServerError, GenAIAPIError) as e:
+                # Record failure and check abort threshold
+                self._record_failure(e)
+                
+                # Check if it's a server overload error (503)
+                is_overload = '503' in str(e) or 'overloaded' in str(e).lower()
+                delay = self.SERVER_OVERLOAD_DELAY if is_overload else retry_delay * (2 ** attempt)
+                
+                logging.warning(
+                    f"API error processing step {step_number} (attempt {attempt + 1}/{max_retries}): {e}. "
+                    f"Waiting {delay}s before retry..."
+                )
+                
+                if attempt < max_retries - 1:
+                    time.sleep(delay)
+                    continue
+                else:
+                    logging.error(f"Failed to process step {step_number} after retries, using fallback")
                     break
             except Exception as e:
                 logging.warning(f"Error processing step {step_number} (attempt {attempt + 1}/{max_retries}): {e}")
@@ -458,7 +578,14 @@ IMPORTANT RULES:
             
         Returns:
             StandardizedGuide with header and steps
+            
+        Raises:
+            AgentAbortError: If too many consecutive API failures occur
+            ValueError: If guide format is invalid
         """
+        # Reset failure counters for new guide
+        self._reset_failure_counts()
+        
         # Validate input
         try:
             guide = Guide(**raw_guide)
@@ -527,6 +654,18 @@ def process_single_file(
         
         logging.info(f"Successfully processed: {input_path} -> {output_path}")
         return True
+    
+    except AgentAbortError as e:
+        logging.error(f"ABORTED: {e}")
+        logging.error(
+            "The API is experiencing issues. Please wait a few minutes and try again. "
+            "If the problem persists, check your API key and quota."
+        )
+        return False
+    
+    except KeyboardInterrupt:
+        logging.warning("Processing interrupted by user (Ctrl+C)")
+        return False
         
     except Exception as e:
         logging.error(f"Error processing {input_path}: {e}", exc_info=True)
@@ -535,7 +674,8 @@ def process_single_file(
 
 def process_batch(
     input_dir: str = "raw_data", 
-    output_dir: str = "standardized_data"
+    output_dir: str = "standardized_data",
+    stop_on_abort: bool = True
 ) -> Dict[str, bool]:
     """
     Process all JSON files in input directory.
@@ -543,6 +683,7 @@ def process_batch(
     Args:
         input_dir: Directory containing raw guide JSON files
         output_dir: Directory to save standardized outputs
+        stop_on_abort: If True, stop processing remaining files when API abort occurs
         
     Returns:
         Dictionary mapping input files to success status
@@ -563,9 +704,32 @@ def process_batch(
     
     logging.info(f"Found {len(json_files)} files to process")
     
-    for json_file in json_files:
-        success = process_single_file(str(json_file), output_dir)
-        results[str(json_file)] = success
+    aborted = False
+    for i, json_file in enumerate(json_files, 1):
+        if aborted and stop_on_abort:
+            logging.warning(f"Skipping remaining {len(json_files) - i + 1} files due to previous abort")
+            for remaining_file in json_files[i-1:]:
+                results[str(remaining_file)] = False
+            break
+            
+        logging.info(f"Processing file {i}/{len(json_files)}: {json_file.name}")
+        
+        try:
+            success = process_single_file(str(json_file), output_dir)
+            results[str(json_file)] = success
+        except KeyboardInterrupt:
+            logging.warning("Batch processing interrupted by user (Ctrl+C)")
+            results[str(json_file)] = False
+            # Mark remaining as not processed
+            for remaining_file in json_files[i:]:
+                results[str(remaining_file)] = False
+            break
+        
+        # Check if the last file processing failed due to abort-like conditions
+        # (process_single_file returns False but doesn't raise)
+        if not success:
+            # Add a small delay before next file to be nice to the API
+            time.sleep(2)
     
     success_count = sum(1 for v in results.values() if v)
     logging.info(f"Batch processing complete: {success_count}/{len(results)} successful")
