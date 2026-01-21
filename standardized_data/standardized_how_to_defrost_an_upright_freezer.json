@@ -1,0 +1,96 @@
+{
+  "header": {
+    "title": "How to Defrost an Upright Freezer",
+    "description": "This guide provides step-by-step instructions on how to safely and effectively defrost an upright freezer. It covers preparation, the defrosting process, and cleanup to minimize inconvenience and potential damage.",
+    "toolbox": [
+      "Plastic Spatula",
+      "Duct Tape"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "Prepare the upright freezer by unplugging it, emptying its contents into a cooler with ice packs, and removing shelves and baskets.",
+      "actions": [
+        "Unplug the upright freezer",
+        "Empty the contents of the freezer",
+        "Place items in a cooler with ice packs",
+        "Remove shelves",
+        "Remove baskets",
+        "Remove small storage compartments"
+      ],
+      "tool": "Plastic Spatula",
+      "part": "Upright freezer",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 2,
+      "description": "Prepare the freezer bottom by placing towels and cookie sheets to catch melting ice and prevent refreezing.",
+      "actions": [
+        "Take a towel.",
+        "Place the towel at the bottom of the freezer.",
+        "Fold the towel if necessary to fit the freezer.",
+        "Place an aluminum cookie sheet on top of the towel.",
+        "Place two or more cookie sheets side by side if there is room.",
+        "Ensure the cookie sheets cover as much of the bottom of the freezer as possible."
+      ],
+      "tool": "Plastic Spatula",
+      "part": "bottom of the freezer",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 3,
+      "description": "A garbage bag is used to catch water leakage during freezer defrosting by lining the freezer and hanging over the door.",
+      "actions": [
+        "Fan the garbage bag out so it does not cling to itself.",
+        "Place one side barely inside the freezer.",
+        "Tape the bag down inside the freezer.",
+        "Pull the bag open.",
+        "Tape the bag to the door so that the bag remains open and hanging from the freezer."
+      ],
+      "tool": "Duct Tape",
+      "part": "upright freezer door",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 4,
+      "description": "Remove frost from the inside of the freezer using a plastic spatula and dispose of the ice.",
+      "actions": [
+        "Scrape frost from the inside of the freezer with a plastic spatula.",
+        "Let the frost fall to the cookie sheet.",
+        "Dispose of the ice in the sink.",
+        "Catch any drips with the towel.",
+        "Remove the cookie sheets, towel, and bag.",
+        "Wipe down the freezer.",
+        "Replace everything."
+      ],
+      "tool": "Plastic Spatula",
+      "part": "Freezer",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    }
+  ]
+}

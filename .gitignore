@@ -84,7 +84,6 @@ desktop.ini
 *.db
 
 # Generated data (output directory)
-standardized_data/
 
 # Temporary files
 *.tmp

@@ -1,0 +1,96 @@
+{
+  "header": {
+    "title": "How to Repair a Chest Freezer that Leaks",
+    "description": "This guide provides instructions on how to address a leaking chest freezer by focusing on clearing a blocked drain tube and initiating a defrost cycle.",
+    "toolbox": [
+      "Wire Hanger"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "This step instructs you to locate and inspect the freezer's drain tube to identify potential blockages causing a leak.",
+      "actions": [
+        "Locate the drain tube at the back of the freezer.",
+        "Remove the back panel if necessary to access the drain tube.",
+        "Rub the tube to check if it feels tight or bloated."
+      ],
+      "tool": "Wire Hanger",
+      "part": "Drain tube",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 2,
+      "description": "Use a straightened wire hanger to attempt to clear a potential clog within the drain tube.",
+      "actions": [
+        "Straighten a wire hanger.",
+        "Push the wire up the tube.",
+        "Check for resistance.",
+        "Poke the clog out of the tube (if possible).",
+        "Place a drain pan under the tube."
+      ],
+      "tool": "Wire Hanger",
+      "part": "drain tube",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 3,
+      "description": "Empty the freezer, check for a blocked drain hole, and clear the blockage with a wire hanger.",
+      "actions": [
+        "Unplug the chest freezer",
+        "Remove all the food inside",
+        "Store food in the bath with a towel",
+        "Move easily defrosting items to another freezer",
+        "Check for a blocked drain hole",
+        "Locate the drain hole at the bottom",
+        "Push through the drain hole with a wire hanger",
+        "Remove as much of the clog as possible"
+      ],
+      "tool": "Wire Hanger",
+      "part": "Drain hole",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 4,
+      "description": "Defrost the freezer completely, manage frozen food, and ensure proper drainage and cooling before refilling.",
+      "actions": [
+        "Check for ice at the bottom of the freezer",
+        "Store frozen food in other freezers or cook it",
+        "Allow 24 hours for complete defrost",
+        "Empty the drain pan (multiple times)",
+        "Wipe out the inside of the chest freezer",
+        "Ensure a clear area around the drain hole",
+        "Plug the freezer back in",
+        "Allow time for the freezer to cool properly",
+        "Check for leaks from the chest freezer"
+      ],
+      "tool": "Wire Hanger",
+      "part": "chest freezer",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    }
+  ]
+}

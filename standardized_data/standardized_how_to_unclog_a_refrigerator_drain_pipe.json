@@ -1,0 +1,123 @@
+{
+  "header": {
+    "title": "How to Unclog a Refrigerator Drain Pipe",
+    "description": "This guide provides step-by-step instructions on how to clear a clogged drain pipe in your refrigerator, preventing water buildup and potential damage. Follow these simple steps to diagnose, unclog, and maintain your refrigerator's drainage system.",
+    "toolbox": [
+      "Drain Snake",
+      "Basting Syringe",
+      "Clean Rag"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "The first step is to disconnect the refrigerator from the power supply to prevent electrical shock.",
+      "actions": [
+        "turn off the power supply",
+        "unplug the refrigerator"
+      ],
+      "tool": "Clean Rag",
+      "part": "refrigerator",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 2,
+      "description": "Locate the drain hole at the bottom of the fridge, potentially removing crisper drawers for better access.",
+      "actions": [
+        "Locate the drain hole",
+        "Remove the crisper drawers (optional)",
+        "Check the manual for drain hole location (if needed)"
+      ],
+      "tool": "Drain Snake",
+      "part": "Fridge",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 3,
+      "description": "Unclog the hole by using a plumbing snake to break up any blockage.",
+      "actions": [
+        "insert a plumbing snake into the hole",
+        "push the snake up and down",
+        "take the snake out of the hole"
+      ],
+      "tool": "Drain Snake",
+      "part": "hole",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 4,
+      "description": "This step involves cleaning the drain hole using baking soda and warm water.",
+      "actions": [
+        "pour 1 teaspoon of baking soda down the drain hole",
+        "pour 2 cups of warm water from a basting syringe"
+      ],
+      "tool": "Basting Syringe",
+      "part": "drain hole",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 5,
+      "description": "Empty the drain pan, clean it, and replace it along with the front grill plate before restoring power to the fridge.",
+      "actions": [
+        "Take off the fridge’s front grill plate",
+        "Locate the drain pan",
+        "Empty the drain pan of the baking soda solution",
+        "Clean the pan with warm water and a clean rag",
+        "Remove any mold or mildew with a cleaning agent like vinegar (if present)",
+        "Replace the drain pan",
+        "Replace the front grill plate",
+        "Turn the fridge’s electricity back on"
+      ],
+      "tool": "Clean Rag",
+      "part": "Drain Pan",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 6,
+      "description": "To prevent future clogs, clean the drain every 2-3 months.",
+      "actions": [
+        "clean drain",
+        "repeat process every 2-3 months"
+      ],
+      "tool": "Drain Snake",
+      "part": "drain",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    }
+  ]
+}

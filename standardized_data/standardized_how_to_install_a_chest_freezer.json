@@ -1,0 +1,213 @@
+{
+  "header": {
+    "title": "How to Install a Chest Freezer",
+    "description": "This guide provides step-by-step instructions on how to safely install a chest freezer, including electrical work and proper placement.",
+    "toolbox": [
+      "Hand Truck",
+      "Phillips Screwdriver",
+      "Flathead Screwdriver",
+      "Measuring Tape",
+      "Drill",
+      "Voltmeter",
+      "Keyhole Saw",
+      "Drywall Saw",
+      "Paddle Bit"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "Choose a freezer that fits your space, budget, and energy efficiency requirements.",
+      "actions": [
+        "Select a freezer",
+        "Consider space constraints",
+        "Consider budget",
+        "Consider energy efficiency",
+        "Remember 220V freezers may be more economical"
+      ],
+      "tool": "Measuring Tape",
+      "part": "freezer",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 2,
+      "description": "Determine the appropriate wiring, circuit breaker, and outlet specifications for the freezer based on its voltage requirements.",
+      "actions": [
+        "Determine if the freezer runs on 110V or 220V.",
+        "Select 12X2 electrical wiring and a 110V outlet if the freezer is 110V.",
+        "Select 12X3 electrical wiring and a 220V outlet if the freezer is 220V.",
+        "Determine the required amperage for the freezer.",
+        "Select a 30-amp breaker if the freezer is 220V.",
+        "Select a 15 or 20 amp breaker if the freezer is 110V.",
+        "Consult the freezer manual for amperage information."
+      ],
+      "tool": "Measuring Tape",
+      "part": "Freezer",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 3,
+      "description": "Measure the freezer and a desired location to ensure a proper fit for installation.",
+      "actions": [
+        "Measure the width of the chest freezer.",
+        "Measure the depth of the chest freezer.",
+        "Measure the height of the chest freezer with the lid fully open.",
+        "Pick a location in your home for the freezer.",
+        "Measure the location to ensure a good fit."
+      ],
+      "tool": "Measuring Tape",
+      "part": "chest freezer",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 4,
+      "description": "Cut a hole in the drywall to accommodate the electrical box.",
+      "actions": [
+        "Place the cut-in electrical box against the wall",
+        "Trace the inside of the box on the wall",
+        "Cut out the traced area using a saw",
+        "Check if the box fits snugly",
+        "Trim the hole until the box fits"
+      ],
+      "tool": "Keyhole Saw",
+      "part": "drywall",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 5,
+      "description": "The step instructs the user to turn off the main breaker to the house to cut power to the circuit breaker panel.",
+      "actions": [
+        "Turn off the main breaker"
+      ],
+      "tool": "Voltmeter",
+      "part": "main breaker",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 6,
+      "description": "Route the electrical wire from the circuit panel to the outlet location, potentially drilling a hole in a stud bay.",
+      "actions": [
+        "Run the wire from the circuit panel to the hole",
+        "Drill a hole in the stud bay (if necessary)",
+        "Leave the wire hanging out of the hole"
+      ],
+      "tool": "Drill",
+      "part": "Stud bay",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 7,
+      "description": "Connect the wires to the circuit breaker and snap it into place.",
+      "actions": [
+        "Connect the copper wire to the ground port",
+        "Connect the black wire to the neutral port",
+        "Connect the white wire to the hot port",
+        "Connect the red wire to the secondary hot port (if installing a 220V outlet)",
+        "Snap the circuit breaker into place"
+      ],
+      "tool": "Flathead Screwdriver",
+      "part": "Circuit Breaker",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 8,
+      "description": "This step details how to connect wires to an outlet based on whether it's 110V or 220V.",
+      "actions": [
+        "Identify the hot, neutral, and ground wires for a 110V outlet (black, white, and copper respectively).",
+        "Connect the hot wire to the hot screw (copper screw).",
+        "Connect the neutral wire to the neutral screw (silver screw).",
+        "Connect the ground wire to the ground screw (green screw).",
+        "Identify the red and white wires for a 220V receptacle.",
+        "Connect the red wire to one of the copper screws.",
+        "Connect the white wire to the other copper screw."
+      ],
+      "tool": "Flathead Screwdriver",
+      "part": "Outlet",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 9,
+      "description": "Turn the breaker back on, activate the new breaker, and test the outlet with a voltmeter to verify voltage.",
+      "actions": [
+        "Turn the breaker panel back on",
+        "Turn on the new breaker",
+        "Test the outlet using a voltmeter"
+      ],
+      "tool": "Voltmeter",
+      "part": "Outlet",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 10,
+      "description": "Place the freezer in its designated location, plug it in, and test its functionality.",
+      "actions": [
+        "Place the freezer",
+        "Plug it in",
+        "Test it"
+      ],
+      "tool": "Hand Truck",
+      "part": "freezer",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    }
+  ]
+}

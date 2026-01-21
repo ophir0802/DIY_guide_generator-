@@ -1,7 +1,7 @@
 {
   "header": {
     "title": "How to Clean Chest Freezer Condenser Coils",
-    "description": "This guide explains how to clean the condenser coils of a chest freezer to improve its efficiency and performance. Follow these steps to safely disconnect the freezer, locate and clean the coils and fan, and restore optimal cooling.",
+    "description": "This guide explains how to clean the condenser coils of a chest freezer to improve its efficiency and performance. Follow these steps to safely disconnect power, locate the coils, and remove accumulated dust and debris.",
     "toolbox": [
       "Screwdriver",
       "Torchlight",
@@ -15,18 +15,18 @@
       "step_id": 1,
       "description": "This step instructs the user to disconnect the freezer from power and water sources.",
       "actions": [
-        "Unplug the freezer or turn off the circuit breaker.",
-        "Slide the freezer away.",
-        "Unplug the freezer from the wall outlet.",
-        "Turn off the water supply lines (if freezer has an ice maker)."
+        "Unplug the freezer or turn off the circuit breaker",
+        "Slide the freezer away",
+        "Unplug the freezer from the wall outlet",
+        "Turn off the water supply lines (if freezer has an ice maker)"
       ],
       "tool": "Torchlight",
       "part": "Freezer",
       "geometric_location": {
-        "x": 0.5,
-        "y": 0.5,
-        "w": 0.1,
-        "h": 0.1
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
       },
       "hands": 2
     },
@@ -46,10 +46,10 @@
       "tool": "Torchlight",
       "part": "Condenser coil",
       "geometric_location": {
-        "x": 0.5,
-        "y": 0.5,
-        "w": 0.1,
-        "h": 0.1
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
       },
       "hands": 2
     },
@@ -64,10 +64,10 @@
       "tool": "Vacuum Cleaner",
       "part": "condenser coil",
       "geometric_location": {
-        "x": 0.5,
-        "y": 0.5,
-        "w": 0.1,
-        "h": 0.1
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
       },
       "hands": 1
     },
@@ -81,16 +81,16 @@
       "tool": "Vacuum Cleaner",
       "part": "Freezer Fan",
       "geometric_location": {
-        "x": 0.5,
-        "y": 0.5,
-        "w": 0.1,
-        "h": 0.1
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
       },
       "hands": 1
     },
     {
       "step_id": 5,
-      "description": "Gently brush away any remaining dust from the coil and fan using a paintbrush.",
+      "description": "Gently brush away any remaining dust on the coil and fan using a paintbrush.",
       "actions": [
         "Check for remaining dust on the coil and fan",
         "Gently brush away dust with a paintbrush",
@@ -100,10 +100,10 @@
       "tool": "Brush",
       "part": "Coil and fan",
       "geometric_location": {
-        "x": 0.5,
-        "y": 0.5,
-        "w": 0.1,
-        "h": 0.1
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
       },
       "hands": 1
     }
