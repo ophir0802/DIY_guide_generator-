@@ -43,6 +43,7 @@ Rules:
 # Models to test (add or remove based on availability)
 # Note: Use full model path with "models/" prefix
 MODELS_TO_TEST = [
+    "models/gemma-3-12b-it",  # Currently used - higher quota limits
     "models/gemini-2.5-flash",
     "models/gemini-2.5-pro",
     "models/gemini-2.0-flash-exp",

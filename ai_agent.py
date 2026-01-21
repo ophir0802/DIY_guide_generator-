@@ -8,6 +8,7 @@ import os
 import json
 import logging
 import time
+import re
 from typing import List, Optional, Dict, Any
 from pathlib import Path
 
@@ -30,14 +31,65 @@ class AgentAbortError(Exception):
     pass
 
 
+# --- Helper Functions ---
+
+def extract_json_from_text(text: str) -> Optional[Dict[str, Any]]:
+    """
+    Extract JSON object from text that may contain additional content.
+    
+    This is useful when models don't support JSON mode and return JSON
+    embedded in markdown or with explanatory text.
+    
+    Args:
+        text: Text that may contain JSON
+        
+    Returns:
+        Parsed JSON dict if found, None otherwise
+    """
+    if not text or not text.strip():
+        return None
+    
+    # Try parsing as-is first
+    try:
+        return json.loads(text.strip())
+    except json.JSONDecodeError:
+        pass
+    
+    # Try to extract JSON from markdown code blocks
+    json_match = re.search(r'```(?:json)?\s*(\{.*?\})\s*```', text, re.DOTALL)
+    if json_match:
+        try:
+            return json.loads(json_match.group(1))
+        except json.JSONDecodeError:
+            pass
+    
+    # Try to find JSON object in text (looking for {...})
+    json_match = re.search(r'\{[^{}]*(?:\{[^{}]*\}[^{}]*)*\}', text, re.DOTALL)
+    if json_match:
+        try:
+            return json.loads(json_match.group(0))
+        except json.JSONDecodeError:
+            pass
+    
+    # Try to find JSON array in text (looking for [...])
+    json_match = re.search(r'\[[^\[\]]*(?:\[[^\[\]]*\][^\[\]]*)*\]', text, re.DOTALL)
+    if json_match:
+        try:
+            return json.loads(json_match.group(0))
+        except json.JSONDecodeError:
+            pass
+    
+    return None
+
+
 # --- Pydantic Models for Standardized Format ---
 
 class GeometricLocation(BaseModel):
-    """Normalized geometric location (0-1 range)."""
-    x: float = Field(ge=0.0, le=1.0, description="X coordinate (left edge)")
-    y: float = Field(ge=0.0, le=1.0, description="Y coordinate (top edge)")
-    w: float = Field(ge=0.0, le=1.0, description="Width")
-    h: float = Field(ge=0.0, le=1.0, description="Height")
+    """Normalized geometric location (0-1 range). Null values indicate tool not detected in image."""
+    x: Optional[float] = Field(None, ge=0.0, le=1.0, description="X coordinate (left edge), null if tool not detected")
+    y: Optional[float] = Field(None, ge=0.0, le=1.0, description="Y coordinate (top edge), null if tool not detected")
+    w: Optional[float] = Field(None, ge=0.0, le=1.0, description="Width, null if tool not detected")
+    h: Optional[float] = Field(None, ge=0.0, le=1.0, description="Height, null if tool not detected")
 
 
 class StandardizedStep(BaseModel):
@@ -79,9 +131,12 @@ class InstructionSynthesisAgent:
     MAX_TOTAL_FAILURES = 10  # Abort after this many total failures in a single guide
     SERVER_OVERLOAD_DELAY = 30  # Seconds to wait when server is overloaded (503)
     
-    def __init__(self):
+    def __init__(self, skip_tool_location: bool = False):
         """
         Initialize the agent with Gemini API and ToolLocator.
+        
+        Args:
+            skip_tool_location: If True, skip tool location detection and use default center location
         
         Raises:
             ValueError: If GOOGLE_API_KEY environment variable is not set
@@ -96,12 +151,19 @@ class InstructionSynthesisAgent:
         # Initialize the Gemini client
         self.client = genai.Client(api_key=api_key)
         
-        # Model name - using gemini-flash-latest (best performer: 2.28s, quality 3/3)
+        # Model name - using gemma-3-12b-it (higher quota limits)
         # Note: Use full model path with "models/" prefix
-        self.model_name = "models/gemini-flash-latest"
+        self.model_name = "models/gemma-3-12b-it"
+        
+        # Check if model supports JSON mode
+        # Gemini models support JSON mode, but Gemma models don't
+        self.supports_json_mode = "gemini" in self.model_name.lower()
         
         # Initialize ToolLocator for geometric location inference
         self.tool_locator = ToolLocator()
+        
+        # Tool location settings
+        self.skip_tool_location = skip_tool_location
         
         # Failure tracking for abort mechanism
         self._consecutive_failures = 0
@@ -198,12 +260,17 @@ class InstructionSynthesisAgent:
             image_urls: List of image URLs to search
             
         Returns:
-            GeometricLocation with normalized coordinates (0-1)
-            Returns default center location if tool not found
+            GeometricLocation with normalized coordinates (0-1) if tool found,
+            or null values if tool not detected in image
         """
+        # Check if tool location is disabled
+        if self.skip_tool_location:
+            logging.info(f"Tool location disabled, returning null location for '{tool}'")
+            return GeometricLocation(x=None, y=None, w=None, h=None)
+        
         if not image_urls:
-            logging.warning(f"No images available for tool '{tool}', using default location")
-            return GeometricLocation(x=0.5, y=0.5, w=0.1, h=0.1)
+            logging.warning(f"No images available for tool '{tool}', returning null location")
+            return GeometricLocation(x=None, y=None, w=None, h=None)
         
         # Try each image until tool is found
         for image_url in image_urls:
@@ -220,9 +287,9 @@ class InstructionSynthesisAgent:
                 logging.warning(f"Error locating tool '{tool}' in image {image_url}: {e}")
                 continue
         
-        # Tool not found in any image, use default center location
-        logging.warning(f"Tool '{tool}' not found in any image, using default location")
-        return GeometricLocation(x=0.5, y=0.5, w=0.1, h=0.1)
+        # Tool not found in any image, return null location
+        logging.warning(f"Tool '{tool}' not found in any image, returning null location")
+        return GeometricLocation(x=None, y=None, w=None, h=None)
     
     def _normalize_toolbox(self, supplies: List[str]) -> List[str]:
         """
@@ -326,15 +393,21 @@ Rules:
         
         for attempt in range(max_retries):
             try:
+                # Configure JSON mode only if model supports it
+                config = types.GenerateContentConfig()
+                if self.supports_json_mode:
+                    config.response_mime_type = "application/json"
+                
                 response = self.client.models.generate_content(
                     model=self.model_name,
                     contents=prompt,
-                    config=types.GenerateContentConfig(
-                        response_mime_type="application/json"
-                    )
+                    config=config
                 )
                 
-                result = json.loads(response.text)
+                # Parse JSON from response (handles both JSON mode and plain text with JSON)
+                result = extract_json_from_text(response.text)
+                if result is None:
+                    raise json.JSONDecodeError("No valid JSON found in response", response.text, 0)
                 
                 # Validate and use normalized toolbox from LLM, or fallback to our normalization
                 if "toolbox" in result and isinstance(result["toolbox"], list):
@@ -352,7 +425,11 @@ Rules:
                 )
                 
             except json.JSONDecodeError as e:
-                logging.warning(f"JSON decode error (attempt {attempt + 1}/{max_retries}): {e}")
+                response_preview = response.text[:200] if 'response' in locals() and response.text else "N/A"
+                logging.warning(
+                    f"JSON decode error (attempt {attempt + 1}/{max_retries}): {e}. "
+                    f"Response preview: {response_preview}"
+                )
                 if attempt < max_retries - 1:
                     time.sleep(retry_delay * (2 ** attempt))  # Exponential backoff
                     continue
@@ -454,15 +531,21 @@ IMPORTANT RULES:
         
         for attempt in range(max_retries):
             try:
+                # Configure JSON mode only if model supports it
+                config = types.GenerateContentConfig()
+                if self.supports_json_mode:
+                    config.response_mime_type = "application/json"
+                
                 response = self.client.models.generate_content(
                     model=self.model_name,
                     contents=prompt,
-                    config=types.GenerateContentConfig(
-                        response_mime_type="application/json"
-                    )
+                    config=config
                 )
                 
-                result = json.loads(response.text)
+                # Parse JSON from response (handles both JSON mode and plain text with JSON)
+                result = extract_json_from_text(response.text)
+                if result is None:
+                    raise json.JSONDecodeError("No valid JSON found in response", response.text, 0)
                 
                 # Extract fields
                 description = result.get("description", headline)
@@ -491,7 +574,11 @@ IMPORTANT RULES:
                 )
                 
             except json.JSONDecodeError as e:
-                logging.warning(f"JSON decode error for step {step_number} (attempt {attempt + 1}/{max_retries}): {e}")
+                response_preview = response.text[:200] if 'response' in locals() and response.text else "N/A"
+                logging.warning(
+                    f"JSON decode error for step {step_number} (attempt {attempt + 1}/{max_retries}): {e}. "
+                    f"Response preview: {response_preview}"
+                )
                 if attempt < max_retries - 1:
                     time.sleep(retry_delay * (2 ** attempt))  # Exponential backoff
                     continue
@@ -619,7 +706,8 @@ IMPORTANT RULES:
 
 def process_single_file(
     input_path: str, 
-    output_dir: str = "standardized_data"
+    output_dir: str = "standardized_data",
+    skip_tool_location: bool = False
 ) -> bool:
     """
     Process a single raw guide file and save standardized output.
@@ -627,6 +715,7 @@ def process_single_file(
     Args:
         input_path: Path to input JSON file
         output_dir: Directory to save output
+        skip_tool_location: If True, skip tool location detection and use default center location
         
     Returns:
         True if successful, False otherwise
@@ -637,7 +726,7 @@ def process_single_file(
             raw_guide = json.load(f)
         
         # Process with agent
-        agent = InstructionSynthesisAgent()
+        agent = InstructionSynthesisAgent(skip_tool_location=skip_tool_location)
         standardized = agent.synthesize_guide(raw_guide)
         
         # Create output directory
@@ -675,7 +764,8 @@ def process_single_file(
 def process_batch(
     input_dir: str = "raw_data", 
     output_dir: str = "standardized_data",
-    stop_on_abort: bool = True
+    stop_on_abort: bool = True,
+    skip_tool_location: bool = False
 ) -> Dict[str, bool]:
     """
     Process all JSON files in input directory.
@@ -684,6 +774,7 @@ def process_batch(
         input_dir: Directory containing raw guide JSON files
         output_dir: Directory to save standardized outputs
         stop_on_abort: If True, stop processing remaining files when API abort occurs
+        skip_tool_location: If True, skip tool location detection and use default center location
         
     Returns:
         Dictionary mapping input files to success status
@@ -715,7 +806,7 @@ def process_batch(
         logging.info(f"Processing file {i}/{len(json_files)}: {json_file.name}")
         
         try:
-            success = process_single_file(str(json_file), output_dir)
+            success = process_single_file(str(json_file), output_dir, skip_tool_location)
             results[str(json_file)] = success
         except KeyboardInterrupt:
             logging.warning("Batch processing interrupted by user (Ctrl+C)")
@@ -739,11 +830,26 @@ def process_batch(
 
 if __name__ == "__main__":
     import sys
+    import argparse
     
-    if len(sys.argv) > 1:
+    parser = argparse.ArgumentParser(
+        description='Process DIY guides with AI to create standardized output'
+    )
+    parser.add_argument(
+        'input_file', 
+        nargs='?', 
+        help='Single file to process (if omitted, processes all files in raw_data/)'
+    )
+    parser.add_argument(
+        '--skip-tool-location', 
+        action='store_true', 
+        help='Skip tool location detection and use default center location (saves API calls)'
+    )
+    args = parser.parse_args()
+    
+    if args.input_file:
         # Single file mode
-        input_file = sys.argv[1]
-        process_single_file(input_file)
+        process_single_file(args.input_file, skip_tool_location=args.skip_tool_location)
     else:
         # Batch mode
-        process_batch()
+        process_batch(skip_tool_location=args.skip_tool_location)

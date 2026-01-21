@@ -1,0 +1,111 @@
+{
+  "header": {
+    "title": "How to Clean Chest Freezer Condenser Coils",
+    "description": "This guide explains how to clean the condenser coils of a chest freezer to improve its efficiency and performance. Follow these steps to safely disconnect the freezer, locate and clean the coils and fan, and restore optimal cooling.",
+    "toolbox": [
+      "Screwdriver",
+      "Torchlight",
+      "Vacuum Cleaner",
+      "Brush",
+      "Clean Cloth"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "This step instructs the user to disconnect the freezer from power and water sources.",
+      "actions": [
+        "Unplug the freezer or turn off the circuit breaker.",
+        "Slide the freezer away.",
+        "Unplug the freezer from the wall outlet.",
+        "Turn off the water supply lines (if freezer has an ice maker)."
+      ],
+      "tool": "Torchlight",
+      "part": "Freezer",
+      "geometric_location": {
+        "x": 0.5,
+        "y": 0.5,
+        "w": 0.1,
+        "h": 0.1
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 2,
+      "description": "This step instructs you to locate the condenser coils, which are positioned differently in older and modern freezers.",
+      "actions": [
+        "Locate the condenser coil at the back of older freezers.",
+        "Identify the coil as a black, grid-like structure.",
+        "Locate the condenser coil underneath in modern freezers.",
+        "Use a torchlight to locate the coil and fan.",
+        "Remove the toe space panel if the coil is behind it.",
+        "Remove the condensate tray to reveal the flat condenser coil.",
+        "Slide the freezer away if the coil is on the rear access panel.",
+        "Remove the screws that hold the panels to reveal the cylindrical condenser coil."
+      ],
+      "tool": "Torchlight",
+      "part": "Condenser coil",
+      "geometric_location": {
+        "x": 0.5,
+        "y": 0.5,
+        "w": 0.1,
+        "h": 0.1
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 3,
+      "description": "Vacuum the dirt and dust from the condenser coil, being careful not to damage it.",
+      "actions": [
+        "Use a vacuum cleaner",
+        "Clean away the dirt and dust",
+        "Make sure not to damage the coil"
+      ],
+      "tool": "Vacuum Cleaner",
+      "part": "condenser coil",
+      "geometric_location": {
+        "x": 0.5,
+        "y": 0.5,
+        "w": 0.1,
+        "h": 0.1
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 4,
+      "description": "Vacuum the freezer fan to remove dirt and dust that can hinder airflow and damage the compressor.",
+      "actions": [
+        "Check if the freezer fan is accessible.",
+        "Vacuum the freezer fan."
+      ],
+      "tool": "Vacuum Cleaner",
+      "part": "Freezer Fan",
+      "geometric_location": {
+        "x": 0.5,
+        "y": 0.5,
+        "w": 0.1,
+        "h": 0.1
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 5,
+      "description": "Gently brush away any remaining dust from the coil and fan using a paintbrush.",
+      "actions": [
+        "Check for remaining dust on the coil and fan",
+        "Gently brush away dust with a paintbrush",
+        "Clean the condenser coil at least two times per year",
+        "Unplug the power supply before cleaning the freezer"
+      ],
+      "tool": "Brush",
+      "part": "Coil and fan",
+      "geometric_location": {
+        "x": 0.5,
+        "y": 0.5,
+        "w": 0.1,
+        "h": 0.1
+      },
+      "hands": 1
+    }
+  ]
+}

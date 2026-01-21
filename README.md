@@ -87,9 +87,19 @@ Process a single guide:
 python ai_agent.py raw_data/how_to_clean_chest_freezer_condenser_coils.json
 ```
 
+Process without tool location detection (faster, saves API calls):
+```bash
+python ai_agent.py --skip-tool-location raw_data/how_to_clean_chest_freezer_condenser_coils.json
+```
+
 Process all guides in batch:
 ```bash
 python ai_agent.py
+```
+
+Process all guides in batch without tool location:
+```bash
+python ai_agent.py --skip-tool-location
 ```
 
 Standardized guides will be saved to `standardized_data/` directory.
@@ -175,7 +185,8 @@ DIY_guide_generator/
 ### AI & ML
 - **google-genai** - Google Gemini API client (v1.0+)
   - Replaces deprecated `google-generativeai` package
-  - Supports Gemini 1.5 Flash and Pro models
+  - Currently using gemma-3-12b-it model (higher quota limits)
+  - Supports Gemini 1.5 Flash, Pro, and Gemma models
   - Multimodal input (text + images)
 
 ## Recent Updates (Jan 2026)
@@ -231,10 +242,12 @@ pip install google-genai
 
 ## Performance Notes
 
+- **Model**: Currently using gemma-3-12b-it (higher quota limits than gemini-flash)
 - **Rate Limiting**: 1 second delay between API calls
 - **Retry Logic**: 3 retries with exponential backoff
 - **Timeout**: 10-15 seconds for network requests
-- **Cost**: Using Gemini 1.5 Flash (free tier available)
+- **Cost**: Free tier available with generous quotas
+- **Tool Location**: Use `--skip-tool-location` flag to reduce API calls by ~66% when images don't contain tools
 
 ## Contributing
 

@@ -7,6 +7,7 @@ in normalized 0-1000 coordinate system.
 import os
 import json
 import logging
+import re
 from typing import List, Optional, Dict, Any
 from io import BytesIO
 
@@ -18,6 +19,57 @@ from PIL import Image
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+
+
+# --- Helper Functions ---
+
+def extract_json_from_text(text: str) -> Optional[Dict[str, Any]]:
+    """
+    Extract JSON object from text that may contain additional content.
+    
+    This is useful when models don't support JSON mode and return JSON
+    embedded in markdown or with explanatory text.
+    
+    Args:
+        text: Text that may contain JSON
+        
+    Returns:
+        Parsed JSON dict if found, None otherwise
+    """
+    if not text or not text.strip():
+        return None
+    
+    # Try parsing as-is first
+    try:
+        return json.loads(text.strip())
+    except json.JSONDecodeError:
+        pass
+    
+    # Try to extract JSON from markdown code blocks
+    json_match = re.search(r'```(?:json)?\s*(\{.*?\})\s*```', text, re.DOTALL)
+    if json_match:
+        try:
+            return json.loads(json_match.group(1))
+        except json.JSONDecodeError:
+            pass
+    
+    # Try to find JSON object in text (looking for {...})
+    json_match = re.search(r'\{[^{}]*(?:\{[^{}]*\}[^{}]*)*\}', text, re.DOTALL)
+    if json_match:
+        try:
+            return json.loads(json_match.group(0))
+        except json.JSONDecodeError:
+            pass
+    
+    # Try to find JSON array in text (looking for [...])
+    json_match = re.search(r'\[[^\[\]]*(?:\[[^\[\]]*\][^\[\]]*)*\]', text, re.DOTALL)
+    if json_match:
+        try:
+            return json.loads(json_match.group(0))
+        except json.JSONDecodeError:
+            pass
+    
+    return None
 
 
 # --- Pydantic Models ---
@@ -110,9 +162,13 @@ class ToolLocator:
         # Initialize the Gemini client
         self.client = genai.Client(api_key=api_key)
         
-        # Model name - using gemini-flash-latest (best performer: 2.28s, quality 3/3)
+        # Model name - using gemma-3-12b-it (higher quota limits)
         # Note: Use full model path with "models/" prefix
-        self.model_name = "models/gemini-flash-latest"
+        self.model_name = "models/gemma-3-12b-it"
+        
+        # Check if model supports JSON mode
+        # Gemini models support JSON mode, but Gemma models don't
+        self.supports_json_mode = "gemini" in self.model_name.lower()
         
         logging.info("ToolLocator initialized successfully")
     
@@ -258,6 +314,18 @@ Coordinate system explanation:
 - xmin: Left edge of bounding box (0-1000, where 0 is left of image)
 - ymax: Bottom edge of bounding box (0-1000, must be > ymin)
 - xmax: Right edge of bounding box (0-1000, must be > xmin)
+
+Output must be in JSON format:
+{{
+  "tools": [
+    {{
+      "tool_name": "tool name from list",
+      "bbox_2d": [ymin, xmin, ymax, xmax]
+    }}
+  ]
+}}
+
+If no tools are found, return: {{"tools": []}}
 """
             
             # Generate content with structured output
@@ -268,6 +336,12 @@ Coordinate system explanation:
             image.save(img_byte_arr, format='PNG')
             img_bytes = img_byte_arr.getvalue()
             
+            # Configure JSON mode only if model supports it
+            config = types.GenerateContentConfig()
+            if self.supports_json_mode:
+                config.response_mime_type = "application/json"
+                config.response_schema = DetectionResult  # Pass the Pydantic model class directly
+            
             # Use the new API - pass Pydantic model directly instead of JSON schema
             # The new SDK can handle Pydantic models natively
             response = self.client.models.generate_content(
@@ -276,14 +350,14 @@ Coordinate system explanation:
                     types.Part.from_text(text=prompt),
                     types.Part.from_bytes(data=img_bytes, mime_type='image/png')
                 ],
-                config=types.GenerateContentConfig(
-                    response_mime_type="application/json",
-                    response_schema=DetectionResult  # Pass the Pydantic model class directly
-                )
+                config=config
             )
             
-            # Parse the JSON response
-            result_dict = json.loads(response.text)
+            # Parse the JSON response (handles both JSON mode and plain text with JSON)
+            result_dict = extract_json_from_text(response.text)
+            if result_dict is None:
+                logging.warning(f"No valid JSON found in response, returning empty results")
+                return []
             
             # Validate using Pydantic
             detection_result = DetectionResult(**result_dict)
