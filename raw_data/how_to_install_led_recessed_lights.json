@@ -1,0 +1,41 @@
+{
+    "title": "How to Install LED Recessed Lights",
+    "author": "Written byElad Shem-Tovon Feb 01, 2010",
+    "additional_text_boxes": [],
+    "supplies": [
+        "Recessed LED fixture",
+        "Long-nose pliers",
+        "Tarp jigsaw",
+        "Stud Finder",
+        "Screwdriver",
+        "Drywall circle cutter",
+        "Drywall saw",
+        "Wire strippers",
+        "Wire connectors",
+        "Cable clamp"
+    ],
+    "steps": [
+        [
+            "Step 1 - Be Safe",
+            "Before starting on any work, the circuit breaker to that specific electrical box must be TURNED OFF at the main panel in order to avoid injury from electric shock. Also verify that insulation doesn't touch the light trim, housing unit, or the light bulb, there could be to prevent a possibility of fire hazard. To prevent such an accident, an IC, or insulation-contact rated fixture is suggested. Also for the sake of safety, place the junction box in an easy to access location."
+        ],
+        [
+            "Step 2 - Prepare",
+            "Once the circuit breaker to that junction box is turned off at the main electrical panel, and not just from the local switch to the room, the stud finder may be used to find ceiling joists. After tracing an appropriate shape and size for the lighting fixture, it is important to place a trap for debris directly underneath the tracing; a clean area is a safe area. Next, start cutting the tracing with a drywall saw, drywall circle cutter, or a jigsaw with a plaster-cutting edge. The drywall saw is the most common and cheapest of the tools mentioned. A drywall circle cutter is much more accurate, so it will take less time to do the same job, and is ideal for multiple fixture installations at once. The jigsaw with a plaster-cutting edge is also appropriate, but be careful to not cut nearby wires."
+        ],
+        [
+            "Step 3 - Fasten Electrical Cable",
+            "Bring an electrical feed cable from the previous light fixture's electrical box to the newly cut opening location and pass it through a knockout inside the LED fixture box, using the cable clamp to firmly hold the electrical cable in place' with 6 to 8\" of wire inside the box, with the jacket removed from the cable. Now, strip 3/4\" of insulation from the infeed wires. Next, using wire connectors, connect the matching wires from the fixture to the same colored wires from the 110V feed cable — connect the black wire with the black wire, the white wire with the white wire, and the green wire with the green wire making sure it is also grounded to the box. Note that the green wire represents the ground wire. Fasten the electrical cable into the fixture’s junction box with the cable clamp. After stripping the wires and splicing them to the fixture’s wires with the wire connectors, connect the fixture’s black wire to the black wire of the house. Next, connect white to white, and ground, or green, to ground, or green. Put the wires into the box, and fasten the cover."
+        ],
+        [
+            "Step 4 - Finish",
+            "After pushing the wires into the box and fastening the cover, rotate the fixture into place until the mounting tabs engage. The next step is to actually follow the fixture's manual due to a plethora of variations from one model to the next. Once finished, restore power and test the lights."
+        ]
+    ],
+    "image_urls": [
+        "https://cimg1.ibsrv.net/cimg/www.doityourself.com/660x300_85-1/689/AdobeStock_101569855-389689.jpg",
+        "https://cimg2.ibsrv.net/cimg/www.doityourself.com/660x300_85-1/690/AdobeStock_140937259-389690.jpg",
+        "https://cimg3.ibsrv.net/cimg/www.doityourself.com/660x300_85-1/691/AdobeStock_162555328-389691.jpg"
+    ],
+    "url": "https://www.doityourself.com/stry/how-to-install-led-recessed-lights"
+}

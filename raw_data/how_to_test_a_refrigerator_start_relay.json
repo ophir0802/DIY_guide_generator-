@@ -1,0 +1,32 @@
+{
+    "title": "How to Test a Refrigerator Start Relay",
+    "author": "Written byDiana Moes VandeHoefon Sep 16, 2010",
+    "additional_text_boxes": [],
+    "supplies": [
+        "Set of screwdrivers",
+        "Multimeter",
+        "Needle nose pliers"
+    ],
+    "steps": [
+        [
+            "Step 1 - Disconnect from the Electrical Source",
+            "Turn off electrical power to your refrigerator by turning off the appropriate circuit breaker or by unplugging the unit. This is a step for safety that should be followed any time you're working with electricity or an electrically powered piece of equipment. In this case, when you're testing a refrigerator start relay, you want to turn off the power both to prevent electrical shock and because the compressor could start at any time during the testing process, altering your results."
+        ],
+        [
+            "Step 2 - Find the Start Relay",
+            "Locate the start relay. To do this you need to find the compressor first. Thecompressoris typically located at the back bottom of the fridge so you'll need to remove the unit from the wall. Be careful when moving the refrigerator so you don't damage the kitchen flooring. Ceramic flooring won't damage easily but usually, it doesn't take much to permanently damagelinoleum. Place cardboard on the floor if necessary to protect it. Once the fridge is pulled out, look for a large cylinder-shaped object with copper tubings connected to it, you just found the compressor. Move to the right side of the compressor and look for a box with wires jutting out of it. The start relay is inside this box."
+        ],
+        [
+            "Step 3 - Access the Start Relay",
+            "Take off the cover to the box by loosening it with the appropriate screwdriver, if necessary. In most cases, you won't need a screwdriver because the cover is held in place with tension clips or retaining clips which can be manually loosened. Inside the box is the overload protector, and the start relay. The biggest component is the start relay. A wire-wound relay can be tested by a do-it-yourselfer but a solid-state one will require testing by a professional. Pull off the wire-wound relay with needle-nose pliers."
+        ],
+        [
+            "Step 4 - Test the Relay",
+            "Find the \"s\" and \"m\" plug-type terminals and the \"L\" slip-on terminal. Position the relay on the floor, counter or table so the \"s\" and \"m\" terminal are facing down. Insert the multi-tester with one probe on each of the \"s\" and \"m\" terminals. Set the tester to zero ohms. Turn over the relay and after a clicking sound, the reading should change to \"infinity\" if the relay is functioning. Turn the unit over again and place one probe from the \"s\" terminal to the \"L\" terminal. The tester should read \"zero\" again and when the relay is turned over, there should be no change in the reading if the unit is working properly. If it isn't, you'll need to replace it."
+        ]
+    ],
+    "image_urls": [
+        "https://cimg3.ibsrv.net/cimg/www.doityourself.com/660x300_85-1/739/ohmmeter-138739.jpg"
+    ],
+    "url": "https://www.doityourself.com/stry/how-to-test-a-refrigerator-start-relay"
+}

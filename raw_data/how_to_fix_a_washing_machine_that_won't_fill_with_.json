@@ -1,0 +1,38 @@
+{
+    "title": "How to Fix a Washing Machine That Won't Fill With Water",
+    "author": "Written byChris Nicksonon Mar 15, 2010",
+    "additional_text_boxes": [],
+    "supplies": [
+        "Screwdrivers",
+        "Wrenches",
+        "Multimeter"
+    ],
+    "steps": [
+        [
+            "Step 1 - Examine Hoses",
+            "Start by pulling out the washer so you can see the hoses. First, check whether the faucets are turned on and whether they are allowing water to enter. If not, this could be one reason why the washing machine spins but won't fill. There are also small mesh filters inside where the water hoses are attached to the washing machine. It could also be that the hose is kinked, which would prevent water from passing through, or damaged. If the hose is just kinked, simply straighten the hoses, and try the washing machine again to check that it fills properly. If the hose is damaged, you will need to replace it as soon as possible."
+        ],
+        [
+            "Step 2 - Check Water Level Switch",
+            "The reason the washing machine won’t fill might lie with the water level switch. To test this, you’ll need to open up the washer and locate the control panel. Safety note:Before proceeding, make sure the washer is unplugged to prevent the risk of shock. The water level switch is easy to spot since it has a clear tube running to it. You’ll need to test it with your volt-ohm meter. Have it set on RX1 and check all three terminals by trying all the possible pairings with the probe. One pair should give you a zero reading and on all the others, the reading should be infinity. If not, you’ll need toreplace the water level switch."
+        ],
+        [
+            "Step 3 - Inspect and Clean Filters",
+            "One common reason for the failure of a washer to fill is heavy clogging in the filters. First, unplug the washing machine, then disconnect the hoses from the back of the unit. You’ll be able to see the filters on the back of the washer sitting in the water inlet valve. Clean these out, reconnect the hoses and try again."
+        ],
+        [
+            "Step 4 - Check the Water Inlet Valve",
+            "If the filters are clean, you’ll need to check the water inlet valve. That is actually a double solenoid valve where the hot water is connected to one and the cold water to the other valve is controlled electrically with a solenoid coil. This could be the likely culprit and cause replacement of the valve. You should also check the water volume selector switch to ensure it’s set properly and that the buttons on the control panel are fully depressed. If these are not correctly set, a simple adjustment should repair your washing machine problems."
+        ],
+        [
+            "Step 5 - Examine the Pressure Chamber",
+            "If the pressure chamber of your washing machine is blocked, air can become trapped in the pressure tubing. This causes the pressure switch to remain on. You can diagnose this problem because the machine will wash and spin even though there is no water present. You’ll have to clear the tube to repair washing your machine problems or replace the pressure chamber."
+        ],
+        [
+            "Step 6 - Check for a Very Slow Flow",
+            "If the water only flows and fills very slowly and both the hoses and the filters are fine, the problem will be in your house plumbing."
+        ]
+    ],
+    "image_urls": [],
+    "url": "https://www.doityourself.com/stry/how-to-fix-a-washing-machine-that-wont-fill-with-water"
+}

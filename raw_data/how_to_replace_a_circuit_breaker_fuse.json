@@ -1,0 +1,42 @@
+{
+    "title": "How to Replace a Circuit Breaker Fuse",
+    "author": "Written byPiyush Jainon Oct 18, 2010",
+    "additional_text_boxes": [],
+    "supplies": [
+        "Screwdriver",
+        "Multimeter unit",
+        "Circuit breaker fuse of correct amperage"
+    ],
+    "steps": [
+        [
+            "Step 1 - Open the Fuse Box",
+            "Wear rubber-soled shoes and ensure the floor beneath thecircuit breaker boxis dry to minimize the risk of injury. To start, remove the circuit breaker box cover by unscrewing the corners with a screwdriver. Then, make sure to push the main electricity switch, to the individual fuses, into the “off” position."
+        ],
+        [
+            "Step 2 - Identify Fuse to be Replaced",
+            "Each different type of fuseproblemwill show different symptoms upon inspection. Obviously, the push-lever of a fuse that frequently trips will likely be found in the “off” position despite the rest being on. A circuit breaker fuse that will not reset will be off and cannot be flipped back on; and finally, a fuse that refuses to trip when it is supposed to will probably show marks of overheating or damage."
+        ],
+        [
+            "Step 3 - Check for Current",
+            "Turn the damaged fuse off if it’s not already and set your multimeter to “Volt AC.” Rest one pin on the terminal screw of the faulty fuse and the other on the ground screw, which lies opposite in a row or bar at the side of the box. The reading should indicate no voltage, otherwise, you should not continue."
+        ],
+        [
+            "Step 4 - Remove the Fuse",
+            "To remove the circuit breaker fuse, you will either need to unscrew it or simply pull or lever it from its socket. The fuse will remain connected to either one or two wires. Detach these by loosening the terminal screws. Make a mental note, or write it down if you don’t think you’ll be able to remember, of which color wire attaches to which end of the fuse for later."
+        ],
+        [
+            "Step 5 - Check Fuse Amperage",
+            "It is important that the replacement circuit breaker fuse is of the same amperage (and voltage unit) of the original. You may wish to take the old fuse to the store in order to purchase the correct replacement."
+        ],
+        [
+            "Step 6 - Rewire and Insert New Fuse",
+            "Set the new fuse to the \"off\" position. Insert the originalwires, in turn, into the terminals of the new fuse and tighten the retaining screws with a screwdriver. Push the new fuse back into its socket and, if it’s supplied with retaining screws, tighten screws after inserting them. Flip the lever switch on."
+        ],
+        [
+            "Step 7 - Reconnect Supply",
+            "Switch the circuit breaker fuse box back on and then replace the box cover; insert the screws and tighten them to finish."
+        ]
+    ],
+    "image_urls": [],
+    "url": "https://www.doityourself.com/stry/how-to-replace-a-circuit-breaker-fuse"
+}

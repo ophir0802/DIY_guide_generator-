@@ -1,0 +1,91 @@
+{
+    "title": "How to Troubleshoot Humidistats",
+    "author": "Written byCharles Ouelleton Jul 06, 2023",
+    "additional_text_boxes": [],
+    "supplies": [
+        "Multimeter",
+        "Screwdrivers",
+        "Wrenches",
+        "Humidistat"
+    ],
+    "steps": [
+        [
+            "Step 1",
+            "Plug the unit in and switch it on."
+        ],
+        [
+            "Step 2",
+            "Make sure that the pilot light on the control panel of the unit is on. If it is on, go to Step 5."
+        ],
+        [
+            "Step 3",
+            "If it doesn’t light up or the pilot stays off, check your outlet with an outlet tester or try plugging it into a different outlet. You should also check the circuit breaker panel for a tripped breaker and reset it."
+        ],
+        [
+            "Step 4",
+            "If you have power at the outlet, check for a fuse on the unit to see if it is burnt out by testing for continuity with a multimeter. Replace the fuse if it is burnt out."
+        ],
+        [
+            "Step 5",
+            "With the power on, if your unit doesn’t come on, adjust the integrated humidistat for the maximum humidity setting for a humidifier or for a minimum setting for a dehumidifier. If it still doesn’t come on, unplug the unit from its outlet."
+        ],
+        [
+            "Step 6",
+            "Get access to the float switch and unplug both wires from their connectors. Short the two wires together to close the circuit and plug the unit back in. If it still doesn’t come on, unplug the unit from its outlet. Leave the float switch wires together."
+        ],
+        [
+            "Step 7",
+            "Remove the necessary covers from the unit to gain access to the humidistat controller. Safety Warning! - Do not attempt to troubleshoot with the unit plugged in if you’re not a certified technician or an expert DIYer and are used to doing it. Wear insulated gloves while taking electrical readings."
+        ],
+        [
+            "Step 8",
+            "With your multimeter set for at least 120 AC volts, plug the humidifier back in, touch the ground probe against the grounded metal chassis and the red probe on each of the two connections with the humidity set on maximum for the humidifier and on the minimum setting for the dehumidifier. Either one of the readings should be around 120 VAC. If one of the connections has no voltage present, you can assume that the humidistat is defective and replace it with a new one."
+        ],
+        [
+            "Step 9",
+            "For a humidifier, if the readings are good, replace the fan motor. For a portable dehumidifier, proceed to Step 10."
+        ],
+        [
+            "Step 10",
+            "With voltage present at the humidistat, if the compressor doesn’t run at all, it will likely be caused by a faulty compressor itself and it should be brought to a certified repair shop for confirmation and replacement since this will mean removing the refrigeration gas and unsoldering the copper connections tying it to the evaporator and the condenser coils."
+        ],
+        [
+            "Step 11",
+            "If, however, the compressor motor can be heard running, but no refrigeration is happening on the condenser, it leaves you with two possibilities—a refrigerant leak or a defective “time-delay relay.” This relay lets the gas warm up for a few minutes before engaging the compressor, which can be easily heard when it kicks in. Test the time-delay relay by shorting its two leads across with a jumper wire for just a few seconds, and you should hear the compressor coming on."
+        ],
+        [
+            "Step 12",
+            "Plug the two wires removed from the float switch in Step 6 back into their respective terminals. This is as far as it can be tested by a DIYer without proper testing equipment and training, and you should take it to a certified refrigeration repair shop. Most homes are usually heated with a furnace or a central air system (HVAC), circulating heated or cooled air through your ductwork to provide your entire home with comfortable, warm conditions. But since the warm air flow and the weather conditions tend to vary the RH levels, it is especially important to inject or remove the moisture inside your home in order to maintain a comfortable balance between heat and RH. Although it may not apply to all central air systems, a lot of them are equipped with a central humidifier. The temperature and the relative humidity of the home can then be controlled from a wall-mounted combined climate control. The wall control is set at a specific temperature and at a comfortable RH at which the heating unit or the air conditioner is set when either setting reaches its mark. While the thermostat measures and controls the temperature inside the home, the humidistat does the same but for its relative humidity. If, for instance, the temperature is low and the RH is at a low concentration, the humidistat will trigger the humidifier to inject moisture into the air as long as the circulating fan is running. With the same low temperature and an elevated RH level, the condensation coil of the air conditioner will remove the moisture from the circulating air. When the air gets warmer in the house, the thermostat triggers the air conditioning unit, removing moisture at the same time when the RH is high or starting up the humidifying unit if the RH is low. Since it wouldn’t be very practical to fill the water pan of a humidifier unit every time it runs out, the ductwork is usually complemented with one of 3 different types of humidifiers installed within your heating or cooling system."
+        ],
+        [
+            "Step 1",
+            "Make sure that the water line delivers its water into the pan by pushing down on the float to open the valve."
+        ],
+        [
+            "Step 2",
+            "If you don’t get water flow, check along the water line and make sure all the valves are open."
+        ],
+        [
+            "Step 1",
+            "Turn off the humidistat. Verify if the injector’s nozzle tip is not plugged with some dirt or debris by unscrewing and removing it. Have someone turn the humidistat to its maximum setting briefly until water starts coming through. If you get water coming through, replace the spray nozzle with a new one. If you don’t get water from the nozzle, screw the nozzle tip back on and check the solenoid valve."
+        ],
+        [
+            "Step 2",
+            "If you follow the water line back from the spray nozzle, you will get to the solenoid valve, which receives a 24 volts electrical signal from the control board to open and send water to the spray nozzle whenever the humidistat goes on. The solenoid valve is an electro-mechanical device that is connected to a water line and opens the water flow when voltage is applied to an electromagnet and pulls the shut-off trap in its open position. Remove the water line from the injector’s side of the valve and have someone briefly turn the humidistat to its maximum to get water flowing."
+        ],
+        [
+            "Step 3",
+            "If you don’t get any water flow, remove the cover from the solenoid to expose the electrical connections, and with the humidistat turned on maximum, use a multimeter to check if you get 24 volts across the electromagnet. If the meter registers 24 volts, the problem is either a stuck valve in the closed position or a burnt-out coil. Either way, you’ll need to replace the solenoid valve."
+        ],
+        [
+            "Step 4",
+            "If you don’t get any voltage at the solenoid valve with the humidistat on its maximum setting, you’ll need to open up the humidistat and disconnect the wires going to the control board. With your multimeter set on continuity, place the probes on the humidifier’s terminals and turn the humidity level to its maximum setting. If you can’t get any reading, you’ll have to replace the humidistat or the climate control."
+        ],
+        [
+            "Step 5",
+            "If you did get continuity at Step 4, it’s likely that you have a defective control board and need to replace it with a new one. For more information on this subject or for other closely related articles, check out our pieces on \"Best Home Humidity Levels For Air Conditioning\", \"2 Factors That Affect The Humidity Level in a House\", and \"How Do I Test My Home Humidity Level.\""
+        ]
+    ],
+    "image_urls": [],
+    "url": "https://www.doityourself.com/stry/how-to-troubleshoot-common-humidistat-problems"
+}

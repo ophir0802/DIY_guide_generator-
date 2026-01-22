@@ -1,0 +1,46 @@
+{
+    "title": "How to Wire a Three Pronged Dryer Plug",
+    "author": "Written byCharles Ouelleton Jul 22, 2020",
+    "additional_text_boxes": [],
+    "supplies": [
+        "240V 3-prong dryer cord",
+        "Phillips screwdriver",
+        "Socket wrench"
+    ],
+    "steps": [
+        [
+            "Step 1 - Pick the New Cord",
+            "Since the three prong outlet is still compliant with the code, all you need is a new three prong cord that matches the pattern of the outlet. As shown in Figure 4, there are more than just one type of three-prong cords for ranges and dryers, so care must be taken to get the right one."
+        ],
+        [
+            "Step 2 - Remove the Access Panel",
+            "After confirming the right cord was picked, the dryer’s electrical access panel is removed to expose the terminal block and connections of its wires. Looking at the four wire cable going in, there are a black, a red, a white, and a green wire hooked up inside as in Figure 5. It’s easy enough to see on the inside that the green wire from inside the appliance and the green wire from the four wire cord are both secured at the common point on the chassis or case of the appliance connecting everything to theearth ground. The main difference after it’s all hooked up is the green wire from the four wire cord will be missing after it’s replaced with the three wire cord as seen in Figure 6."
+        ],
+        [
+            "Step 3 - Free the Wires",
+            "With the proper Phillips screwdriver orsocket wrench, remove the screws securing the green wires to the chassis, and the three wires to the terminal block, taking care not to lose any of the screws inside and making note of where each color goes."
+        ],
+        [
+            "Step 4 - Take Out the Four Wire Cable",
+            "The cable clamp holding that cord can then be loosened up and the four wire cable can be removed from the dryer."
+        ],
+        [
+            "Step 5 - Insert the New Cord",
+            "The new cord (with only three wires) is inserted into the knockout opening that is now freed, but without the cable clamp at this time."
+        ],
+        [
+            "Step 6 - Connect the Wires to the Block",
+            "As illustrated in Figure 6, there's no green wire in the new three prong cable, so if the three wires are colored, the wires should be attached to the terminal block to match the same colored wires from the dryer. The “grounding strap” will now replace the green ground wire and can now be connected between the center terminal and the dryer case. If the new cord is a flat cable without color-coding, the center wire goes to the middle terminal screw and the outside wires go attached to each of the outside terminals on the terminal block. The grounding strap still goes connected as described above."
+        ],
+        [
+            "Step 7 - Secure the System",
+            "With the new cable hooked up, the cable clamp can be tightened up to secure the cord in place. With this done, the access cover can also be put back and screwed in place. And there it is, ready to get plugged in and tested."
+        ]
+    ],
+    "image_urls": [
+        "https://cimg0.ibsrv.net/cimg/www.doityourself.com/660x300_85/4/Figure-4a-4b-602004.jpg",
+        "https://cimg3.ibsrv.net/cimg/www.doityourself.com/660x300_85/3/Figure-5-602003.jpg",
+        "https://cimg1.ibsrv.net/cimg/www.doityourself.com/660x300_85/5/Figure-6-602005.jpg"
+    ],
+    "url": "https://www.doityourself.com/stry/how-to-wire-a-3-prong-dryer-outlet"
+}

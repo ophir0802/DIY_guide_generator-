@@ -1,0 +1,36 @@
+{
+    "title": "How to Test a Dryer Motor",
+    "author": "Written byScott Vanderlinon Mar 28, 2010",
+    "additional_text_boxes": [],
+    "supplies": [
+        "Screwdriver",
+        "Motor"
+    ],
+    "steps": [
+        [
+            "Step 1 - Turn off Power",
+            "The first thing you will want to do is disconnect the power supply from the dryer. This will be done either by unplugging the dryer if it is plugged in or turning off thecircuit breakerswitch that it is attached to."
+        ],
+        [
+            "Step 2 - Turn Dryer on Its Side",
+            "In order to access the motor, you will need to turn the dryer on its side."
+        ],
+        [
+            "Step 3 - Remove Belt",
+            "Once you have located the dryer motor, remove the rubber belt from the motor with your hands or with the assistance of a screwdriver."
+        ],
+        [
+            "Step 4 - Check for Obstructions in the Blower Fan",
+            "Look inside the housing for the blower fan. If there are any obvious obstructions, remove them."
+        ],
+        [
+            "Step 5 - Rotate Shaft of Motor",
+            "Next, manually rotate the shaft of the motor. If it feels like the shaft is grinding or is hard to turn in certain spots while turning it, a bad bearing is probably the cause and the motor would need to be replaced. If the shaft turns easily and smoothly while turning it, plug the dryer back in and run the motor without the belt on. If the motor runs fine without the belt, you most likely have a problem somewhere else in the motor. If the motor does not run without the belt, you will need to replace the motor."
+        ]
+    ],
+    "image_urls": [
+        "https://cimg1.ibsrv.net/cimg/www.doityourself.com/660x300_85-1/709/AdobeStock_188166310-373709.jpg",
+        "https://cimg0.ibsrv.net/cimg/www.doityourself.com/660x300_85-1/200/AdobeStock_130333999-235200.jpg"
+    ],
+    "url": "https://www.doityourself.com/stry/how-to-test-a-dryer-motor"
+}

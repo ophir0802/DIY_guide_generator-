@@ -1,0 +1,41 @@
+{
+    "title": "How to Wire a Light with Two Switches",
+    "author": "Written byConnor Doeon Feb 04, 2010",
+    "additional_text_boxes": [],
+    "supplies": [
+        "Screwdriver",
+        "Insulated pliers",
+        "4 wire nuts",
+        "2 3-way switches",
+        "Light fixture",
+        "Electrical tape",
+        "3-wire with ground cable"
+    ],
+    "steps": [
+        [
+            "Step 1 - Run Cable",
+            "Make sure the plastic switch boxes and lightbox are all properly affixed to the studs or joist and that Romex cable is fed through them. In the lightbox, there should be a cable coming up from the main power source. Depending on whether the circuit is 15 amp or 20 amp, the cable will be either a 14/2 or a 12/2 Romex. Between the lightbox and the first switch box, there should be a length of 2-wire — a black, white, and bare wire — inside. For the span between the first and second switch boxes, run 3-wire Romex. This cable contains three wires and a ground: red, black, white, and bare. Each length of cable should come out of the box at least 6 inches to give you room to work. More is better, for it can always be stuffed back through when wired."
+        ],
+        [
+            "Step 2 - Connect the Lightbox",
+            "Check that the individual circuit you are working on is turned off at thebreaker panel. Double check with a voltmeter. In the lightbox, strip off the insulation of both ends of Romex to free the 3 wires within. On both the cable from the source and that leading to the first switch box, strip off 1 inch of insulation from each individual wire: 2 black and 2 white. The bare ground has no insulation. Connect the white wire from the source to the white wire or silver screw on the light fixture. Twist the ground wires from both ends together and fasten with a wire nut. At the end of the insulation on the white wire leading to the first switch, wrap a small piece of black electrical tape. Now twist that wire and the black wire from the source together and fasten with a second wire nut. Leave the black wire leading to the first switch alone for now."
+        ],
+        [
+            "Step 3 - Connect Switch Box 1",
+            "Strip the same 1 inch of insulation off each of the wires in the first switch box. There should be a total of 5 wires to strip not including the 2 ground wires: 2 white, 2 black, and 1 red. Take the white wire you marked with black tape in the lightbox and mark the other end of it with black tape. Attach this to the lower brass screw on the right side of the first switch. Connect the black wire coming from the lightbox with the black wire leading to the second switch by twisting their ends together and fastening with a third wire nut. Connect the 2 ground wires with a fourth wire nut. Take the white wire leading to the second box and mark its end black too. Connect it to the screw on the left side of the switch. Connect the red wire leading to the second switch to the top brass screw on the right side."
+        ],
+        [
+            "Step 4 - Connect Switch Box 2",
+            "In the second switch box, mark the other end of the white wire with black tape and connect it to the left side of the second switch. Connect the red wire to the top screw on the right side of the switch. Connect the ground wire to the screw attached to the switch box. Then connect the black wire to the bottom screw on the right side."
+        ],
+        [
+            "Step 5 - Connect Hot Wire to Light Fixture",
+            "Now go back and connect the black wire leading to the first switch box to the light fixture. Turn the circuit back on and check your work. Both switches should turn the light on and off. If it does not work, check your connections. Once you are satisfied, stuff the wire in the boxes and secure them inside, followed by the faceplates."
+        ]
+    ],
+    "image_urls": [
+        "https://cimg3.ibsrv.net/cimg/www.doityourself.com/660x300_85-1/955/AdobeStock_58979894-377955.jpg",
+        "https://cimg2.ibsrv.net/cimg/www.doityourself.com/659x300_85/982/light-switch-364982.jpg"
+    ],
+    "url": "https://www.doityourself.com/stry/how-to-wire-a-light-with-two-switches"
+}

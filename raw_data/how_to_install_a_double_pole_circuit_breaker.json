@@ -1,0 +1,30 @@
+{
+    "title": "How to Install a Double Pole Circuit Breaker",
+    "author": "Written byCharles Ouelleton Oct 04, 2010",
+    "additional_text_boxes": [],
+    "supplies": [
+        "220 volts circuit breaker",
+        "Two-prong light-up electrical tester",
+        "Wirecutter/wire stripper",
+        "Screwdrivers",
+        "Battery-operated trouble-light"
+    ],
+    "steps": [
+        [
+            "Step 4 - Determine the Size of the Breaker Needed",
+            "If you’re installing a double pole circuit breaker, you must need 240 volts at an appliance or tool that consumes a lot of power such as a range, a dryer, a hot water heater, etc. The more power you need, the larger the wire gauge size you need, so check the appliance’s nameplate to find out just how much amperage it will draw from the power grid. This will determine the size of your circuit breaker."
+        ],
+        [
+            "Step 5 - The Right Wire Gauge for the Job",
+            "The more power the appliance is rated for, the larger the gauge size for the wires needs to be. If you’re not familiar withwire gauge sizesand amperage, you should consult with a reliable electrician to determine for you the size of the cable and figure out whether it needs aNeutral wire, as described in Step 6."
+        ],
+        [
+            "Step 6 - Make Sure You Use the Proper Cable",
+            "When wiring a 240 volts circuit, you must always use the proper cable with at least two colored wires (one black and one another color besides white—usually red). A white wire must never be connected to a breaker terminal, but strictly to the Neutral bus instead. Once the double-pole breaker is powered-up, the power flows through one of the two colored wires from one terminal, passes through the load, and returns through the other wire to the other terminal, completing the 240 volt circuit back into the grid. There are some situations, however, where the appliances, such as an electric range, require 240 volts at the elements, but also 120 volts to power the fans, the PC control boards, and the lights. Appliances such as these need a 3-wires cable—as described in Step 5—with the white Neutral wire connected to the Neutral bus (Figure 7) and the two colored wires connected to the two circuit breaker terminals inside the panel, while at the other end they will go to a terminal block inside the appliance. This way, anything connected across the two colored wires will be powered with 240 volts while 120 volts will be provided to anything connected across the Neutral white and either the black or the red terminal screw. To finish, don’t forget that the GND wires (bare and green wires) always need to begrounded to GND terminals(Figure 7) and appliances’ chassis."
+        ]
+    ],
+    "image_urls": [
+        "https://cimg0.ibsrv.net/cimg/www.doityourself.com/660x300_85/100/figure-7-654100.jpg"
+    ],
+    "url": "https://www.doityourself.com/stry/how-to-install-a-double-pole-circuit-breaker"
+}

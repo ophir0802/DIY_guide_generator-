@@ -1,0 +1,39 @@
+{
+    "title": "How to Replace a Refrigerator Start Relay",
+    "author": "Written byKenneth Riveraon Sep 16, 2010",
+    "additional_text_boxes": [],
+    "supplies": [
+        "Screwdriver",
+        "Allen wrench",
+        "New compressor relay",
+        "Needle nose pliers"
+    ],
+    "steps": [
+        [
+            "Step 1 - Unplug the Refrigerator",
+            "Before starting on the refrigerator work, unplug it from the wall and avoid electrocution by also turning off the circuit breaker that gives electricity to your refrigerator."
+        ],
+        [
+            "Step 2 - Wear Protective Gear",
+            "When dealing with electricity it is always recommended to wear safety gear such as insulated gloves and safety glasses to protect against accidents."
+        ],
+        [
+            "Step 3 - Removal of the Refrigerator Panel",
+            "Most refrigerator panels are on the back lower part of the appliance. Remove the cover by loosening or removing the screws."
+        ],
+        [
+            "Step 4 - Locate the Refrigerator Capacitor",
+            "Confirm if a capacitor is present. The capacitor is a tube-like part of the refrigerator with wiring attachments to the compressor and to the relay. Once this part is found, remove the leads from the resistor part and onto the leads of the capacitor. This process will prevent the capacitor’s discharge to ensure that there is no shock accident to occur during the procedure."
+        ],
+        [
+            "Step 5 - Locate the Relay Terminal Cover",
+            "Determine the location of therelay terminalcover. Its normal placement is by the lower interior part at the back portion of the refrigerator. A wire will be visible that connects to the cover from the compressor. Take out the cover and the start relay will be found directly underneath the cover. You will see wires plugged into the relay terminals. A spool of copper wires will be seen wrapping the relay. These wires should be taken out by pulling the connector attached to the relay."
+        ],
+        [
+            "Step 6 - Replacement of the New Start Relay",
+            "Find a start relay at appliance or hardware stores. Connect the wire again back to the new starter relay. Install the new relay back to the connectors that the old start relay was removed from. Put the terminal cover back on. Return the cover panel of the refrigerator back on. The refrigerator can now be plugged back in."
+        ]
+    ],
+    "image_urls": [],
+    "url": "https://www.doityourself.com/stry/how-to-replace-a-refrigerator-start-relay"
+}

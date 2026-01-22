@@ -71,14 +71,31 @@ export GOOGLE_API_KEY="your-api-key-here"
 
 ### Step 1: Crawl DIY Guides
 
-The crawler targets the Freezer category by default: `https://www.doityourself.com/scat/freezer`
+### Step 1: Configure Target Categories
 
-Run the crawler:
+The crawler reads target category URLs from a `urls.json` file in the project root.
+Create or edit `urls.json` to include the categories you want to scrape:
+
+```json
+{
+    "urls": [
+        "https://www.doityourself.com/scat/freezer",
+        "https://www.doityourself.com/scat/dishwasher"
+    ]
+}
+```
+
+### Step 2: Run the Crawler
+
+Run the crawler to fetch guides from the configured categories:
 ```bash
 python crawler.py
 ```
 
-This will save raw guides to `raw_data/` directory.
+The crawler will:
+1. Read URLs from `urls.json`
+2. Scrape up to 5 guides per category
+3. Save raw guides to `raw_data/` directory
 
 ### Step 2: Process with AI Agent
 

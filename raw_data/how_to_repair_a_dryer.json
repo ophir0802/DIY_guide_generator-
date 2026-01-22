@@ -1,0 +1,45 @@
+{
+    "title": "How to Repair a Dryer",
+    "author": "Written byDawn Hammonon Sep 24, 2019",
+    "additional_text_boxes": [],
+    "supplies": [],
+    "steps": [
+        [
+            "Step 1 - Identify the Problem",
+            "This is the most challenging step in dryer repair. The problem could stem from any number of parts, so narrow the possibilities with some investigative work."
+        ],
+        [
+            "Step 2 - Check Power Cord",
+            "If your dryer is providing inconsistent power or won’t start at all, thoroughly check the power cord to make sure it's plugged firmly into the wall and isn't damaged. Turn off the circuit to the dryer at themain circuit paneland then turn it back on to see if that solves the problem."
+        ],
+        [
+            "Step 3 - Test the Timer",
+            "The timer is often responsible for a moody dryer. With use, the timer knob itself, or the mechanism behind it can fail, causing your dryer to run endlessly or refuse to start. Wiggle the timer, try different settings, and push/pull it a few times to see if there's a short in the system."
+        ],
+        [
+            "Step 4 - Check the Door Switch",
+            "Another common issue is a faulty or blocked door sensor. This mechanism tells the machine that the door is closed. If it's malfunctioning, or just obstructed by some stray lint, the machine thinks the door is open and won’t run. Test the door switch by manually pushing on it while attempting to run the machine. Pull the door switch andtest for continuity with a multimeterto establish whether it's working correctly."
+        ],
+        [
+            "Step 5 - Dismantle the Machine",
+            "Tearing apart a dryer is not difficult, but it does require attention to detail. Typically there are small screws inside the door that release the top of the dryer and more screws inside the top. With the top off, you can remove the front, but watch out for wires that connect it to the electrical components. It’s easiest to dismantle the machine when it is laying on it’s back, but be sure to place it on wooden blocks so the exhaust flange for the dryer hose doesn’t get crushed. This will provide access to the drum, motor, heating element, rollers, and more. You may not need to remove the front and top parts of the dryer, though. Before you try that, you can remove the back panel instead to access the fuse and thermostats—common culprits in a malfunctioning dryer."
+        ],
+        [
+            "Step 6 - Test the Components",
+            "With the back of the machine off, grab a multimeter to help identify the problem. Put the probes on either side of the main thermostat and look for a reading or listen for a beep, depending on your multimeter model. Next, test the secondary thermostat. Finally, test the fuse. If the multimeter fails to register at any of these points, you’ve identified the problem. Replace the faulty part and you should be back in business."
+        ],
+        [
+            "Step 7 - Dig Deeper",
+            "If everything checks out up to this point, your issue could be deeper in the system. Check for lint build up inside the casing, drum, andengine components. Blow out all dust and make sure there isn’t any foreign material inside the machine that could cause issues. Grab your multimeter again and check continuity. Unplug the large red wire on the timer. Connect one probe to the unplugged unit and the other to red wire on the heating element terminal. A functioning system should read about 15 ohms. If it does then you know the heating element, high-limit thermostat, operating thermostat, and thermo cut-off fuse are all functioning. If you don't get a solid read, test one element at a time to find the culprit."
+        ],
+        [
+            "Step 7 - Motor Issues",
+            "If your electrical components all check out, the problem may be with the motor itself. Depending on your dryer model, it may or may not be worth the money and effort to repair or replace afaulty dryer engine. Since the motor runs both the fan and drum, it your drum is not rotating, this could be the problem. If it is, you may need to replace the dryer."
+        ]
+    ],
+    "image_urls": [
+        "https://cimg1.ibsrv.net/cimg/www.doityourself.com/660x300_85/433/dryer-lint-513433.jpg",
+        "https://cimg3.ibsrv.net/cimg/www.doityourself.com/660x300_85/431/checking-dryer-513431.jpg"
+    ],
+    "url": "https://www.doityourself.com/stry/how-to-repair-a-dryer"
+}

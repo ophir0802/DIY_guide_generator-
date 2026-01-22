@@ -1,0 +1,37 @@
+{
+    "title": "How to Check a Washing Machine Motor Capacitor",
+    "author": "Written byJennifer Searson Mar 08, 2010",
+    "additional_text_boxes": [],
+    "supplies": [
+        "Flathead screwdriver",
+        "Needle-nose pliers",
+        "Jumper wires with alligator clips on both ends",
+        "Multimeter"
+    ],
+    "steps": [
+        [
+            "Step 1 - Get Ready",
+            "Warning:Unplug your washing machine before performing any of these steps. Use your machine's insulated handles it's equipped with to avoid electric shock. When you're ready to begin and you’ve unplugged your machine, remove the rear panel to reach the washer motor. Find the start capacitor, which is the larger of the two capacitors, and remove the metal cover."
+        ],
+        [
+            "Step 2 - Remove Wires",
+            "Next, remove the wires from the terminals, using your needle-nose pliers."
+        ],
+        [
+            "Step 3 - Discharge the Run Capacitor",
+            "Discharge the run capacitor by placing one alligator clip from your jumper wire to the housing of the capacitor, and place the other on the metal shaft of your screwdriver. Then, put the blade of the screwdriver to one of the terminals and the shaft of the screwdriver to the other terminal. This will cause the capacitor to short out, so you don't have to worry about getting shocked from its stored charge."
+        ],
+        [
+            "Step 4 - Set up the Multimeter",
+            "Change your multimeter to the ohm scale. Then, touch the two lead points to one another and switch the adjusting wheel until the needle reaches zero, pointing upward."
+        ],
+        [
+            "Step 5 - Check the Capacitor",
+            "Touch the leads to the capacitor terminals. The black lead goes on right, and the red lead goes on left. This should make the needle of the multimeter jump from zero to the right before going back to zero. Finally, reverse the leads. This will make the needle move even farther from zero before going back. If the needle doesn't move, this means that your capacitor is not working, and it should be replaced."
+        ]
+    ],
+    "image_urls": [
+        "https://cimg1.ibsrv.net/cimg/www.doityourself.com/660x300_85-1/453/multimeter-298453.jpg"
+    ],
+    "url": "https://www.doityourself.com/stry/how-to-check-a-washing-machine-motor-capacitor"
+}

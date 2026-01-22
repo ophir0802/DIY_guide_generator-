@@ -427,46 +427,79 @@ def parse_html(html_content: str, base_url: str) -> Optional[dict]:
 # --- 4. Execution Logic (Main Loop) ---
 
 def main():
-    category_url = "https://www.doityourself.com/scat/freezer"
-    
-    print(f"--- Starting Crawler using category: {category_url} ---")
-    
-    # 1. Get Links
-    target_urls = fetch_category_links(category_url)
-    
-    if not target_urls:
-        print("No articles found in category.")
+    # Load configuration from urls.json
+    config_path = "urls.json"
+    if not os.path.exists(config_path):
+        print(f"Error: {config_path} not found. Please create it with a list of target URLs.")
         return
 
-    print(f"Found {len(target_urls)} articles to process.")
-    
-    # 2. Main Loop
-    success_count = 0
-    for url in target_urls:
-        logging.info(f"Processing: {url}")
+    try:
+        with open(config_path, 'r') as f:
+            config = json.load(f)
+            target_categories = config.get("urls", [])
+    except json.JSONDecodeError:
+        print(f"Error: Failed to parse {config_path}. properly.")
+        return
         
-        # Step A: Fetch
-        html = fetch_page(url)
-        
-        if html:
-            # Step B: Parse
-            data = parse_html(html, url)
-            
-            if data:
-                # Step C: Save immediately
-                if save_single_guide(data):
-                    success_count += 1
-                    logging.info(f"Successfully scraped: {data['title']}")
-                    
-                    if success_count >= 5:
-                        print("Reached limit of 5 guides. Stopping.")
-                        break
-            else:
-                logging.warning(f"Failed to parse content from {url}")
-        else:
-            logging.warning(f"Skipping {url} due to fetch error.")
+    if not target_categories:
+        print("No URLs found in urls.json.")
+        return
 
-    print(f"--- Crawler Finished. Processed {success_count} guides. ---")
+    print(f"--- Starting Crawler using {len(target_categories)} categories from {config_path} ---")
+
+    total_processed_all = 0
+    
+    for category_url in target_categories:
+        print(f"\n--- Processing Category: {category_url} ---")
+        
+        # 1. Get Links
+        target_urls = fetch_category_links(category_url)
+        
+        if not target_urls:
+            print(f"No articles found in category: {category_url}")
+            continue
+        num_of_each_category = 10
+        print(f"Found {len(target_urls)} articles to process in this category.")
+        
+        # 2. Main Loop for this category
+        success_count = 0
+        for url in target_urls:
+            logging.info(f"Processing: {url}")
+            
+            # Step A: Fetch
+            html = fetch_page(url)
+            
+            if html:
+                # Step B: Parse
+                data = parse_html(html, url)
+                
+                if data:
+                    # Step C: Save immediately
+                    if save_single_guide(data):
+                        success_count += 1
+                        total_processed_all += 1
+                        logging.info(f"Successfully scraped: {data['title']}")
+                        
+                        # Count total files in raw_data
+                        try:
+                            total_files = len([name for name in os.listdir("raw_data") if os.path.isfile(os.path.join("raw_data", name))])
+                        except FileNotFoundError:
+                            total_files = 0
+                            
+                        print(f"Total raw_data files: {total_files} | Progress: {success_count}/{num_of_each_category} for current category.")
+
+                        if success_count >= num_of_each_category:
+                            print(f"Reached limit of {num_of_each_category} guides for category: {category_url}. Moving to next.")
+                            break
+                else:
+                    logging.warning(f"Failed to parse content from {url}")
+            else:
+                logging.warning(f"Skipping {url} due to fetch error.")
+
+        if success_count < num_of_each_category:
+             print(f"No more guides at category {category_url}")
+
+    print(f"\n--- Crawler Finished. Processed {total_processed_all} guides in total. ---")
 
 if __name__ == "__main__":
     main()

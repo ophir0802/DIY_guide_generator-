@@ -1,0 +1,32 @@
+{
+    "title": "How to Replace a Chest Freezer Compressor",
+    "author": "Written byBuen Rendonon Apr 06, 2010",
+    "additional_text_boxes": [],
+    "supplies": [
+        "A new compressor",
+        "New charging tube",
+        "Screwdriver (Philips and flat)",
+        "Map gas with torch",
+        "Silver rod",
+        "Long nose pliers",
+        "Vacuum pump",
+        "Manifold gauge",
+        "Freon 134A"
+    ],
+    "steps": [
+        [
+            "Step 1 - Remove the Old Compressor",
+            "Make sure the freezer is unplugged. Simply remove the cover of the area of the freezer where the compressor is located. Using long-nose pliers remove the clip cover; remove the cover overload using your hand. Take out the clip overload using the long nose pliers. Because the compressor is connected through the common (attached by an overload), running, and starting terminals (both are attached by a relay), you have to individually remove these connections using your hands. Keep them for later use. Free the compressor from the remaining freon by breaking the charging tube using the long nose pliers. Use a torch with Mapp gas to disconnect the suction and the discharge tubes from the compressor. Detach the compressor by removing the bolts and nuts attached to the compressor base. Keep the bolts and nuts for later use."
+        ],
+        [
+            "Step 2 - Install the New Compressor",
+            "Attach the new compressor to thecompressorbase using the bolts and nuts. Use a torch with Mapp gas and the silver rod to connect the suction and discharge tubes and install a new charging tube. Before fitting in the removed overload to the common terminal put in the clip overload; immediately attach the running and starting terminal using the relay. Use the manifold to thread the neutral pressure gauge (NPG) to the vacuum pump to take out existing air and any tiny particles from the tubing and the compressor. Plug in the vacuum pump and let it work for 30 minutes; check if compressor and tubing are totally voided of air. The low-pressure gauge (LPG) of the manifold gauge should indicate a negative pressure. Close the LPG knob. Turn off the vacuum pump. Transfer the NPG from the vacuum pump to the freon tank. Open the freon tank and loosen the NPG valve to release existing air off the hose. You can now start charging freon to the compressor based on the suggested PSI of the freezer (check the sticker found at the back of the freezer). Plug in thechest freezerwhile waiting for the freon to regulate."
+        ],
+        [
+            "Step 3 - Finish Up",
+            "After everything is good, close the freon tank and gently remove the hose connected to it. Slide in the compressor to its proper place. That’s it. You have just successfully replaced your chest freezer compressor."
+        ]
+    ],
+    "image_urls": [],
+    "url": "https://www.doityourself.com/stry/how-to-replace-a-chest-freezer-compressor"
+}

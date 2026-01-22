@@ -1,0 +1,35 @@
+{
+    "title": "How to Test a Dishwasher Water Inlet Valve",
+    "author": "Written byRobert Milleron Mar 19, 2010",
+    "additional_text_boxes": [],
+    "supplies": [
+        "Inlet valve",
+        "Screwdriver",
+        "Pliers",
+        "Crescent wrench",
+        "Ohmmeter"
+    ],
+    "steps": [
+        [
+            "Step 1 - Lock Out Dishwasher",
+            "Before working on the dishwasher, disconnect it from itspower and water supply. You can unplug it or shut off the circuit breaker to stop the flow of electricity. Water supply can usually be shut off at the angle stop under the kitchen sink."
+        ],
+        [
+            "Step 2 - Expose Valve",
+            "Unscrew the kick panel in the bottom left or right corner by removing two to four screws. The valve will be connected to two to four wires as well as supply and drain hoses. Remove the wires with pliers, but do not pull on them."
+        ],
+        [
+            "Step 3 - Test Solenoids",
+            "Hook up the ohmmeter to the terminals. A reading of infinity indicates that the solenoid has failed."
+        ],
+        [
+            "Step 4 - Test Valve Seal",
+            "Even if the solenoid works, the seal may be broken or the dishwasher inlet valve could be clogged with dirt and particle from the water supply line. Unfasten the supply at the valve, take out the screened-washer, inspect and clean it out and reinstall. If that doesn't correct the problem, there is probably a mechanical failure inside the valve and it will need to be replaced."
+        ]
+    ],
+    "image_urls": [
+        "https://cimg1.ibsrv.net/cimg/www.doityourself.com/660x300_85/581/fixing-dishwasher-352581.jpg",
+        "https://cimg1.ibsrv.net/cimg/www.doityourself.com/660x300_85-1/9/dishwasher-199009.jpg"
+    ],
+    "url": "https://www.doityourself.com/stry/how-to-test-a-dishwasher-water-inlet-valve"
+}

@@ -1,0 +1,33 @@
+{
+    "title": "How to Repair a Leaking Coffeemaker",
+    "author": "Written byPiyush Jainon Oct 22, 2010",
+    "additional_text_boxes": [],
+    "supplies": [
+        "White vinegar",
+        "Fresh water",
+        "Volt-ohmmeter",
+        "Screwdriver"
+    ],
+    "steps": [
+        [
+            "Step 1 - Clean",
+            "If your coffee maker seems to be clogged, try cleaning it with a mixture ofwhite vinegarand water. Assuming that your coffee maker has a 12 cup capacity you will want to use 11 cups of vinegar and 1 cup of water. Fill the coffee pot to the 11 cup mark with vinegar and then fill it to the 12 cup mark with water. Pour this mixture into the reservoir and turn on the coffee maker, allowing it to run through a brewing cycle as if you were making a pot of coffee. By doing this you will dissolve any build up in your coffee maker. If the coffee maker is leaking because the pump is clogged, then this might clear the clog and stop the leaking. If it has been a while since you last cleaned your coffee maker, you may need to run the vinegar through more than one cleaning cycle to dissolve all of the buildups."
+        ],
+        [
+            "Step 2 - Inspect the Pump Valve",
+            "Unplug the coffee maker and examine the pump valve. If the pump valve is broken or has a clog, then the water will not be able to rise up and flow through the fill tube. When the coffee maker is turned on, the water needs to go someplace. If it cannot flow through the fill tube, then it may leak onto the countertop. If the pump in your coffee maker is sealed, you will need to replace the whole pump. If the pump is not sealed you should check it to ensure it is not clogged with coffee grounds or mineral deposits."
+        ],
+        [
+            "Step 3 - Look at the Brew Switch",
+            "Examine the brewing switch to ensure that is working. To get to the brewing switch, remove the base plate. Next, you will need to test the switch with your volt-ohmmeter. Touch the tester to the RX1 scale. If it reads 0 ohms then you will know that the switch works fine. If it gives you a number other than 0 then it is time to replace the switch."
+        ],
+        [
+            "Step 4 - Inspect the Tube Connectors",
+            "If the coffee maker is leaking or sputtering then you should take a look at the tube connectors. Many times, a leaky coffee maker is caused by faulty tube connectors. If you find the leak is in an elbow, clean the surfaces before you replace it. If the tube connector leaks, replace both the tube and the elbow so that you can be sure the pieces will both fit together properly."
+        ]
+    ],
+    "image_urls": [
+        "https://cimg3.ibsrv.net/cimg/www.doityourself.com/660x300_85/67/adobestock-118160015-620067.jpg"
+    ],
+    "url": "https://www.doityourself.com/stry/how-to-repair-a-leaking-coffee-maker"
+}
