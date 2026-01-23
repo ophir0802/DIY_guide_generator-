@@ -1,7 +1,7 @@
 {
   "header": {
     "title": "How to Clean Chest Freezer Condenser Coils",
-    "description": "This guide explains how to clean the condenser coils of a chest freezer to improve its efficiency and performance. Follow these steps to safely disconnect power, locate the coils, and remove accumulated dust and debris.",
+    "description": "This guide explains how to clean the condenser coils of a chest freezer to improve its efficiency and performance. Follow these steps to safely disconnect the freezer, locate and clean the coils and fan, and restore optimal cooling.",
     "toolbox": [
       "Screwdriver",
       "Torchlight",
@@ -23,10 +23,10 @@
       "tool": "Torchlight",
       "part": "Freezer",
       "geometric_location": {
-        "x": null,
-        "y": null,
-        "w": null,
-        "h": null
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
       },
       "hands": 2
     },
@@ -90,7 +90,7 @@
     },
     {
       "step_id": 5,
-      "description": "Gently brush away any remaining dust on the coil and fan using a paintbrush.",
+      "description": "Gently brush away any remaining dust from the coil and fan using a paintbrush.",
       "actions": [
         "Check for remaining dust on the coil and fan",
         "Gently brush away dust with a paintbrush",
