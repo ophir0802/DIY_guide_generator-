@@ -2,7 +2,7 @@
 Instruction Synthesis Agent
 
 Transforms raw scraped DIY guides into standardized Action-Object sequences
-using Google Gemini API and ToolLocator for geometric location inference.
+using Google Gemini API and PartLocator for geometric location inference.
 """
 import os
 import json
@@ -17,7 +17,7 @@ from google.genai import types
 from google.genai.errors import ServerError, APIError as GenAIAPIError
 from pydantic import BaseModel, Field, ValidationError
 
-from tool_locator import ToolLocator
+from part_locator import PartLocator
 from crawler import Guide
 
 # Configure logging
@@ -122,7 +122,7 @@ class InstructionSynthesisAgent:
     """
     LLM-driven agent that transforms raw DIY guides into standardized format.
     
-    Uses Google Gemini API for text processing and ToolLocator for geometric
+    Uses Google Gemini API for text processing and PartLocator for geometric
     location inference from images.
     """
     
@@ -133,10 +133,10 @@ class InstructionSynthesisAgent:
     
     def __init__(self, skip_tool_location: bool = False):
         """
-        Initialize the agent with Gemini API and ToolLocator.
+        Initialize the agent with Gemini API and PartLocator.
         
         Args:
-            skip_tool_location: If True, skip tool location detection and use default center location
+            skip_tool_location: If True, skip part location detection and use null location values
         
         Raises:
             ValueError: If GOOGLE_API_KEY environment variable is not set
@@ -159,10 +159,10 @@ class InstructionSynthesisAgent:
         # Gemini models support JSON mode, but Gemma models don't
         self.supports_json_mode = "gemini" in self.model_name.lower()
         
-        # Initialize ToolLocator for geometric location inference
-        self.tool_locator = ToolLocator()
+        # Initialize PartLocator for geometric location inference
+        self.part_locator = PartLocator()
         
-        # Tool location settings
+        # Part location settings
         self.skip_tool_location = skip_tool_location
         
         # Failure tracking for abort mechanism
@@ -220,7 +220,7 @@ class InstructionSynthesisAgent:
     
     def _convert_bbox_format(self, bbox_2d: List[int]) -> GeometricLocation:
         """
-        Convert bounding box from tool_locator format to geometric_location format.
+        Convert bounding box from part_locator format to geometric_location format.
         
         Args:
             bbox_2d: Bounding box in format [ymin, xmin, ymax, xmax] with coordinates 0-1000
@@ -249,46 +249,46 @@ class InstructionSynthesisAgent:
     
     def _get_geometric_location_from_image(
         self, 
-        tool: str, 
+        part: str, 
         image_urls: List[str]
     ) -> GeometricLocation:
         """
-        Get geometric location of tool in images using ToolLocator.
+        Get geometric location of part/component in images using PartLocator.
         
         Args:
-            tool: Tool name to locate
+            part: Part/component name to locate
             image_urls: List of image URLs to search
             
         Returns:
-            GeometricLocation with normalized coordinates (0-1) if tool found,
-            or null values if tool not detected in image
+            GeometricLocation with normalized coordinates (0-1) if part found,
+            or null values if part not detected in image
         """
-        # Check if tool location is disabled
+        # Check if part location is disabled
         if self.skip_tool_location:
-            logging.info(f"Tool location disabled, returning null location for '{tool}'")
+            logging.info(f"Part location disabled, returning null location for '{part}'")
             return GeometricLocation(x=None, y=None, w=None, h=None)
         
         if not image_urls:
-            logging.warning(f"No images available for tool '{tool}', returning null location")
+            logging.warning(f"No images available for part '{part}', returning null location")
             return GeometricLocation(x=None, y=None, w=None, h=None)
         
-        # Try each image until tool is found
+        # Try each image until part is found
         for image_url in image_urls:
             try:
-                tool_locations = self.tool_locator.locate_tools(image_url, [tool])
+                part_locations = self.part_locator.locate_parts(image_url, [part])
                 
-                if tool_locations:
+                if part_locations:
                     # Use first match
-                    bbox = tool_locations[0].bbox_2d
-                    logging.info(f"Found tool '{tool}' in image {image_url}")
+                    bbox = part_locations[0].bbox_2d
+                    logging.info(f"Found part '{part}' in image {image_url}")
                     return self._convert_bbox_format(bbox)
                 
             except Exception as e:
-                logging.warning(f"Error locating tool '{tool}' in image {image_url}: {e}")
+                logging.warning(f"Error locating part '{part}' in image {image_url}: {e}")
                 continue
         
-        # Tool not found in any image, return null location
-        logging.warning(f"Tool '{tool}' not found in any image, returning null location")
+        # Part not found in any image, return null location
+        logging.warning(f"Part '{part}' not found in any image, returning null location")
         return GeometricLocation(x=None, y=None, w=None, h=None)
     
     def _normalize_toolbox(self, supplies: List[str]) -> List[str]:
@@ -557,8 +557,8 @@ IMPORTANT RULES:
                 # Validate tool is in toolbox (fuzzy match)
                 tool = self._match_tool_to_toolbox(tool, toolbox)
                 
-                # Get geometric location using ToolLocator
-                geometric_location = self._get_geometric_location_from_image(tool, image_urls)
+                # Get geometric location using PartLocator (locate the PART, not the tool)
+                geometric_location = self._get_geometric_location_from_image(part, image_urls)
                 
                 # Record success
                 self._record_success()
@@ -615,7 +615,7 @@ IMPORTANT RULES:
         
         # Fallback
         tool = toolbox[0] if toolbox else "Unknown"
-        geometric_location = self._get_geometric_location_from_image(tool, image_urls)
+        geometric_location = self._get_geometric_location_from_image("Unknown", image_urls)
         
         return StandardizedStep(
             step_id=step_number,
@@ -715,7 +715,7 @@ def process_single_file(
     Args:
         input_path: Path to input JSON file
         output_dir: Directory to save output
-        skip_tool_location: If True, skip tool location detection and use default center location
+        skip_tool_location: If True, skip part location detection and use null location values
         
     Returns:
         True if successful, False otherwise
@@ -774,7 +774,7 @@ def process_batch(
         input_dir: Directory containing raw guide JSON files
         output_dir: Directory to save standardized outputs
         stop_on_abort: If True, stop processing remaining files when API abort occurs
-        skip_tool_location: If True, skip tool location detection and use default center location
+        skip_tool_location: If True, skip part location detection and use null location values
         
     Returns:
         Dictionary mapping input files to success status
@@ -843,7 +843,7 @@ if __name__ == "__main__":
     parser.add_argument(
         '--skip-tool-location', 
         action='store_true', 
-        help='Skip tool location detection and use default center location (saves API calls)'
+        help='Skip part location detection and use null location values (saves API calls)'
     )
     args = parser.parse_args()
     

@@ -1,7 +1,7 @@
 """
-Tool Locator Module
+Part Locator Module
 
-Uses Google Gemini 1.5 Flash API to detect tools in images and return bounding boxes
+Uses Google Gemini 1.5 Flash API to detect parts/components in images and return bounding boxes
 in normalized 0-1000 coordinate system.
 """
 import os
@@ -74,16 +74,16 @@ def extract_json_from_text(text: str) -> Optional[Dict[str, Any]]:
 
 # --- Pydantic Models ---
 
-class ToolLocation(BaseModel):
+class PartLocation(BaseModel):
     """
-    Represents a detected tool with its bounding box coordinates.
+    Represents a detected part/component with its bounding box coordinates.
     
     Attributes:
-        tool_name: Name of the detected tool
+        part_name: Name of the detected part/component
         bbox_2d: Bounding box coordinates in format [ymin, xmin, ymax, xmax]
                  All coordinates are normalized to 0-1000 range
     """
-    tool_name: str = Field(..., description="Name of the detected tool")
+    part_name: str = Field(..., description="Name of the detected part/component")
     bbox_2d: List[int] = Field(
         ..., 
         min_length=4, 
@@ -124,30 +124,30 @@ class ToolLocation(BaseModel):
 
 class DetectionResult(BaseModel):
     """
-    Wrapper model for tool detection results from Gemini API.
+    Wrapper model for part detection results from Gemini API.
     
     Attributes:
-        tools: List of detected tools with their bounding boxes
+        parts: List of detected parts with their bounding boxes
     """
-    tools: List[ToolLocation] = Field(
+    parts: List[PartLocation] = Field(
         default_factory=list,
-        description="List of detected tools. Empty list if no tools found."
+        description="List of detected parts. Empty list if no parts found."
     )
 
 
-# --- ToolLocator Class ---
+# --- PartLocator Class ---
 
-class ToolLocator:
+class PartLocator:
     """
-    Tool detection class using Google Gemini 1.5 Flash API.
+    Part detection class using Google Gemini 1.5 Flash API.
     
-    Analyzes images to locate tools and returns bounding boxes in normalized
+    Analyzes images to locate parts/components and returns bounding boxes in normalized
     coordinate system (0-1000 range).
     """
     
     def __init__(self):
         """
-        Initialize the ToolLocator with Gemini API configuration.
+        Initialize the PartLocator with Gemini API configuration.
         
         Raises:
             ValueError: If GOOGLE_API_KEY environment variable is not set
@@ -170,7 +170,7 @@ class ToolLocator:
         # Gemini models support JSON mode, but Gemma models don't
         self.supports_json_mode = "gemini" in self.model_name.lower()
         
-        logging.info("ToolLocator initialized successfully")
+        logging.info("PartLocator initialized successfully")
     
     def _clean_json_schema(self, schema: Dict[str, Any]) -> Dict[str, Any]:
         """
@@ -250,21 +250,21 @@ class ToolLocator:
             logging.error(f"Error processing image from {image_url}: {e}")
             return None
     
-    def locate_tools(
+    def locate_parts(
         self, 
         image_url: str, 
-        tool_list: List[str]
-    ) -> List[ToolLocation]:
+        part_list: List[str]
+    ) -> List[PartLocation]:
         """
-        Locate tools in an image using Gemini API.
+        Locate parts/components in an image using Gemini API.
         
         Args:
             image_url: URL of the image to analyze
-            tool_list: List of tool names to search for (e.g., ["hammer", "drill"])
+            part_list: List of part/component names to search for (e.g., ["condenser coil", "freezer fan"])
             
         Returns:
-            List of ToolLocation objects containing detected tools and their bounding boxes.
-            Returns empty list if no tools found or if an error occurs.
+            List of PartLocation objects containing detected parts and their bounding boxes.
+            Returns empty list if no parts found or if an error occurs.
             
         Coordinate System:
             Bounding boxes are returned in [ymin, xmin, ymax, xmax] format with normalized
@@ -273,8 +273,8 @@ class ToolLocator:
             - xmin, xmax: Horizontal coordinates (0 = left, 1000 = right)
             - ymin < ymax and xmin < xmax are guaranteed by validation
         """
-        if not tool_list:
-            logging.warning("Empty tool_list provided, returning empty results")
+        if not part_list:
+            logging.warning("Empty part_list provided, returning empty results")
             return []
         
         # Download image
@@ -288,26 +288,27 @@ class ToolLocator:
             # The prompt instructs Gemini to:
             # 1. Return bounding boxes in [ymin, xmin, ymax, xmax] format
             # 2. Use normalized coordinates 0-1000 range
-            # 3. Return null or empty list if tool not visible
+            # 3. Return null or empty list if part not visible
             # 4. Be strictly factual (no hallucinations)
-            tool_list_str = ", ".join(tool_list)
-            prompt = f"""Analyze this image and locate the following tools: {tool_list_str}
+            part_list_str = ", ".join(part_list)
+            prompt = f"""Analyze this image and locate the following parts/components: {part_list_str}
 
-For each tool that is VISIBLE in the image, provide:
-- The exact tool name (must match one from the list: {tool_list_str})
+For each part/component that is VISIBLE in the image, provide:
+- The exact part name (must match one from the list: {part_list_str})
 - A bounding box in format [ymin, xmin, ymax, xmax] with normalized coordinates in 0-1000 range
 
 IMPORTANT RULES:
-1. Only return tools that are CLEARLY VISIBLE in the image
-2. If a tool is not visible, do NOT include it in the results
+1. Only return parts/components that are CLEARLY VISIBLE in the image
+2. If a part is not visible, do NOT include it in the results
 3. Use normalized coordinates where:
    - 0,0 is the top-left corner
    - 1000,1000 is the bottom-right corner
    - ymin < ymax (vertical: top < bottom)
    - xmin < xmax (horizontal: left < right)
-4. Be strictly factual - only report tools you can actually see
-5. If multiple instances of the same tool exist, return all of them
-6. Return an empty list if no tools from the list are visible
+4. Be strictly factual - only report parts you can actually see
+5. If multiple instances of the same part exist, return all of them
+6. Return an empty list if no parts from the list are visible
+7. Focus on mechanical/electrical components, not tools being used
 
 Coordinate system explanation:
 - ymin: Top edge of bounding box (0-1000, where 0 is top of image)
@@ -317,19 +318,19 @@ Coordinate system explanation:
 
 Output must be in JSON format:
 {{
-  "tools": [
+  "parts": [
     {{
-      "tool_name": "tool name from list",
+      "part_name": "part name from list",
       "bbox_2d": [ymin, xmin, ymax, xmax]
     }}
   ]
 }}
 
-If no tools are found, return: {{"tools": []}}
+If no parts are found, return: {{"parts": []}}
 """
             
             # Generate content with structured output
-            logging.info(f"Analyzing image for tools: {tool_list}")
+            logging.info(f"Analyzing image for parts: {part_list}")
             
             # Convert PIL Image to bytes
             img_byte_arr = BytesIO()
@@ -362,18 +363,18 @@ If no tools are found, return: {{"tools": []}}
             # Validate using Pydantic
             detection_result = DetectionResult(**result_dict)
             
-            # Extract and return tool locations
-            tools = detection_result.tools
-            logging.info(f"Detected {len(tools)} tool(s) in image")
+            # Extract and return part locations
+            parts = detection_result.parts
+            logging.info(f"Detected {len(parts)} part(s) in image")
             
-            for tool in tools:
+            for part in parts:
                 logging.info(
-                    f"  - {tool.tool_name}: bbox={tool.bbox_2d} "
-                    f"(ymin={tool.bbox_2d[0]}, xmin={tool.bbox_2d[1]}, "
-                    f"ymax={tool.bbox_2d[2]}, xmax={tool.bbox_2d[3]})"
+                    f"  - {part.part_name}: bbox={part.bbox_2d} "
+                    f"(ymin={part.bbox_2d[0]}, xmin={part.bbox_2d[1]}, "
+                    f"ymax={part.bbox_2d[2]}, xmax={part.bbox_2d[3]})"
                 )
             
-            return tools
+            return parts
             
         except json.JSONDecodeError as e:
             logging.error(f"Failed to parse JSON response from Gemini API: {e}")
@@ -383,6 +384,5 @@ If no tools are found, return: {{"tools": []}}
             logging.error(f"Validation error when parsing Gemini response: {e}")
             return []
         except Exception as e:
-            logging.error(f"Error during tool detection: {e}", exc_info=True)
+            logging.error(f"Error during part detection: {e}", exc_info=True)
             return []
-

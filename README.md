@@ -7,7 +7,7 @@ A Python-based system that crawls DIY guides from DoItYourself.com and transform
 This project consists of three main components:
 1. **Web Crawler** (`crawler.py`) - Scrapes DIY guides from DoItYourself.com
 2. **AI Agent** (`ai_agent.py`) - Transforms raw guides into standardized format using Google Gemini
-3. **Tool Locator** (`tool_locator.py`) - Uses computer vision to locate tools in images and provide geometric coordinates
+3. **Part Locator** (`part_locator.py`) - Uses computer vision to locate parts/components in images and provide geometric coordinates
 
 ## Features
 
@@ -25,7 +25,7 @@ This project consists of three main components:
 - 🤖 **LLM Processing**: Uses Google Gemini 1.5 Flash for intelligent text processing
 - 📝 **Action Extraction**: Breaks down steps into discrete, actionable strings
 - 🔧 **Tool Identification**: Identifies and normalizes tool names from supplies
-- 📍 **Geometric Location**: Infers tool locations in images using computer vision
+- 📍 **Geometric Location**: Infers part/component locations in images using computer vision
 - ✋ **Hand Requirements**: Determines number of hands needed for each step
 - 🎯 **Part Recognition**: Identifies specific parts/objects being worked on
 - 📊 **Structured Output**: Generates standardized JSON format
@@ -104,7 +104,7 @@ Process a single guide:
 python ai_agent.py raw_data/how_to_clean_chest_freezer_condenser_coils.json
 ```
 
-Process without tool location detection (faster, saves API calls):
+Process without part location detection (faster, saves API calls):
 ```bash
 python ai_agent.py --skip-tool-location raw_data/how_to_clean_chest_freezer_condenser_coils.json
 ```
@@ -114,7 +114,7 @@ Process all guides in batch:
 python ai_agent.py
 ```
 
-Process all guides in batch without tool location:
+Process all guides in batch without part location:
 ```bash
 python ai_agent.py --skip-tool-location
 ```
@@ -178,7 +178,7 @@ Standardized guides will be saved to `standardized_data/` directory.
 DIY_guide_generator/
 ├── crawler.py                  # Web crawler for DoItYourself.com
 ├── ai_agent.py                 # AI-powered guide standardization
-├── tool_locator.py             # Computer vision for tool location
+├── part_locator.py             # Computer vision for part location
 ├── raw_data/                   # Raw crawled guides (JSON)
 ├── standardized_data/          # Processed standardized guides (JSON)
 ├── requirements.txt            # Python dependencies
@@ -264,7 +264,7 @@ pip install google-genai
 - **Retry Logic**: 3 retries with exponential backoff
 - **Timeout**: 10-15 seconds for network requests
 - **Cost**: Free tier available with generous quotas
-- **Tool Location**: Use `--skip-tool-location` flag to reduce API calls by ~66% when images don't contain tools
+- **Part Location**: Use `--skip-tool-location` flag to reduce API calls by ~66% when images don't contain visible parts
 
 ## Contributing
 

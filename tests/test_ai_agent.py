@@ -1,7 +1,7 @@
 """
 Tests for Instruction Synthesis Agent.
 
-Tests the transformation of raw DIY guides into standardized format.
+Tests the transformation of raw DIY guides into standardized format with part detection.
 """
 import pytest
 import json
@@ -57,7 +57,7 @@ class TestCoordinateConversion:
     
     @patch.dict('os.environ', {'GOOGLE_API_KEY': 'test-key'})
     def test_convert_bbox_format(self):
-        """Test conversion from tool_locator format to geometric_location."""
+        """Test conversion from part_locator format to geometric_location."""
         agent = InstructionSynthesisAgent()
         
         # Test conversion: [ymin, xmin, ymax, xmax] (0-1000) -> {x, y, w, h} (0-1)
@@ -137,21 +137,21 @@ class TestGeometricLocationInference:
     """Tests for geometric location inference."""
     
     @patch.dict('os.environ', {'GOOGLE_API_KEY': 'test-key'})
-    @patch('ai_agent.ToolLocator')
-    def test_get_geometric_location_found(self, mock_tool_locator_class):
-        """Test getting geometric location when tool is found."""
-        # Mock ToolLocator
-        mock_tool_locator = Mock()
-        mock_tool_location = Mock()
-        mock_tool_location.bbox_2d = [100, 200, 300, 400]
-        mock_tool_locator.locate_tools.return_value = [mock_tool_location]
-        mock_tool_locator_class.return_value = mock_tool_locator
+    @patch('ai_agent.PartLocator')
+    def test_get_geometric_location_found(self, mock_part_locator_class):
+        """Test getting geometric location when part is found."""
+        # Mock PartLocator
+        mock_part_locator = Mock()
+        mock_part_location = Mock()
+        mock_part_location.bbox_2d = [100, 200, 300, 400]
+        mock_part_locator.locate_parts.return_value = [mock_part_location]
+        mock_part_locator_class.return_value = mock_part_locator
         
         agent = InstructionSynthesisAgent()
-        agent.tool_locator = mock_tool_locator
+        agent.part_locator = mock_part_locator
         
         image_urls = ["https://example.com/image.jpg"]
-        result = agent._get_geometric_location_from_image("Screwdriver", image_urls)
+        result = agent._get_geometric_location_from_image("condenser coil", image_urls)
         
         assert result.x == 0.2
         assert result.y == 0.1
@@ -159,85 +159,85 @@ class TestGeometricLocationInference:
         assert result.h == 0.2
     
     @patch.dict('os.environ', {'GOOGLE_API_KEY': 'test-key'})
-    @patch('ai_agent.ToolLocator')
-    def test_get_geometric_location_not_found(self, mock_tool_locator_class):
-        """Test getting default location when tool is not found."""
-        # Mock ToolLocator
-        mock_tool_locator = Mock()
-        mock_tool_locator.locate_tools.return_value = []
-        mock_tool_locator_class.return_value = mock_tool_locator
+    @patch('ai_agent.PartLocator')
+    def test_get_geometric_location_not_found(self, mock_part_locator_class):
+        """Test getting null location when part is not found."""
+        # Mock PartLocator
+        mock_part_locator = Mock()
+        mock_part_locator.locate_parts.return_value = []
+        mock_part_locator_class.return_value = mock_part_locator
         
         agent = InstructionSynthesisAgent()
-        agent.tool_locator = mock_tool_locator
+        agent.part_locator = mock_part_locator
         
         image_urls = ["https://example.com/image.jpg"]
-        result = agent._get_geometric_location_from_image("Unknown Tool", image_urls)
+        result = agent._get_geometric_location_from_image("unknown part", image_urls)
         
-        # Should return default center location
-        assert result.x == 0.5
-        assert result.y == 0.5
-        assert result.w == 0.1
-        assert result.h == 0.1
+        # Should return null location
+        assert result.x is None
+        assert result.y is None
+        assert result.w is None
+        assert result.h is None
     
     @patch.dict('os.environ', {'GOOGLE_API_KEY': 'test-key'})
     def test_get_geometric_location_no_images(self):
-        """Test getting default location when no images available."""
+        """Test getting null location when no images available."""
         agent = InstructionSynthesisAgent()
         
-        result = agent._get_geometric_location_from_image("Screwdriver", [])
+        result = agent._get_geometric_location_from_image("condenser coil", [])
         
-        # Should return default center location
-        assert result.x == 0.5
-        assert result.y == 0.5
-        assert result.w == 0.1
-        assert result.h == 0.1
+        # Should return null location
+        assert result.x is None
+        assert result.y is None
+        assert result.w is None
+        assert result.h is None
 
 
 class TestStepProcessing:
     """Tests for step processing."""
     
     @patch.dict('os.environ', {'GOOGLE_API_KEY': 'test-key'})
-    @patch('ai_agent.ToolLocator')
+    @patch('ai_agent.PartLocator')
     @patch('ai_agent.genai.Client')
-    def test_process_step_success(self, mock_client_class, mock_tool_locator_class):
+    def test_process_step_success(self, mock_client_class, mock_part_locator_class):
         """Test successful step processing."""
         # Mock LLM response
         mock_client = Mock()
         mock_models = Mock()
         mock_response = Mock()
         mock_response.text = json.dumps({
-            "description": "Remove the screws",
-            "actions": ["Locate the screws", "Remove the screws"],
+            "description": "Remove the condenser coil cover",
+            "actions": ["Locate the cover screws", "Remove the screws", "Lift off the cover"],
             "tool": "Screwdriver",
-            "part": "Bottom screws",
+            "part": "condenser coil cover",
             "hands": 2
         })
         mock_models.generate_content.return_value = mock_response
         mock_client.models = mock_models
         mock_client_class.return_value = mock_client
         
-        # Mock ToolLocator
-        mock_tool_locator = Mock()
-        mock_tool_location = Mock()
-        mock_tool_location.bbox_2d = [100, 200, 300, 400]
-        mock_tool_locator.locate_tools.return_value = [mock_tool_location]
-        mock_tool_locator_class.return_value = mock_tool_locator
+        # Mock PartLocator
+        mock_part_locator = Mock()
+        mock_part_location = Mock()
+        mock_part_location.bbox_2d = [100, 200, 300, 400]
+        mock_part_locator.locate_parts.return_value = [mock_part_location]
+        mock_part_locator_class.return_value = mock_part_locator
         
         agent = InstructionSynthesisAgent()
         agent.client = mock_client
-        agent.tool_locator = mock_tool_locator
+        agent.part_locator = mock_part_locator
         
-        step_data = ["Step 1 - Remove Screws", "Locate and remove the bottom screws."]
+        step_data = ["Step 1 - Remove Cover", "Locate and remove the condenser coil cover."]
         toolbox = ["Screwdriver", "Wrench"]
         image_urls = ["https://example.com/image.jpg"]
         
         result = agent._process_step(step_data, 1, toolbox, image_urls)
         
         assert result.step_id == 1
-        assert result.description == "Remove the screws"
-        assert len(result.actions) == 2
+        assert result.description == "Remove the condenser coil cover"
+        assert len(result.actions) == 3
         assert result.tool == "Screwdriver"
-        assert result.part == "Bottom screws"
+        assert result.part == "condenser coil cover"
         assert result.hands == 2
 
 
@@ -245,9 +245,9 @@ class TestGuideSynthesis:
     """Tests for full guide synthesis."""
     
     @patch.dict('os.environ', {'GOOGLE_API_KEY': 'test-key'})
-    @patch('ai_agent.ToolLocator')
+    @patch('ai_agent.PartLocator')
     @patch('ai_agent.genai.Client')
-    def test_synthesize_guide(self, mock_client_class, mock_tool_locator_class):
+    def test_synthesize_guide(self, mock_client_class, mock_part_locator_class):
         """Test synthesizing a complete guide."""
         # Mock LLM responses
         mock_client = Mock()
@@ -256,17 +256,17 @@ class TestGuideSynthesis:
         # Header response
         header_response = Mock()
         header_response.text = json.dumps({
-            "description": "This guide teaches how to clean a freezer.",
+            "description": "This guide teaches how to clean freezer condenser coils.",
             "toolbox": ["Screwdriver", "Vacuum Cleaner"]
         })
         
         # Step response
         step_response = Mock()
         step_response.text = json.dumps({
-            "description": "Remove the screws",
-            "actions": ["Locate the screws", "Remove the screws"],
+            "description": "Remove the condenser coil cover",
+            "actions": ["Locate the cover", "Remove the screws", "Lift off cover"],
             "tool": "Screwdriver",
-            "part": "Bottom screws",
+            "part": "condenser coil cover",
             "hands": 2
         })
         
@@ -274,24 +274,24 @@ class TestGuideSynthesis:
         mock_client.models = mock_models
         mock_client_class.return_value = mock_client
         
-        # Mock ToolLocator
-        mock_tool_locator = Mock()
-        mock_tool_location = Mock()
-        mock_tool_location.bbox_2d = [100, 200, 300, 400]
-        mock_tool_locator.locate_tools.return_value = [mock_tool_location]
-        mock_tool_locator_class.return_value = mock_tool_locator
+        # Mock PartLocator
+        mock_part_locator = Mock()
+        mock_part_location = Mock()
+        mock_part_location.bbox_2d = [100, 200, 300, 400]
+        mock_part_locator.locate_parts.return_value = [mock_part_location]
+        mock_part_locator_class.return_value = mock_part_locator
         
         agent = InstructionSynthesisAgent()
         agent.client = mock_client
-        agent.tool_locator = mock_tool_locator
+        agent.part_locator = mock_part_locator
         
         raw_guide = {
-            "title": "How to Clean Freezer",
+            "title": "How to Clean Freezer Condenser Coils",
             "author": "Test Author",
             "additional_text_boxes": [],
             "supplies": ["Screwdriver", "Vacuum cleaner"],
             "steps": [
-                ["Step 1 - Remove Screws", "Locate and remove the bottom screws."]
+                ["Step 1 - Remove Cover", "Locate and remove the condenser coil cover."]
             ],
             "image_urls": ["https://example.com/image.jpg"],
             "url": "https://example.com/guide"
@@ -300,7 +300,7 @@ class TestGuideSynthesis:
         result = agent.synthesize_guide(raw_guide)
         
         assert isinstance(result, StandardizedGuide)
-        assert result.header.title == "How to Clean Freezer"
+        assert result.header.title == "How to Clean Freezer Condenser Coils"
         assert len(result.steps) == 1
         assert result.steps[0].step_id == 1
 

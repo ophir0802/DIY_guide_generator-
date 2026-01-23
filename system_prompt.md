@@ -112,7 +112,7 @@ IMPORTANT RULES:
 
 ## Geometric Location
 
-Geometric locations are determined separately using `tool_locator.py`:
-- ToolLocator analyzes images to find tool locations
+Geometric locations are determined separately using `part_locator.py`:
+- PartLocator analyzes images to find part/component locations
 - Coordinates are converted from [ymin, xmin, ymax, xmax] (0-1000) to {x, y, w, h} (0-1)
-- If tool not found in images, default center location is used
+- If part not found in images, null values are returned (x=None, y=None, w=None, h=None)
