@@ -1,0 +1,106 @@
+{
+  "header": {
+    "title": "How to Remove Corrosion from Copper Wiring",
+    "description": "This guide provides a step-by-step process for removing corrosion (copper oxide) from copper wiring using a homemade cleaning solution and neutralization process. It details how to prepare cleaning and neutralizing agents and safely apply them to restore the wire's conductivity.",
+    "toolbox": [
+      "Wire Stripper"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "Before cleaning copper wire, strip the insulation back far enough to ensure all corrosion is removed and identify tinned wires.",
+      "actions": [
+        "Understand the problem of oxidation and its effect on copper wire.",
+        "Strip the insulation far enough back.",
+        "Inspect the wire for corrosion.",
+        "Identify tinned (silvery) copper wires."
+      ],
+      "tool": "Wire Stripper",
+      "part": "Copper wire insulation",
+      "geometric_location": {
+        "x": 0.2,
+        "y": 0.1,
+        "w": 0.15,
+        "h": 0.15
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 2,
+      "description": "This step involves creating a cleaning solution of vinegar and salt to remove patina from copper wiring.",
+      "actions": [
+        "Put one tablespoon of salt in the first container.",
+        "Fill the rest of the container with vinegar.",
+        "Stir the solution together.",
+        "Add salt to the container until the solution no longer dissolves it."
+      ],
+      "tool": "Wire Stripper",
+      "part": "copper wiring",
+      "geometric_location": {
+        "x": 0.2,
+        "y": 0.1,
+        "w": 0.15,
+        "h": 0.15
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 3,
+      "description": "Create a neutralizing solution by mixing sodium bicarbonate (baking soda) and water in a container.",
+      "actions": [
+        "Put one tablespoon of Sodium Bicarbonate in the second container",
+        "Finish filling the container with water",
+        "Stir together",
+        "Add more baking soda as needed",
+        "Stir the mixture"
+      ],
+      "tool": "Wire Stripper",
+      "part": "wires",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.1,
+        "w": 0.25,
+        "h": 0.15
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 4,
+      "description": "Clean the exposed copper of the wire by submerging it in a vinegar solution and stirring.",
+      "actions": [
+        "Dip the end of the wire or wires in the vinegar solution",
+        "Ensure the stripped exposed copper is completely submerged",
+        "Stir the solution with the wire",
+        "Keep stirring the wire in the solution until it becomes uniformly shiny"
+      ],
+      "tool": "Wire Stripper",
+      "part": "exposed copper",
+      "geometric_location": {
+        "x": 0.2,
+        "y": 0.1,
+        "w": 0.15,
+        "h": 0.15
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 5,
+      "description": "Submerge the cleaned wire in a neutralizing solution and stir to remove any remaining acid.",
+      "actions": [
+        "Pull the wire out of the container",
+        "Submerge the copper completely inside the neutralizing solution",
+        "Stir the solution for 10 or 15 seconds"
+      ],
+      "tool": "Wire Stripper",
+      "part": "wire",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.1,
+        "w": 0.2,
+        "h": 0.15
+      },
+      "hands": 2
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "header": {
     "title": "How to Defrost an Upright Freezer",
-    "description": "This guide provides step-by-step instructions on how to safely and effectively defrost an upright freezer. It covers preparation, the defrosting process, and cleanup to minimize inconvenience and potential damage.",
+    "description": "This guide provides step-by-step instructions on how to safely and effectively defrost an upright freezer. It covers preparation, the defrosting process, and cleanup to minimize mess and ensure proper freezer function.",
     "toolbox": [
       "Plastic Spatula",
       "Duct Tape"
@@ -22,10 +22,10 @@
       "tool": "Plastic Spatula",
       "part": "Upright freezer",
       "geometric_location": {
-        "x": null,
-        "y": null,
-        "w": null,
-        "h": null
+        "x": 0.0,
+        "y": 0.1,
+        "w": 1.0,
+        "h": 0.6
       },
       "hands": 2
     },
@@ -35,24 +35,22 @@
       "actions": [
         "Take a towel.",
         "Place the towel at the bottom of the freezer.",
-        "Fold the towel if necessary to fit the freezer.",
         "Place an aluminum cookie sheet on top of the towel.",
-        "Place two or more cookie sheets side by side if there is room.",
-        "Ensure the cookie sheets cover as much of the bottom of the freezer as possible."
+        "Add more cookie sheets if they fit side by side."
       ],
       "tool": "Plastic Spatula",
-      "part": "bottom of the freezer",
+      "part": "Upright Freezer",
       "geometric_location": {
-        "x": null,
-        "y": null,
-        "w": null,
-        "h": null
+        "x": 0.15,
+        "y": 0.25,
+        "w": 0.4,
+        "h": 0.2
       },
       "hands": 2
     },
     {
       "step_id": 3,
-      "description": "A garbage bag is used to catch water leakage during freezer defrosting by lining the freezer and hanging over the door.",
+      "description": "A garbage bag is used to catch water leakage during freezer defrosting by taping it to the freezer door and inside.",
       "actions": [
         "Fan the garbage bag out so it does not cling to itself.",
         "Place one side barely inside the freezer.",
@@ -85,10 +83,10 @@
       "tool": "Plastic Spatula",
       "part": "Freezer",
       "geometric_location": {
-        "x": null,
-        "y": null,
-        "w": null,
-        "h": null
+        "x": 0.0,
+        "y": 0.1,
+        "w": 1.0,
+        "h": 0.5
       },
       "hands": 2
     }

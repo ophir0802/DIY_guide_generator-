@@ -1,0 +1,182 @@
+{
+  "header": {
+    "title": "How to Safely Install a Gas Dryer",
+    "description": "This guide provides step-by-step instructions on how to safely install a gas dryer, covering gas and electrical connections, vent inspection, and leak testing.",
+    "toolbox": [
+      "Pipe wrench",
+      "Shutoff valve",
+      "Sponge",
+      "Bucket"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "This step instructs the user to turn off the gas and electricity supply before starting any repairs or installations.",
+      "actions": [
+        "Turn off the main gas supply at the meter.",
+        "Remove the cap on the gas pipe (if present).",
+        "Hold the pipe to prevent it from turning while removing the shutoff valve (if necessary).",
+        "Turn off the power at the breaker box."
+      ],
+      "tool": "Pipe wrench",
+      "part": "Gas meter, Gas pipe, Shutoff valve, Breaker box",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 2,
+      "description": "Install the gas connection parts for the gas dryer, referring to the dryer's installation kit or contacting a gas provider if unsure.",
+      "actions": [
+        "Refer to the gas dryer installation kit for instructions.",
+        "Contact your gas provider if unsure about the installation."
+      ],
+      "tool": "Pipe wrench",
+      "part": "Gas connection parts",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 3,
+      "description": "Inspect the dryer vent hole to ensure it matches the vent hole in the home.",
+      "actions": [
+        "Check vent hole on gas dryer",
+        "Ensure vent hole matches home vent hole",
+        "Cut a new dryer vent hole (if necessary)"
+      ],
+      "tool": "Pipe wrench",
+      "part": "Vent hole",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 4,
+      "description": "Clean the floor where the gas dryer will be installed and its surrounding area.",
+      "actions": [
+        "Wash the floor",
+        "Dry the floor",
+        "Inspect the vent hole",
+        "Clean up debris"
+      ],
+      "tool": "Sponge",
+      "part": "floor",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 5,
+      "description": "Apply pipe dope to the threads and then screw the stainless steel connector onto the pipe.",
+      "actions": [
+        "Put pipe dope on the threads",
+        "Take your stainless steel connector",
+        "Screw it to the pipe"
+      ],
+      "tool": "Pipe wrench",
+      "part": "Stainless steel connector",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 6,
+      "description": "Check the newly installed gas connections for leaks using a soapy water solution.",
+      "actions": [
+        "Mix 50 percent water with 50 percent liquid dish soap.",
+        "Put the solution on the gas connections.",
+        "Turn on the gas.",
+        "Observe for bubbles.",
+        "Tighten connections if bubbles are present.",
+        "Test again until the leak is gone."
+      ],
+      "tool": "Sponge",
+      "part": "Gas connections",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 7,
+      "description": "Fasten the vent housing to the duct and secure it with a hose clamp.",
+      "actions": [
+        "Fasten the vent housing to the duct",
+        "Place your hose clamp on",
+        "Tighten"
+      ],
+      "tool": "Pipe wrench",
+      "part": "Vent housing",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 8,
+      "description": "Connect the vent hose, position the dryer, and ensure proper clearance from the wall.",
+      "actions": [
+        "Plug in the gas dryer",
+        "Attach the loose end of the vent hose",
+        "Push the dryer back into place",
+        "Keep the dryer at least three inches off the wall for circulation",
+        "Check local codes and regulations regarding dryer elevation"
+      ],
+      "tool": "Pipe wrench",
+      "part": "Vent hose",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 9,
+      "description": "The final step involves turning on the gas and breaker, then testing the new gas dryer.",
+      "actions": [
+        "Turn the gas on",
+        "Turn the breaker back on",
+        "Test drive your new gas dryer"
+      ],
+      "tool": "Shutoff valve",
+      "part": "gas",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    }
+  ]
+}

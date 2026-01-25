@@ -1,0 +1,203 @@
+{
+  "header": {
+    "title": "How to Install a Dryer Outlet",
+    "description": "This guide provides step-by-step instructions on how to safely install a dryer outlet, including wiring, box installation, and circuit testing.",
+    "toolbox": [
+      "Electrical Screwdriver",
+      "Wire Stripper",
+      "Cordless Drill",
+      "Multimeter"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "Run the electrical cable from the electrical panel to the dryer outlet location, initially across the floor to plan the route.",
+      "actions": [
+        "Run the cable",
+        "Run the cable from the electrical panel",
+        "Run the cable to the dryer outlet location",
+        "Run the cable across the floor",
+        "Work out the rough route"
+      ],
+      "tool": "Wire Stripper",
+      "part": "cable",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.1,
+        "w": 0.8,
+        "h": 0.8
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 2,
+      "description": "This step involves concealing wires within the property, potentially by routing them through ceilings, walls, or floors.",
+      "actions": [
+        "Decide on wire routing method based on property type and age",
+        "Run wires through ceilings",
+        "Run wires down walls",
+        "Run wires under the floor",
+        "Chisel a channel in the walls"
+      ],
+      "tool": "Cordless Drill",
+      "part": "walls",
+      "geometric_location": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 3,
+      "description": "This step involves removing the outer and inner sheaths of the cable to expose the wires.",
+      "actions": [
+        "Cut off the plastic sheath around the outside of the cable",
+        "Expose about six inches of the cable",
+        "Adjust the wire strippers",
+        "Cut away the inner sheath on the individual cables"
+      ],
+      "tool": "Wire Stripper",
+      "part": "cable",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.1,
+        "w": 0.8,
+        "h": 0.8
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 4,
+      "description": "The dryer receptacle needs to be wired by feeding the cable through the connector and tightening the screws.",
+      "actions": [
+        "Feed the cable through the connector",
+        "Tighten the screws"
+      ],
+      "tool": "Electrical Screwdriver",
+      "part": "Dryer receptacle",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 5,
+      "description": "Mark the desired position of the box on the wall by tracing around it with a pencil.",
+      "actions": [
+        "Hold the box up against the wall",
+        "Draw around it with a pencil"
+      ],
+      "tool": "Cordless Drill",
+      "part": "box",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 6,
+      "description": "Cut a hole in the wall, remove the plaster, and install an electrical box.",
+      "actions": [
+        "Cut around the outline of your shape using a small saw",
+        "Create several drill holes in sequence around the edge",
+        "Use a chisel to remove the piece of plaster in the center of the hole",
+        "Fit a standard electrical box inside the wall",
+        "Secure the electrical box in the wall by screwing or opening clamps"
+      ],
+      "tool": "Cordless Drill",
+      "part": "plaster",
+      "geometric_location": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 0.666
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 7,
+      "description": "This step involves connecting the earth, neutral, black, and red wires to the appropriate terminals on a device.",
+      "actions": [
+        "Connect the earth wire to the grounding screw",
+        "Connect the neutral (white) wire to the center silver screw terminal",
+        "Wire up the remaining terminals to the black and red wires"
+      ],
+      "tool": "Electrical Screwdriver",
+      "part": "Grounding screw, silver screw terminal, terminals",
+      "geometric_location": {
+        "x": 0.2,
+        "y": 0.1,
+        "w": 0.05,
+        "h": 0.05
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 8,
+      "description": "The faceplate is attached to the electrical outlet box.",
+      "actions": [
+        "Fix the faceplate",
+        "Attach to the electrical outlet box"
+      ],
+      "tool": "Electrical Screwdriver",
+      "part": "Face Plate",
+      "geometric_location": {
+        "x": 0.2,
+        "y": 0.15,
+        "w": 0.6,
+        "h": 0.45
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 9,
+      "description": "Connect the new circuit into the home's electrical panel, ensuring safety and proper wiring.",
+      "actions": [
+        "Switch the circuit breaker OFF at the main electric panel",
+        "Consult an electrician if you are unsure",
+        "Ensure sufficient cable length",
+        "Strip the wires",
+        "Connect each wire to the correct terminal inside the electrical panel",
+        "Ensure everything inside the electrical panel is neat and in the right place",
+        "Check for frayed sections of wire"
+      ],
+      "tool": "Wire Stripper",
+      "part": "electrical panel",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 10,
+      "description": "Use a multimeter to verify the voltage readings at the dryer outlet.",
+      "actions": [
+        "Use your multimeter",
+        "Insert probes into the slots",
+        "Check for 240V reading on the outside slots",
+        "Check for 120V reading on the center slot"
+      ],
+      "tool": "Multimeter",
+      "part": "Dryer outlet",
+      "geometric_location": {
+        "x": 0.3,
+        "y": 0.2,
+        "w": 0.6,
+        "h": 0.5
+      },
+      "hands": 2
+    }
+  ]
+}

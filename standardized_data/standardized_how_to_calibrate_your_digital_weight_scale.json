@@ -1,0 +1,90 @@
+{
+  "header": {
+    "title": "How to Calibrate Your Digital Weight Scale",
+    "description": "This guide provides step-by-step instructions on how to calibrate your digital weight scale to ensure accurate measurements. Follow the process to enter calibration mode, perform a test, and finalize the calibration.",
+    "toolbox": [
+      "Soft cleaning brush",
+      "Cleaning cloth"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "Turn on the digital weight scale and allow it to warm up, ensuring to use objects with a definite weight for calibration.",
+      "actions": [
+        "Turn on the digital weight scale",
+        "Let it warm up",
+        "Use objects with a definite weight"
+      ],
+      "tool": "Soft cleaning brush",
+      "part": "digital weight scale",
+      "geometric_location": {
+        "x": 0.0,
+        "y": 0.1,
+        "w": 1.0,
+        "h": 0.8
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 2,
+      "description": "This step instructs the user to enter calibration mode on the digital weight scale by pressing a specific button until a calibration indicator appears.",
+      "actions": [
+        "Locate the calibration button",
+        "Identify the button label (Cal, Function, Mode, or Cal/Mode)",
+        "Press the calibration button down",
+        "Observe the display for '0', '000', or 'Cal'"
+      ],
+      "tool": "Soft cleaning brush",
+      "part": "digital weight scale",
+      "geometric_location": {
+        "x": 0.0,
+        "y": 0.1,
+        "w": 1.0,
+        "h": 0.8
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 3,
+      "description": "Place approximately 30 pounds of known weight objects onto the digital scale for calibration.",
+      "actions": [
+        "Put known weight objects on the digital scale.",
+        "Ensure the objects amount to roughly 30 pounds.",
+        "Place the objects without wobbling or movement.",
+        "Place the objects on the central part of the scale."
+      ],
+      "tool": "Cleaning cloth",
+      "part": "digital scale",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.1,
+        "w": 0.8,
+        "h": 0.7
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 4,
+      "description": "Allow the digital scale to take a measurement, then end the calibration session.",
+      "actions": [
+        "Allow the digital scale to take in the measurement.",
+        "Wait for about five seconds.",
+        "Press the calibration button once more to end the session.",
+        "Check for 'End', '0', or 'Cal' on the digital scale’s monitor.",
+        "If the scale does not reset automatically, switch off the scale.",
+        "Leave the scale switched off for at least two minutes.",
+        "Switch the scale on again."
+      ],
+      "tool": "Soft cleaning brush",
+      "part": "digital scale",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.1,
+        "w": 0.8,
+        "h": 0.7
+      },
+      "hands": 1
+    }
+  ]
+}

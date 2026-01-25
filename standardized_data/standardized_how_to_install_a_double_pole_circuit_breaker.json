@@ -1,0 +1,71 @@
+{
+  "header": {
+    "title": "How to Install a Double Pole Circuit Breaker",
+    "description": "This guide provides instructions on how to safely install a double pole circuit breaker. It covers determining the correct breaker size, wire gauge, and cable type for the installation.",
+    "toolbox": [
+      "Wirecutter",
+      "Wire Stripper",
+      "Screwdriver",
+      "Electrical Tester",
+      "Trouble Light"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "Determine the appropriate size circuit breaker by checking the appliance's nameplate for amperage requirements.",
+      "actions": [
+        "Check the appliance's nameplate",
+        "Find the amperage the appliance will draw"
+      ],
+      "tool": "Electrical Tester",
+      "part": "Appliance's nameplate",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 2,
+      "description": "This step advises consulting an electrician to determine the appropriate wire gauge and cable configuration based on the appliance's power rating.",
+      "actions": [
+        "Consult with a reliable electrician",
+        "Determine the size of the cable",
+        "Figure out whether it needs a Neutral wire"
+      ],
+      "tool": "Electrical Tester",
+      "part": "cable",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.1,
+        "w": 0.15,
+        "h": 0.1
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 3,
+      "description": "This step explains the proper cable usage for 240-volt circuits, differentiating between standard and appliances requiring both 240V and 120V.",
+      "actions": [
+        "Use the proper cable with at least two colored wires (one black and one other color besides white—usually red).",
+        "Connect the white wire to the Neutral bus.",
+        "Connect two colored wires to the two circuit breaker terminals inside the panel.",
+        "Connect the white Neutral wire to the Neutral bus (Figure 7).",
+        "Connect the two colored wires to the two circuit breaker terminals inside the panel.",
+        "Ground the GND wires (bare and green wires) to GND terminals (Figure 7) and appliances’ chassis."
+      ],
+      "tool": "Wirecutter",
+      "part": "Cable, Circuit Breaker, Neutral Bus, GND terminals, Appliances’ chassis",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.22,
+        "w": 0.2,
+        "h": 0.13
+      },
+      "hands": 2
+    }
+  ]
+}

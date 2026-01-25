@@ -1,0 +1,113 @@
+{
+  "header": {
+    "title": "How to Replace a Light Ballast",
+    "description": "This guide provides step-by-step instructions on how to diagnose and replace a faulty ballast in a fluorescent light fixture. Follow these instructions to safely restore your light to working order.",
+    "toolbox": [
+      "Screwdriver"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "Observe a fluorescent light to identify signs of a failing ballast, such as dimming and eventual failure to turn on.",
+      "actions": [
+        "Observe the light source",
+        "Activate and shut off the light",
+        "Check for steady dimming",
+        "Observe if the light eventually won't come on",
+        "Observe if other aspects of the light device work less effectively"
+      ],
+      "tool": "Screwdriver",
+      "part": "fluorescent bulbs",
+      "geometric_location": {
+        "x": 0.2,
+        "y": 0.1,
+        "w": 0.4,
+        "h": 0.3
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 2,
+      "description": "This step instructs the user to diagnose the cause of a malfunctioning fluorescent or high-intensity light.",
+      "actions": [
+        "Check the main power source for the house",
+        "See if the circuit breaker has been tripped",
+        "Check if a fuse has blown",
+        "Make sure the lamp is plugged into a functioning electrical outlet",
+        "Check for damage to the bulb itself",
+        "Rule out all causes before replacing the light ballast (if flickering)"
+      ],
+      "tool": "Screwdriver",
+      "part": "Circuit breaker, fuse, bulb, ballast, lamp",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.1,
+        "w": 0.6,
+        "h": 0.3
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 3,
+      "description": "This step instructs the user to check fluorescent bulbs for signs of wear, test their circuitry, and replace them if necessary, also noting proper disposal procedures.",
+      "actions": [
+        "Check if the bulb is significantly dark and opaque at one end.",
+        "Test the circuit across the pins mounted in the end of each long fluorescent tube.",
+        "Determine if electrodes are functioning properly by checking for current flow between pins.",
+        "Replace the fluorescent tube if it has reached the end of its useful life.",
+        "Replace both fluorescent tubes in a pair if one fails.",
+        "Look up local laws regarding fluorescent bulb disposal.",
+        "Dispose of waste fluorescent bulbs properly."
+      ],
+      "tool": "Screwdriver",
+      "part": "Fluorescent Bulbs",
+      "geometric_location": {
+        "x": 0.2,
+        "y": 0.1,
+        "w": 0.45,
+        "h": 0.25
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 4,
+      "description": "Determine whether to replace the entire fluorescent light fixture or just the ballast based on its age.",
+      "actions": [
+        "Assess the age of the fluorescent light fixture.",
+        "If fixture is older than 15 years, consider replacing the entire fixture.",
+        "If fixture is less than 5 years old, consider replacing the ballast."
+      ],
+      "tool": "Screwdriver",
+      "part": "fluorescent light fixture",
+      "geometric_location": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 0.78
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 5,
+      "description": "This step involves locating, removing, and replacing the ballast within a fluorescent light fixture.",
+      "actions": [
+        "Disassemble the fluorescent light fixture",
+        "Find the ballast (a small metal box with colored wires)",
+        "Examine the circuit diagram inside the light housing",
+        "Detach the circuit diagram",
+        "Purchase a magnetic or electronic ballast (matching the old one)",
+        "Install the new ballast according to the diagram"
+      ],
+      "tool": "Screwdriver",
+      "part": "Ballast",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    }
+  ]
+}

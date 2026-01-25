@@ -1,0 +1,118 @@
+{
+  "header": {
+    "title": "How to Repair a Washing Machine that Overfills",
+    "description": "This guide provides instructions on diagnosing and repairing a washing machine that is overfilling, focusing on common issues related to the pressure switch and related components. Follow these steps to troubleshoot and resolve the problem, potentially saving you the cost of a repair technician.",
+    "toolbox": [
+      "Toothbrush"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "This step instructs you to differentiate between electrical and mechanical problems in a washing machine by observing water flow after disconnecting power.",
+      "actions": [
+        "Turn on the washing machine",
+        "Allow it to fill with water",
+        "Push the timer off using the knob",
+        "Pull the plug connected to the wall",
+        "Observe if water continues to fill",
+        "Observe if water stops"
+      ],
+      "tool": "Toothbrush",
+      "part": "washing machine",
+      "geometric_location": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 2,
+      "description": "This step involves checking the washer's pressure switch by disconnecting, testing, and reconnecting its tubing to ensure it's functioning correctly.",
+      "actions": [
+        "Unplug the washer.",
+        "Find the console and open it.",
+        "Pull off the small rubber tube attached to the pressure switch.",
+        "Replace the pulled-off tube with new rubber or plastic tubing.",
+        "Blow pressure into the switch, listening for a click.",
+        "Blow pressure again when the pressure is released, listening for a second click.",
+        "Plug in the washer.",
+        "Inhale and blow pressure again as the water fills.",
+        "If the switch is not good, replace the switch."
+      ],
+      "tool": "Toothbrush",
+      "part": "Pressure switch",
+      "geometric_location": {
+        "x": 0.45,
+        "y": 0.35,
+        "w": 0.1,
+        "h": 0.1
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 3,
+      "description": "Check the pressure tubing by cleaning it and blowing air through it to assess for any restrictions.",
+      "actions": [
+        "Wipe off the end of the tube",
+        "Blow air into the tube",
+        "Check for a little restriction"
+      ],
+      "tool": "Toothbrush",
+      "part": "pressure tubing",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 4,
+      "description": "This step involves unclogging the washing machine's port or tank dome, which may require different approaches depending on the model.",
+      "actions": [
+        "Assess the manufacturer and style of washing machine.",
+        "If necessary, remove the cabinet and tub (consider professional help).",
+        "Remove the clamp found outside of the tank.",
+        "Remove the pressure tube attached to the clamp.",
+        "Locate the 'gunk' visible after removing the pressure tube.",
+        "Take the hose to a sink.",
+        "Flush the hose clean using hot water.",
+        "Check for additional 'gunk' at the tank area.",
+        "Clean out the tank area using a toothbrush."
+      ],
+      "tool": "Toothbrush",
+      "part": "Tank area",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.1,
+        "w": 0.8,
+        "h": 0.8
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 5,
+      "description": "Inspect the tube for damage and replace it if necessary.",
+      "actions": [
+        "Take a close look at the tube.",
+        "Check for small holes.",
+        "Check for worn areas.",
+        "Check for chew marks.",
+        "Replace the tube if damage is found."
+      ],
+      "tool": "Toothbrush",
+      "part": "tube",
+      "geometric_location": {
+        "x": 0.38,
+        "y": 0.37,
+        "w": 0.2,
+        "h": 0.15
+      },
+      "hands": 1
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "header": {
+    "title": "How to Repair a Crystal Chandelier",
+    "description": "This guide provides step-by-step instructions on how to repair a broken arm on a crystal chandelier using foam, wire, and glue.",
+    "toolbox": [
+      "Needle-nose pliers",
+      "Utility knife"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "Carve a foam block to match the shape of a chandelier arm, ensuring a stable work environment.",
+      "actions": [
+        "Ensure the chandelier is on a flat and stable work surface.",
+        "Ensure the work area is free from traffic and undisturbed for 24 to 36 hours.",
+        "Use a utility knife to carve out the foam block.",
+        "Carve the foam block so that it perfectly conforms to the shape of an undamaged chandelier arm."
+      ],
+      "tool": "Utility knife",
+      "part": "foam block",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 2,
+      "description": "Check the fit of the broken crystal chandelier arm piece by aligning it with the chandelier base using a craft foam block.",
+      "actions": [
+        "Lay the broken crystal chandelier arm piece into the craft foam block",
+        "Gently push the broken edge of the crystal arm up against the chandelier base",
+        "Check if the broken edges fit together perfectly",
+        "Adjust the foam block so that the two broken pieces of the crystal arm match"
+      ],
+      "tool": "Utility knife",
+      "part": "crystal chandelier arm",
+      "geometric_location": {
+        "x": 0.2,
+        "y": 0.1,
+        "w": 0.2,
+        "h": 0.2
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 3,
+      "description": "Ensure the craft foam provides adequate support for the broken crystal arm before gluing it to the chandelier base, and use metal hanging wire for additional support if needed.",
+      "actions": [
+        "Check if the craft foam piece will adequately support the arm",
+        "Use metal hanging wire to help hold the broken crystal arm securely in place while it dries (if needed)"
+      ],
+      "tool": "Needle-nose pliers",
+      "part": "crystal arm",
+      "geometric_location": {
+        "x": 0.2,
+        "y": 0.1,
+        "w": 0.1,
+        "h": 0.1
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 4,
+      "description": "Secure the broken crystal arm using metal wire, twisting it around the arm and chandelier top for support.",
+      "actions": [
+        "Use metal hanging wire",
+        "Twist the wire around the loose part of the broken crystal arm",
+        "Twist the wire around the chandelier top",
+        "Use as many pieces of wire as needed to securely stabilize the broken piece"
+      ],
+      "tool": "Needle-nose pliers",
+      "part": "broken crystal arm",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 5,
+      "description": "Prepare the arm for gluing by freeing any restricted wires and repositioning the craft foam.",
+      "actions": [
+        "Untwist the wires",
+        "Push the craft foam piece back from the base"
+      ],
+      "tool": "Needle-nose pliers",
+      "part": "broken arm piece",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 6,
+      "description": "Glue the broken crystal arm back onto the base, ensuring proper alignment and securing it with wires and foam.",
+      "actions": [
+        "Apply instant glass glue to the broken edges of the crystal arm according to the manufacturer's directions.",
+        "Fit the broken arm piece to the broken edge on the base carefully.",
+        "Make sure the arm and base line up evenly.",
+        "Re-twist the metal wires that were holding the arm in place.",
+        "Make sure that the craft foam is securely seated underneath the arm."
+      ],
+      "tool": "Needle-nose pliers",
+      "part": "crystal arm",
+      "geometric_location": {
+        "x": 0.2,
+        "y": 0.1,
+        "w": 0.1,
+        "h": 0.1
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 7,
+      "description": "Allow the glued glass to dry completely, then remove support materials and hang the chandelier.",
+      "actions": [
+        "Allow the instant glass glued to dry for at least 24 hours",
+        "Allow the glue to dry for 36 hours before moving the chandelier",
+        "Remove the metal wires",
+        "Remove the foam blocks",
+        "Hang the crystal chandelier back on its mounting brace"
+      ],
+      "tool": "Needle-nose pliers",
+      "part": "metal wires",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.1,
+        "w": 0.2,
+        "h": 0.2
+      },
+      "hands": 2
+    }
+  ]
+}

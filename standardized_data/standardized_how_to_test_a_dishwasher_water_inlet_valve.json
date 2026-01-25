@@ -1,0 +1,90 @@
+{
+  "header": {
+    "title": "How to Test a Dishwasher Water Inlet Valve",
+    "description": "This guide provides step-by-step instructions on how to diagnose a faulty dishwasher water inlet valve. You'll learn to safely lock out the dishwasher, access the valve, and test its solenoids and seal to determine if it's functioning correctly.",
+    "toolbox": [
+      "Screwdriver",
+      "Pliers",
+      "Crescent Wrench",
+      "Ohmmeter"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "Disconnect the dishwasher from its power and water supply before starting work.",
+      "actions": [
+        "Disconnect dishwasher from power",
+        "Unplug dishwasher",
+        "Shut off circuit breaker",
+        "Shut off water supply",
+        "Locate angle stop under kitchen sink"
+      ],
+      "tool": "Crescent Wrench",
+      "part": "angle stop",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 2,
+      "description": "This step involves removing the kick panel to access and disconnect the valve.",
+      "actions": [
+        "Unscrew the kick panel",
+        "Remove two to four screws",
+        "Remove the wires with pliers",
+        "Do not pull on the wires"
+      ],
+      "tool": "Screwdriver",
+      "part": "Kick panel",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 3,
+      "description": "Test the solenoids using an ohmmeter to check for failure.",
+      "actions": [
+        "Hook up the ohmmeter to the terminals.",
+        "Observe the reading."
+      ],
+      "tool": "Ohmmeter",
+      "part": "solenoids",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 4,
+      "description": "This step involves testing the dishwasher inlet valve seal by inspecting and cleaning the screened-washer, and potentially replacing the valve if necessary.",
+      "actions": [
+        "Unfasten the supply at the valve",
+        "Take out the screened-washer",
+        "Inspect the screened-washer",
+        "Clean out the screened-washer",
+        "Reinstall the screened-washer"
+      ],
+      "tool": "Crescent Wrench",
+      "part": "Screened-washer",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    }
+  ]
+}

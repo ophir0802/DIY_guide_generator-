@@ -1,0 +1,75 @@
+{
+  "header": {
+    "title": "How to Remove Mildew from the Interior of a Dishwasher",
+    "description": "This guide provides a simple method for removing mildew from the interior of your dishwasher using common household ingredients. Follow these steps to clean and refresh your dishwasher, ensuring optimal performance.",
+    "toolbox": [
+      "Sponge",
+      "Cleaning brush"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "Remove dishwasher racks and silverware tray, clean them, and set them aside to dry.",
+      "actions": [
+        "Remove the racks from the dishwasher",
+        "Remove the silverware tray from the dishwasher",
+        "Access the corners and crevices of the dishwasher",
+        "Wash the racks with hot water",
+        "Wash the silverware tray with hot water",
+        "Put the racks aside to dry",
+        "Put the silverware tray aside to dry"
+      ],
+      "tool": "Sponge",
+      "part": "Racks and silverware tray",
+      "geometric_location": {
+        "x": 0.2,
+        "y": 0.2,
+        "w": 0.6,
+        "h": 0.4
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 2,
+      "description": "Clean the inside of the dishwasher using a vinegar and water solution.",
+      "actions": [
+        "Add ½ cup of white vinegar to 2 cups of hot water in a large bowl.",
+        "Mix the vinegar and water thoroughly.",
+        "Apply the mixture inside the dishwasher using a sponge.",
+        "Scrub the inside of the dishwasher thoroughly.",
+        "If needed, use an old toothbrush to clean mildew."
+      ],
+      "tool": "Sponge",
+      "part": "dishwasher",
+      "geometric_location": {
+        "x": 0.0,
+        "y": 0.1,
+        "w": 1.0,
+        "h": 0.65
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 3,
+      "description": "This step involves running the dishwasher with vinegar and baking soda to remove mildew and mold.",
+      "actions": [
+        "Replace the racks",
+        "Add white vinegar to a small dishwasher-safe bowl",
+        "Place the bowl on the top rack",
+        "Start the dishwasher with the highest level of heating available",
+        "Put 1 cup of baking soda at the bottom of the dishwasher floor",
+        "Run the dishwasher with the highest level of heating a second time"
+      ],
+      "tool": "Sponge",
+      "part": "dishwasher",
+      "geometric_location": {
+        "x": 0.0,
+        "y": 0.1,
+        "w": 1.0,
+        "h": 0.65
+      },
+      "hands": 1
+    }
+  ]
+}

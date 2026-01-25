@@ -1,0 +1,83 @@
+{
+  "header": {
+    "title": "How to Paint a Stove Exhaust Hood",
+    "description": "This guide provides step-by-step instructions on how to refresh the appearance of your stove exhaust hood by cleaning, sanding, priming, painting, and sealing it.",
+    "toolbox": [
+      "Paintbrush",
+      "Paint Roller",
+      "Sandpaper",
+      "Sponge",
+      "Step Stool"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "Clean and sand the hood to remove grease, old paint, and grime.",
+      "actions": [
+        "Mix Dawn dish soap with hot water in a bucket.",
+        "Position the step stool securely.",
+        "Clean the hood with a sponge.",
+        "Wipe away excess water with a damp cloth.",
+        "Allow the hood to dry.",
+        "Sand the entire hood with 150-grit sandpaper.",
+        "Avoid applying too much pressure.",
+        "Wipe the hood with a damp cloth.",
+        "Let the hood dry."
+      ],
+      "tool": "Sponge",
+      "part": "Hood",
+      "geometric_location": {
+        "x": 0.0,
+        "y": 0.1,
+        "w": 1.0,
+        "h": 0.5
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 2,
+      "description": "This step involves taping off edges, priming, and painting the exhaust hood with two coats of primer and two coats of paint.",
+      "actions": [
+        "Tape off all the outside edges using painter’s tape",
+        "Pour primer into the paint tray",
+        "Use a paintbrush to get the edges and the trim of the exhaust hood",
+        "Use a roller to complete the priming process",
+        "Apply two layers of metal primer",
+        "Let the primer dry as per instructions on the can",
+        "Clean the paintbrush and tray",
+        "Fill the tray with metal paint",
+        "Use a brush to paint the trim",
+        "Use a roller to apply two separate coats of paint"
+      ],
+      "tool": "Paintbrush",
+      "part": "exhaust hood",
+      "geometric_location": {
+        "x": 0.0,
+        "y": 0.15,
+        "w": 0.8,
+        "h": 0.5
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 3,
+      "description": "Apply two layers of sealant to the exhaust hood after the paint has dried to prevent damage.",
+      "actions": [
+        "Apply two layers of sealant",
+        "Wait for oil-based paint to dry",
+        "Put away your supplies",
+        "Avoid cooking on the range top for 24 hours"
+      ],
+      "tool": "Paint Roller",
+      "part": "exhaust hood",
+      "geometric_location": {
+        "x": 0.0,
+        "y": 0.15,
+        "w": 0.8,
+        "h": 0.5
+      },
+      "hands": 1
+    }
+  ]
+}

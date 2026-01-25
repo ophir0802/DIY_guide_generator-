@@ -1,0 +1,148 @@
+{
+  "header": {
+    "title": "How to Replace a Circuit Breaker Fuse",
+    "description": "This guide provides step-by-step instructions on how to safely replace a circuit breaker fuse. Follow these steps to identify, remove, and install a new fuse with the correct amperage.",
+    "toolbox": [
+      "Screwdriver",
+      "Multimeter"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "This step involves opening the fuse box by removing the cover and switching off the main electricity switch.",
+      "actions": [
+        "Wear rubber-soled shoes",
+        "Ensure the floor beneath the circuit breaker box is dry",
+        "Remove the circuit breaker box cover",
+        "Unscrew the corners with a screwdriver",
+        "Push the main electricity switch to the 'off' position"
+      ],
+      "tool": "Screwdriver",
+      "part": "circuit breaker box cover",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 2,
+      "description": "Inspect fuses to identify the type of problem based on their condition.",
+      "actions": [
+        "Inspect the push-lever of frequently tripping fuses.",
+        "Check if circuit breaker fuses are off and cannot be reset.",
+        "Examine fuses that refuse to trip for signs of overheating or damage."
+      ],
+      "tool": "Screwdriver",
+      "part": "Fuse",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 3,
+      "description": "Check for voltage across the faulty fuse using a multimeter.",
+      "actions": [
+        "Turn the damaged fuse off if it’s not already",
+        "Set your multimeter to \"Volt AC\"",
+        "Rest one pin on the terminal screw of the faulty fuse",
+        "Rest the other pin on the ground screw",
+        "Observe the reading on the multimeter",
+        "Do not continue if voltage is indicated"
+      ],
+      "tool": "Multimeter",
+      "part": "Faulty fuse",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 4,
+      "description": "This step details how to remove a circuit breaker fuse by either unscrewing or pulling it from its socket, ensuring wire connections are detached and noting the wire colors.",
+      "actions": [
+        "Unscrew the fuse",
+        "Pull or lever the fuse from its socket",
+        "Detach wires from the fuse",
+        "Loosen the terminal screws",
+        "Note which color wire attaches to which end of the fuse"
+      ],
+      "tool": "Screwdriver",
+      "part": "Fuse",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 5,
+      "description": "Ensure the replacement fuse has the same amperage and voltage as the original fuse.",
+      "actions": [
+        "check fuse amperage",
+        "take old fuse to store",
+        "purchase correct replacement"
+      ],
+      "tool": "Screwdriver",
+      "part": "fuse",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 6,
+      "description": "This step involves setting a new fuse to the 'off' position, connecting the wires, and inserting it into its socket.",
+      "actions": [
+        "Set the new fuse to the \"off\" position.",
+        "Insert the original wires, in turn, into the terminals of the new fuse.",
+        "Tighten the retaining screws with a screwdriver.",
+        "Push the new fuse back into its socket.",
+        "Tighten screws after inserting them (if supplied)."
+      ],
+      "tool": "Screwdriver",
+      "part": "New fuse",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 7,
+      "description": "Reconnect the power supply by turning on the circuit breaker and securing the box cover with screws.",
+      "actions": [
+        "Switch the circuit breaker fuse box back on",
+        "Replace the box cover",
+        "Insert the screws",
+        "Tighten them"
+      ],
+      "tool": "Screwdriver",
+      "part": "box cover",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    }
+  ]
+}

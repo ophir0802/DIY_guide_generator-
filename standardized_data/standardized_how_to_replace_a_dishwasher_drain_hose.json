@@ -1,0 +1,148 @@
+{
+  "header": {
+    "title": "How to Replace a Dishwasher Drain Hose",
+    "description": "This guide provides step-by-step instructions on how to safely replace a dishwasher drain hose. Follow these instructions to disconnect the old hose, install a new one, and restore your dishwasher's functionality.",
+    "toolbox": [
+      "Adjustable Wrench",
+      "Screwdriver",
+      "Bucket",
+      "Pliers"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "The first step is to disconnect the power supply to the dishwasher either by unplugging it or switching off the circuit breaker.",
+      "actions": [
+        "disconnect the dishwasher's power cord from the socket",
+        "cut the circuit at the breaker box",
+        "double check that you're in the clear by trying to turn the machine on"
+      ],
+      "tool": "Screwdriver",
+      "part": "dishwasher",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 2,
+      "description": "Detach the drain connection by unscrewing the nuts holding it in place.",
+      "actions": [
+        "Locate the drain connection",
+        "Detach the connection",
+        "Unscrew the nuts"
+      ],
+      "tool": "Adjustable Wrench",
+      "part": "Drain Connection",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 3,
+      "description": "Move the dishwasher to access the drain hose by loosening brackets and sliding the appliance out.",
+      "actions": [
+        "Loosen the screws",
+        "Remove the brackets",
+        "Slide the machine out",
+        "Check the wiring"
+      ],
+      "tool": "Screwdriver",
+      "part": "dishwasher",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 4,
+      "description": "Disconnect the drain hose from the dishwasher by squeezing the clamp and sliding it out after preparing for potential water spillage.",
+      "actions": [
+        "Locate the drain hose on the bottom left-hand side of the machine.",
+        "Trace the drain hose to where it leads into the cabinet.",
+        "Place a bucket under the drain hose connection at the sink.",
+        "Place a rag under the drain hose connection at the dishwasher.",
+        "Squeeze the clamp.",
+        "Slide the hose out."
+      ],
+      "tool": "Pliers",
+      "part": "Drain hose",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 5,
+      "description": "Connect a replacement hose between the drain and the dishwasher, ensuring compatibility and a secure seal.",
+      "actions": [
+        "Connect a proper replacement hose to the drain",
+        "Connect a proper replacement hose to the dishwasher",
+        "Ensure the new hose will work with your specific make and model",
+        "Clamp in the connector",
+        "Ascertain the hold of the seal"
+      ],
+      "tool": "Adjustable Wrench",
+      "part": "Hose",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 6,
+      "description": "Slide the dishwasher back into place, ensuring wires are not tangled, and secure it with brackets.",
+      "actions": [
+        "Slide the dishwasher back into its original position.",
+        "Be careful with the wires.",
+        "Make sure they do not get tangled up.",
+        "Screw the brackets back in."
+      ],
+      "tool": "Screwdriver",
+      "part": "dishwasher",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 7,
+      "description": "Reconnect the power supply to the dishwasher and perform a test run to verify the repair.",
+      "actions": [
+        "Switch the breaker to the dishwasher back on",
+        "Plug the appliance back in",
+        "Check that your repair was successful",
+        "Put the machine through a test run"
+      ],
+      "tool": "Screwdriver",
+      "part": "dishwasher",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    }
+  ]
+}

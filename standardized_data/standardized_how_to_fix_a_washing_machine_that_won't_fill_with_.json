@@ -1,0 +1,137 @@
+{
+  "header": {
+    "title": "How to Fix a Washing Machine That Won't Fill With Water",
+    "description": "This guide provides step-by-step instructions on troubleshooting and repairing a washing machine that is failing to fill with water. It covers common causes and solutions, from checking hoses to inspecting internal components.",
+    "toolbox": [
+      "Screwdriver",
+      "Wrench",
+      "Multimeter"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "This step involves inspecting the washing machine hoses to identify potential issues preventing water from filling.",
+      "actions": [
+        "Pull out the washer",
+        "Check if faucets are turned on",
+        "Check if faucets are allowing water to enter",
+        "Inspect mesh filters inside where hoses are attached",
+        "Check for kinks in the hoses",
+        "Straighten hoses if kinked",
+        "Check for damage to the hoses",
+        "Replace damaged hoses"
+      ],
+      "tool": "Screwdriver",
+      "part": "Hoses",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 2,
+      "description": "This step involves testing the water level switch using a multimeter to diagnose a potential filling issue in the washing machine.",
+      "actions": [
+        "Open the washer.",
+        "Locate the control panel.",
+        "Ensure the washer is unplugged.",
+        "Locate the water level switch (identified by a clear tube).",
+        "Set the volt-ohm meter to RX1.",
+        "Check all three terminals with the probe, trying all possible pairings.",
+        "Observe the meter readings for each pairing.",
+        "Replace the water level switch if readings are incorrect."
+      ],
+      "tool": "Multimeter",
+      "part": "Water level switch",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 3,
+      "description": "This step involves inspecting and cleaning the filters located on the back of the washing machine to resolve filling issues.",
+      "actions": [
+        "Unplug the washing machine",
+        "Disconnect the hoses from the back of the unit",
+        "Locate the filters on the back of the washer",
+        "Clean the filters",
+        "Reconnect the hoses"
+      ],
+      "tool": "Wrench",
+      "part": "Filters",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 4,
+      "description": "This step involves checking the water inlet valve, water volume selector switch, and control panel buttons to ensure proper function.",
+      "actions": [
+        "Check the water inlet valve",
+        "Check the water volume selector switch",
+        "Ensure the buttons on the control panel are fully depressed",
+        "Adjust the settings if necessary"
+      ],
+      "tool": "Screwdriver",
+      "part": "Water inlet valve, water volume selector switch, control panel buttons",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 5,
+      "description": "Diagnose a potential blockage in the pressure chamber by observing the washing machine's behavior and determining if it washes and spins without water.",
+      "actions": [
+        "Examine the pressure chamber",
+        "Diagnose the problem",
+        "Observe if the machine washes and spins without water",
+        "Clear the tube",
+        "Replace the pressure chamber"
+      ],
+      "tool": "Screwdriver",
+      "part": "Pressure chamber",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 6,
+      "description": "If water flow is very slow and hoses/filters are clear, the issue is likely within the house plumbing.",
+      "actions": [
+        "Check for very slow water flow",
+        "Verify hoses are fine",
+        "Verify filters are fine",
+        "Identify problem in house plumbing"
+      ],
+      "tool": "Screwdriver",
+      "part": "house plumbing",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    }
+  ]
+}

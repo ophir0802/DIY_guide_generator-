@@ -1,0 +1,33 @@
+{
+  "header": {
+    "title": "How to Make a Smoothie without a Blender",
+    "description": "This guide demonstrates how to create a delicious smoothie using common kitchen tools, even without a traditional blender. Learn to mash and mix ingredients to achieve a smooth and refreshing beverage.",
+    "toolbox": [
+      "Electric Mixer",
+      "Large Spoon",
+      "Sharp Knife",
+      "Rubber Spatula"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "Combine chopped fruits, milk, yogurt, and optional powder additives in a mixing bowl.",
+      "actions": [
+        "Put all the chopped fruits inside the medium-sized mixing bowl.",
+        "Add 1 cup of milk.",
+        "Add 1 cup of yogurt.",
+        "Add any powder additives you may want."
+      ],
+      "tool": "Large Spoon",
+      "part": "medium-sized mixing bowl",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    }
+  ]
+}

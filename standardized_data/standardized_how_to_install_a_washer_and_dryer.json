@@ -1,0 +1,355 @@
+{
+  "header": {
+    "title": "How to Install a Washer and Dryer",
+    "description": "This guide provides step-by-step instructions for installing a new washer and dryer, covering plumbing, gas connections (if applicable), electrical work, and venting.",
+    "toolbox": [
+      "Screwdriver",
+      "Level",
+      "Water-pressure gauge"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "This step instructs the user to purchase a washer and dryer, considering delivery and installation options.",
+      "actions": [
+        "Choose the right washer and dryer",
+        "Consider delivery options from appliance stores",
+        "Consider paying for professional installation"
+      ],
+      "tool": "Screwdriver",
+      "part": "Washer and Dryer",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 2,
+      "description": "Install hot and cold water lines with shut-off valves and a water hammer arrester if needed for new appliance locations.",
+      "actions": [
+        "Run hot- and cold-water lines to the appliances",
+        "Terminate the lines with shut-off valves",
+        "Install a water hammer arrester between the shut-off valve and the incoming water supply",
+        "Check water pressure with a water pressure gauge"
+      ],
+      "tool": "Water-pressure gauge",
+      "part": "Water lines, shut-off valves, water hammer arrester",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 3,
+      "description": "Position the washer and dryer, ensuring a level surface and proper connection reach for hoses and cords.",
+      "actions": [
+        "Get help positioning the washer and dryer.",
+        "Ensure the placement location is completely flat.",
+        "Use a level to check for flatness.",
+        "Adjust the washer’s feet to ensure it stays level.",
+        "Verify hose connections can safely reach their sources.",
+        "Verify cords can safely reach their sources.",
+        "Ensure hoses and vents reach their source without straining or restricting water or airflow."
+      ],
+      "tool": "Level",
+      "part": "Washer and Dryer",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 4,
+      "description": "Before installation, disconnect power to the washer and dryer by switching off the appropriate circuit breakers.",
+      "actions": [
+        "Cut off the power",
+        "Locate the circuit breakers",
+        "Switch off the 110V breaker to the washer",
+        "Switch off the 220V breaker to the dryer (if not gas setup)"
+      ],
+      "tool": "Screwdriver",
+      "part": "Circuit breakers",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 5,
+      "description": "Connect the hoses to the outlet valves, securing them with silicone tape and ensuring proper hot and cold connections, and connecting any water-suppression valve as directed.",
+      "actions": [
+        "Attach hoses to outlet valves",
+        "Observe hot and cold connections",
+        "Secure with silicone tape",
+        "Connect water-suppression valve (if applicable)",
+        "Refer to owner's manual for water-suppression valve connection"
+      ],
+      "tool": "Screwdriver",
+      "part": "Hoses",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 6,
+      "description": "This step describes how to connect the washer's drainpipe, either by hooking it over an existing laundry sink or installing a standpipe.",
+      "actions": [
+        "Hook the washer's drainpipe over the edge of an existing laundry sink (if available)",
+        "Use a standpipe if no laundry sink is present",
+        "Attach the standpipe to an existing drain system",
+        "Purchase a standpipe from a plumbing outlet",
+        "Build a standpipe from scratch"
+      ],
+      "tool": "Screwdriver",
+      "part": "drainpipe, standpipe, drain system, laundry sink",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 7,
+      "description": "Install a trap if a standpipe is required, positioning the standpipe and trap at specific heights.",
+      "actions": [
+        "Install a trap",
+        "Use a standpipe if needed",
+        "Position the standpipe 18-30 inches above the trap",
+        "Position the trap 6-8 inches above floor level"
+      ],
+      "tool": "Level",
+      "part": "Trap",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 8,
+      "description": "This step involves powering on the washing machine and checking for leaks after installation.",
+      "actions": [
+        "Plug the washer in",
+        "Turn on the circuit breaker to the washer",
+        "Ensure the water valves are on",
+        "Turn on the machine to begin filling the washer",
+        "Check for any leaks"
+      ],
+      "tool": "Screwdriver",
+      "part": "Washer",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 9,
+      "description": "Connect the gas supply to the shut-off valve and then to the dryer, using silicone tape for added security.",
+      "actions": [
+        "Shut off breakers and gas valve",
+        "Connect the gas supply to the shut-off valve",
+        "Use silicone tape for extra security",
+        "Connect the flexible gas supply line to the dryer"
+      ],
+      "tool": "Screwdriver",
+      "part": "Shut-off valve",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 10,
+      "description": "Check the gas fitting for leaks by applying a soapy water solution and observing for bubbles.",
+      "actions": [
+        "Brush a 50-to-50 ratio of liquid detergent and water on the gas fitting.",
+        "Turn the gas at the main gas shut-off valve.",
+        "Observe gas connections for bubbles.",
+        "Ensure the fitting is tight if bubbles are present.",
+        "Turn off the gas again."
+      ],
+      "tool": "Screwdriver",
+      "part": "gas fitting",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 11,
+      "description": "Connect the dryer to a vent outlet using metal ducting and secure the connections with screws and duct tape.",
+      "actions": [
+        "Attach a metal-ducting pipe to the dryer.",
+        "Use appropriate lengths to reach the outlet.",
+        "Attach all elbows and fittings with sheet-metal screws.",
+        "Wrap the connections with duct tape."
+      ],
+      "tool": "Screwdriver",
+      "part": "metal-ducting pipe",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 12,
+      "description": "Attach the power cord to the dryer, following instructions for electric dryer installation, and then test the dryer.",
+      "actions": [
+        "Attach the power cord",
+        "Follow directions for 'Installing an Electric Dryer'",
+        "Plug in the power cord",
+        "Turn on the gas",
+        "Turn on the electric",
+        "Test the dryer"
+      ],
+      "tool": "Screwdriver",
+      "part": "Power cord",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 13,
+      "description": "Determine the type of electrical outlet in the laundry room and purchase a compatible power cord for the dryer.",
+      "actions": [
+        "Determine which outlet your laundry room has",
+        "Purchase the appropriate cord"
+      ],
+      "tool": "Screwdriver",
+      "part": "power cord",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 14,
+      "description": "Ensure the power to the dryer's outlet is turned off before installation.",
+      "actions": [
+        "make sure the power is off"
+      ],
+      "tool": "Screwdriver",
+      "part": "dryer’s outlet",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 15,
+      "description": "This step details how to install a four-prong cord by connecting the wires and securing the ground wire to the dryer.",
+      "actions": [
+        "If you have a three-prong cord, move on to the next step.",
+        "Connect the white, black, and red cord wires to the corresponding wires on the dryer.",
+        "Attach the green ground wire to the dryer’s green ground screw.",
+        "Remove any copper strap or green wire running from the ground screw to the white dryer wire."
+      ],
+      "tool": "Screwdriver",
+      "part": "dryer",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 16,
+      "description": "Connect a three-prong cord to the dryer by matching wires according to the instructions.",
+      "actions": [
+        "Connect the dryer’s red wire to either of the outside wires.",
+        "Connect the other outside wire to the black wire.",
+        "Connect the center wire to the white dryer wire.",
+        "Connect the center wire to the ground strap that’s attached to the ground screw."
+      ],
+      "tool": "Screwdriver",
+      "part": "Dryer",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 17,
+      "description": "Attach the vent hose to the vent duct and the dryer’s port using hose clamps.",
+      "actions": [
+        "Attach vent hose to vent duct",
+        "Attach vent hose to dryer’s port"
+      ],
+      "tool": "Screwdriver",
+      "part": "Vent hose, vent duct, dryer’s port",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 18,
+      "description": "Plug in the dryer, turn the power back on, and test to ensure it functions correctly.",
+      "actions": [
+        "Plug in the dryer",
+        "Turn the power back on",
+        "Test the electric dryer"
+      ],
+      "tool": "Screwdriver",
+      "part": "Dryer",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    }
+  ]
+}

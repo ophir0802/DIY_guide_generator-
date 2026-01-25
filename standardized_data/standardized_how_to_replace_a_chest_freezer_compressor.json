@@ -1,0 +1,90 @@
+{
+  "header": {
+    "title": "How to Replace a Chest Freezer Compressor",
+    "description": "This guide provides step-by-step instructions on how to replace the compressor in a chest freezer. It covers removing the old compressor, installing the new one, and completing the necessary finishing steps to restore freezer functionality.",
+    "toolbox": [
+      "Screwdriver (Philips)",
+      "Screwdriver (Flathead)",
+      "Map Gas Torch",
+      "Long Nose Pliers",
+      "Vacuum Pump",
+      "Manifold Gauge"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "This step involves disconnecting and removing the old compressor from the freezer.",
+      "actions": [
+        "Make sure the freezer is unplugged.",
+        "Remove the cover of the area where the compressor is located.",
+        "Remove the clip cover using long-nose pliers.",
+        "Remove the cover overload using your hand.",
+        "Take out the clip overload using long nose pliers.",
+        "Remove the common, running, and starting terminal connections individually using your hands.",
+        "Free the compressor from the remaining freon by breaking the charging tube using long nose pliers.",
+        "Disconnect the suction and discharge tubes from the compressor using a torch with Mapp gas.",
+        "Detach the compressor by removing the bolts and nuts attached to the compressor base."
+      ],
+      "tool": "Long Nose Pliers",
+      "part": "Compressor",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 2,
+      "description": "This step details the installation of a new compressor, including connecting tubes, installing electrical components, and evacuating/charging the system with freon.",
+      "actions": [
+        "Attach the new compressor to the compressor base using the bolts and nuts.",
+        "Use a torch with Mapp gas and the silver rod to connect the suction and discharge tubes.",
+        "Install a new charging tube.",
+        "Install a clip overload.",
+        "Attach the running and starting terminal using the relay.",
+        "Thread the neutral pressure gauge (NPG) to the vacuum pump using the manifold.",
+        "Take out existing air and any tiny particles from the tubing and the compressor.",
+        "Plug in the vacuum pump.",
+        "Let the vacuum pump work for 30 minutes.",
+        "Check if compressor and tubing are totally voided of air.",
+        "Close the LPG knob.",
+        "Turn off the vacuum pump.",
+        "Transfer the NPG from the vacuum pump to the freon tank.",
+        "Open the freon tank.",
+        "Loosen the NPG valve to release existing air off the hose.",
+        "Start charging freon to the compressor based on the suggested PSI.",
+        "Plug in the chest freezer while waiting for the freon to regulate."
+      ],
+      "tool": "Map Gas Torch",
+      "part": "compressor",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 3,
+      "description": "This step involves closing the freon tank, removing the hose, and installing the compressor.",
+      "actions": [
+        "Close the freon tank",
+        "Remove the hose connected to it",
+        "Slide in the compressor to its proper place"
+      ],
+      "tool": "Long Nose Pliers",
+      "part": "freon tank",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    }
+  ]
+}

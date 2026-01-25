@@ -1,0 +1,92 @@
+{
+  "header": {
+    "title": "How to Clean Solar Garden Lights",
+    "description": "This guide provides a simple, step-by-step process for cleaning your solar garden lights, ensuring optimal performance and longevity. Learn how to properly clean both the solar panel and battery compartment.",
+    "toolbox": [
+      "Soft lint-free cleaning cloth",
+      "Dry cloth",
+      "Small soft brush",
+      "Toothbrush"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "Disassemble the solar lights using the provided instructions to access the solar panels.",
+      "actions": [
+        "Use solar light instructions",
+        "Disassemble your lights",
+        "Access the solar panels"
+      ],
+      "tool": "Soft lint-free cleaning cloth",
+      "part": "solar lights",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.1,
+        "w": 0.2,
+        "h": 0.15
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 2,
+      "description": "Clean the solar battery by removing oxidation and ensuring contact points are clear.",
+      "actions": [
+        "Locate the solar battery.",
+        "Remove the solar battery from the light fixture.",
+        "Check for oxidation where the plastic and cell pack make contact.",
+        "Clean oxidized batteries with a small soft brush.",
+        "Clean the areas of contact with the light fixture.",
+        "Consider replacing the solar battery if it has been in use for more than a year and malfunctioning."
+      ],
+      "tool": "Small soft brush",
+      "part": "Solar battery",
+      "geometric_location": {
+        "x": 0.25,
+        "y": 0.15,
+        "w": 0.1,
+        "h": 0.1
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 3,
+      "description": "Clean the solar panel monthly using a damp cloth to remove dirt and grime.",
+      "actions": [
+        "Clean the solar panel at least once a month",
+        "Use a damp, lint-free cloth",
+        "Gently wipe down the collector panel",
+        "Remove any dust, dirt, or grime",
+        "Wipe it with a dry cloth"
+      ],
+      "tool": "Soft lint-free cleaning cloth",
+      "part": "solar panel",
+      "geometric_location": {
+        "x": 0.2,
+        "y": 0.12,
+        "w": 0.1,
+        "h": 0.1
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 4,
+      "description": "Clean and dry the outer shell of the solar garden lights and then reassemble them according to the original instructions.",
+      "actions": [
+        "Wipe the outer shell with a damp cloth.",
+        "Wash the outer shell in a sink (if made of glass or plastic).",
+        "Carefully dry the outer shell.",
+        "Re-assemble the light fixture according to the solar garden light instructions."
+      ],
+      "tool": "Soft lint-free cleaning cloth",
+      "part": "Outer shell of the solar garden lights",
+      "geometric_location": {
+        "x": 0.2,
+        "y": 0.1,
+        "w": 0.2,
+        "h": 0.2
+      },
+      "hands": 2
+    }
+  ]
+}

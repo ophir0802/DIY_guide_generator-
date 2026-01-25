@@ -1,0 +1,73 @@
+{
+  "header": {
+    "title": "How to Test a Chest Freezer Compressor",
+    "description": "This guide provides step-by-step instructions on how to diagnose a chest freezer compressor issue by taking readings, observing freezer operation, and identifying unusual noises.",
+    "toolbox": []
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "Step 1 - Take Readings",
+      "actions": [
+        "Read the instruction manual of your chest freezer as not all appliances are the same. Consult thetroubleshooting sectionto take the first steps in identifying the problem and solution."
+      ],
+      "tool": "Unknown",
+      "part": "Unknown",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 2,
+      "description": "Step 2 - Turn on Your Freezer",
+      "actions": [
+        "Plug your freezer in and check if its light functions or there is a sound coming from the fan or motor. If everything functions well, but your freezer is still having trouble, try to plug in any appliance that needs the use of electricity to function. If it works, examine your circuit breakers or fuse."
+      ],
+      "tool": "Unknown",
+      "part": "Unknown",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 3,
+      "description": "Step 3 - Check the Evaporator Coil",
+      "actions": [
+        "Remove the panel and take a look at the chest freezer’s evaporator coil to see if heavy frost has formed. If it has, this may be the reason why it is not cooling well. This is applicable for self-defrosting chest freezers. If your chest freezer is not of this kind and it’s not cooling well, then you must defrost it. Confirm if the temperature is in the right setting."
+      ],
+      "tool": "Unknown",
+      "part": "Unknown",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 4,
+      "description": "Step 4 - Identify the Noise Generated Inside Your Chest Freezer",
+      "actions": [
+        "Activate your chest freezer, and listen carefully to the sound it is making. If there are noises coming from it, identify the source. If the sounds are coming from inside, it may be caused by a fan when the freezer door is opened and closed. If it’s noisier when open, then there is something wrong with your evaporator fan motor. This is an indication that it needs replacement. If the noise is coming from the outside back of the appliance, then it’s either the compressor or the condenser fan. If it’s the compressor, you must change it. If it’s the condenser fan, a thorough cleaning may fix the problem."
+      ],
+      "tool": "Unknown",
+      "part": "Unknown",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    }
+  ]
+}

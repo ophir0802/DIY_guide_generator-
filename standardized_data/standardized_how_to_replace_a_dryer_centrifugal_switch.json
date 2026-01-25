@@ -1,0 +1,142 @@
+{
+  "header": {
+    "title": "How to Replace a Dryer Centrifugal Switch",
+    "description": "This guide provides step-by-step instructions on how to replace a dryer's centrifugal switch. It covers the necessary safety precautions, disassembly, and switch removal and replacement process.",
+    "toolbox": [
+      "Screwdriver",
+      "Wrench",
+      "Putty Knife"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "Gather the necessary tools and a new centrifugal switch for the dryer repair.",
+      "actions": [
+        "Buy a new centrifugal switch from a hardware or home supplies store.",
+        "Record the brand and model information of the dryer.",
+        "Collect screwdrivers.",
+        "Collect wrenches.",
+        "Collect protective gear."
+      ],
+      "tool": "Screwdriver",
+      "part": "centrifugal switch",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 2,
+      "description": "Disconnect the dryer from its power source before proceeding with any work.",
+      "actions": [
+        "Switch off the dryer",
+        "Unplug it from power outlet"
+      ],
+      "tool": "Screwdriver",
+      "part": "Dryer",
+      "geometric_location": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 3,
+      "description": "Remove the dryer's outer panel to access the centrifugal switch.",
+      "actions": [
+        "Use a screwdriver",
+        "Remove the outer panel",
+        "Loosen the screws",
+        "Carefully lift off the lid",
+        "Place the lid in a safe position"
+      ],
+      "tool": "Screwdriver",
+      "part": "outer panel",
+      "geometric_location": {
+        "x": 0.0,
+        "y": 0.1,
+        "w": 1.0,
+        "h": 0.4
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 4,
+      "description": "Remove the rear panel from the dryer using a screwdriver, ensuring screws are stored safely and noting their locations.",
+      "actions": [
+        "Use a screwdriver to remove the rear panel",
+        "Place screws from the appliance in a safe location",
+        "Take note where each set has been removed",
+        "Take a picture before removing parts"
+      ],
+      "tool": "Screwdriver",
+      "part": "rear panel",
+      "geometric_location": {
+        "x": 0.0,
+        "y": 0.1,
+        "w": 1.0,
+        "h": 0.4
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 5,
+      "description": "Access the drum by removing the lint tray and loosening retaining clips.",
+      "actions": [
+        "Dismount the lint tray",
+        "Use screws to loosen the component",
+        "Place the component in a safe position",
+        "Use a putty knife to press the top part of the dryer",
+        "Loosen retaining clips"
+      ],
+      "tool": "Putty Knife",
+      "part": "Drum",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.1,
+        "w": 0.7,
+        "h": 0.5
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 6,
+      "description": "This step involves removing the old centrifugal switch, inspecting other dryer components, and preparing for the new switch installation.",
+      "actions": [
+        "Hold down the clips using a putty knife.",
+        "Remove the toe panel.",
+        "Loosen the screws at the corners of the panel.",
+        "Locate the motor.",
+        "Remove the old switch.",
+        "Inspect other components in the dryer.",
+        "Look out for dust or dirt build.",
+        "Remove debris using a brush or vacuum.",
+        "Check for torn or worn out devices.",
+        "Make the required replacements (if necessary).",
+        "Replace the drive belt (if necessary).",
+        "Oil the motor (if necessary).",
+        "Place the new centrifugal switch into position.",
+        "Make sure it is fixed properly and secure.",
+        "Reassemble the device.",
+        "Check whether all devices are fastened in the appliance.",
+        "Plug the appliance to a power supply.",
+        "Turn on the switch."
+      ],
+      "tool": "Putty Knife",
+      "part": "Centrifugal Switch",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    }
+  ]
+}

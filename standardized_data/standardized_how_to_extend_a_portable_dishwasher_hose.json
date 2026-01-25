@@ -1,0 +1,89 @@
+{
+  "header": {
+    "title": "How to Extend a Portable Dishwasher Hose",
+    "description": "This guide explains how to extend the drain and water hoses of a portable dishwasher using couplers and clamps. Follow these steps to safely lengthen your dishwasher's hoses for improved placement flexibility.",
+    "toolbox": [
+      "Screwdriver"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "This step instructs the user to visit a hardware store to purchase necessary tools and materials for the dishwasher repair.",
+      "actions": [
+        "Find a hardware store with a large plumbing department.",
+        "Note the dimensions of your hoses or remove them.",
+        "Take hoses to the store.",
+        "Purchase a hose in the desired length for each of the two hoses on the back of the dishwasher.",
+        "Determine coupler and clamp sizes using the hoses."
+      ],
+      "tool": "Screwdriver",
+      "part": "hoses",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 2,
+      "description": "This step involves attaching a coupler between the dishwasher hose and an extension hose using a metal clamp.",
+      "actions": [
+        "Slide the metal clamp on to the hose",
+        "Tighten the clamp a bit",
+        "Insert the coupler into the exposed end of the original hose",
+        "Insert the other end of the coupler into the extension hose"
+      ],
+      "tool": "Screwdriver",
+      "part": "coupler",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.1,
+        "w": 0.8,
+        "h": 0.8
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 3,
+      "description": "Position the adjustable metal clamps on the hose, ensuring they sit on top of the coupler, and then tighten them to secure the connection.",
+      "actions": [
+        "Move the clamps up the length of the hose",
+        "Position the clamp on top of the coupler",
+        "Tighten the clamp",
+        "Lightly tug on the hose to make sure that it is secure",
+        "Repeat steps 2 and 3 for the second hose"
+      ],
+      "tool": "Screwdriver",
+      "part": "Adjustable Metal Clamps",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.1,
+        "w": 0.8,
+        "h": 0.8
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 4,
+      "description": "Test the dishwasher's functionality with the new hose extensions by attaching them and running a short cycle.",
+      "actions": [
+        "Roll the dishwasher to the desired position",
+        "Attach the hoses to the faucet adapter",
+        "Insert everything as with the original hoses",
+        "Run a short cycle to test the extensions"
+      ],
+      "tool": "Screwdriver",
+      "part": "hoses",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    }
+  ]
+}

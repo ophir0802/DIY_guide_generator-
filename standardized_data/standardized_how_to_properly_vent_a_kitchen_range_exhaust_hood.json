@@ -1,0 +1,89 @@
+{
+  "header": {
+    "title": "How to Properly Vent a Kitchen Range Exhaust Hood",
+    "description": "This guide provides step-by-step instructions on how to properly vent a kitchen range exhaust hood, covering exit ventilation, ductwork installation, and hood mounting.",
+    "toolbox": [
+      "Screwdriver",
+      "Pencil",
+      "Drill",
+      "Saw",
+      "Masonry Saw"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "This step explains the options for venting an exhaust hood, emphasizing the importance of venting to the outside to prevent fire hazards.",
+      "actions": [
+        "Choose between ceiling or wall installation for exhaust venting.",
+        "Consider range location to determine venting option (attic or wall).",
+        "Do not vent into the wall or attic.",
+        "Run the exhaust fan duct to the outside of the house."
+      ],
+      "tool": "Drill",
+      "part": "exhaust hood",
+      "geometric_location": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 0.566
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 2,
+      "description": "This step involves marking, cutting, and running ductwork for the vent hood exhaust.",
+      "actions": [
+        "Cover the hole that you are not using for exhaust",
+        "Secure the hood to its final positioning to mark the location of the vent duct",
+        "Remove the hood",
+        "Cut a hole in the wall or ceiling",
+        "Make guide holes",
+        "Complete the circle with a saw",
+        "Go into the attic if you chose a ceiling exit",
+        "Run the duct from the hole to an external wall or your roof",
+        "Mark where you are going to cut the second hole for exiting from the house",
+        "Use stiff or flex ducting",
+        "Ensure the duct protrudes a little out both the ceiling and the exit point",
+        "Cover the exit with a vent cap/cover",
+        "Caulk around the edges"
+      ],
+      "tool": "Saw",
+      "part": "Vent duct",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 3,
+      "description": "This step involves installing the vent hood, connecting its components, wiring it, and testing its functionality.",
+      "actions": [
+        "Connect the vent hood using screws and anchors",
+        "Caulk around the seams between the vent hood and the ceiling",
+        "Install the fan",
+        "Install the filter",
+        "Install the light kit",
+        "Hook up all the wiring, black to black, white to white, and green to green (or copper)",
+        "Use wire nuts to cover the loose ends of the wires",
+        "Secure the wires under the electrical component cover",
+        "Turn on the vent hood",
+        "Verify the lights and fan work",
+        "Verify there are no leaks in the duct",
+        "Verify the exhaust is going out through the exit duct"
+      ],
+      "tool": "Screwdriver",
+      "part": "Vent hood",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.1,
+        "w": 0.8,
+        "h": 0.7
+      },
+      "hands": 2
+    }
+  ]
+}

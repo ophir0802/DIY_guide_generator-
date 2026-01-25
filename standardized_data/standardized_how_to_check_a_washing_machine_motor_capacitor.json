@@ -1,0 +1,109 @@
+{
+  "header": {
+    "title": "How to Check a Washing Machine Motor Capacitor",
+    "description": "This guide explains how to diagnose a faulty washing machine motor capacitor using a multimeter. Learn to safely discharge the capacitor and test its functionality to determine if it needs replacement.",
+    "toolbox": [
+      "Flathead Screwdriver",
+      "Needle-Nose Pliers",
+      "Multimeter",
+      "Jumper Wires"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "This step instructs the user to unplug the washing machine, access the motor, and prepare the start capacitor for work.",
+      "actions": [
+        "Unplug your washing machine",
+        "Use insulated handles to avoid electric shock",
+        "Remove the rear panel",
+        "Find the start capacitor",
+        "Remove the metal cover"
+      ],
+      "tool": "Flathead Screwdriver",
+      "part": "Rear panel, Start capacitor, Metal cover",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 2,
+      "description": "Remove the wires from the terminals using needle-nose pliers.",
+      "actions": [
+        "remove wires",
+        "use needle-nose pliers"
+      ],
+      "tool": "Needle-Nose Pliers",
+      "part": "terminals",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.75,
+        "w": 0.1,
+        "h": 0.2
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 3,
+      "description": "Discharge the run capacitor by shorting it out using a screwdriver and jumper wire.",
+      "actions": [
+        "Place one alligator clip from jumper wire to the housing of the capacitor",
+        "Place the other alligator clip on the metal shaft of the screwdriver",
+        "Put the blade of the screwdriver to one of the terminals",
+        "Put the shaft of the screwdriver to the other terminal"
+      ],
+      "tool": "Flathead Screwdriver",
+      "part": "Run capacitor",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 4,
+      "description": "Calibrate the multimeter by setting it to the ohm scale and adjusting the wheel until the needle reads zero.",
+      "actions": [
+        "Change multimeter to ohm scale",
+        "Touch the two lead points to one another",
+        "Switch the adjusting wheel until the needle reaches zero, pointing upward"
+      ],
+      "tool": "Multimeter",
+      "part": "Multimeter",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.15,
+        "w": 0.75,
+        "h": 0.7
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 5,
+      "description": "This step involves using a multimeter to test a capacitor by observing its needle movement when leads are connected in both polarities.",
+      "actions": [
+        "Touch the black lead to the right capacitor terminal.",
+        "Touch the red lead to the left capacitor terminal.",
+        "Observe the multimeter needle movement.",
+        "Reverse the leads.",
+        "Observe the multimeter needle movement.",
+        "If the needle doesn't move, replace the capacitor."
+      ],
+      "tool": "Multimeter",
+      "part": "Capacitor",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    }
+  ]
+}

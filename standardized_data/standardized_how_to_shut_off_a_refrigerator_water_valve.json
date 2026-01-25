@@ -1,0 +1,56 @@
+{
+  "header": {
+    "title": "How to Shut off a Refrigerator Water Valve",
+    "description": "This guide provides simple instructions on how to locate and shut off the water valve connected to your refrigerator. Following these steps will allow you to stop the water supply to your appliance.",
+    "toolbox": [
+      "Wrench",
+      "Pliers"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "This step instructs you to locate the refrigerator water valve, which may require moving the refrigerator and removing protective guards.",
+      "actions": [
+        "Find the water valve location.",
+        "Move the refrigerator forward.",
+        "Unscrew the guard (if present).",
+        "Follow the water supply line.",
+        "Locate the valve near the cold water supply valve at the bottom of the sink (if not found at the back)."
+      ],
+      "tool": "Wrench",
+      "part": "Water valve",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 2,
+      "description": "Shut off the water valve using a lever or knob, taking precautions if it's difficult to rotate.",
+      "actions": [
+        "Identify if the valve uses a lever or a knob.",
+        "If the valve uses a lever, rotate the lever until it is perpendicular to the waterline.",
+        "If the valve uses a knob, rotate the knob clockwise.",
+        "If the valve is hard to rotate, consider shutting off the main water line.",
+        "Inspect the valve for a large nut at the base of the rotating shaft.",
+        "If a nut is present, use a wrench to move the nut and work the knob or lever to loosen it.",
+        "If the valve cannot be taken apart, use a wrench or pliers to rotate it back and forth, gradually increasing movement.",
+        "Grip the lever or knob with a gripping device and turn it slowly until it comes loose.",
+        "Hand-rotate the lever or knob until the water valve is shut off."
+      ],
+      "tool": "Wrench",
+      "part": "Water valve",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    }
+  ]
+}

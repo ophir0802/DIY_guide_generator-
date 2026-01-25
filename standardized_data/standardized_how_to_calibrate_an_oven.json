@@ -1,0 +1,86 @@
+{
+  "header": {
+    "title": "How to Calibrate an Oven",
+    "description": "This guide provides step-by-step instructions on how to calibrate your oven, regardless of whether it uses analog or touchpad controls. Learn to accurately measure and adjust your oven's temperature for consistent baking results.",
+    "toolbox": [
+      "Oven thermometer",
+      "Notepad",
+      "Pencil"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "This step involves comparing the actual oven temperature with its setting to determine the temperature variance and whether recalibration is needed.",
+      "actions": [
+        "Check the temperature sensor at the top of the back wall of the oven.",
+        "Ensure the temperature sensor is properly secured and not touching other parts.",
+        "Place a grate at the halfway height of the oven chamber.",
+        "Place or hang the oven thermometer in the center of the oven chamber.",
+        "Close the oven door.",
+        "Preheat the oven to 350°F (177°C).",
+        "Allow the oven to heat for at least 20 minutes.",
+        "Take a temperature reading.",
+        "Take readings every 20 minutes for about two hours or at least four readings.",
+        "Calculate the average temperature from all readings."
+      ],
+      "tool": "Oven thermometer",
+      "part": "Oven",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.1,
+        "w": 0.8,
+        "h": 0.6
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 2,
+      "description": "This step details how to calibrate an oven with analog controls by adjusting the thermostat knob.",
+      "actions": [
+        "Remove the oven temperature knob from its post by pulling it out.",
+        "Pry the knob out gently using a butter knife or a flat blade screwdriver if there is resistance.",
+        "Turn the knob over and look at the back for a notched disk and a pointer.",
+        "Make a mark on the disk to remain in perspective with the original setting.",
+        "Loosen the screws holding the disk in place.",
+        "Rotate the disk slightly within the limit of its slotted adjustment, guiding yourself with the 10° marks.",
+        "Tighten the screws back up to secure the disk in place.",
+        "Return the knob onto its post."
+      ],
+      "tool": "Notepad",
+      "part": "oven temperature knob",
+      "geometric_location": {
+        "x": 0.82,
+        "y": 0.16,
+        "w": 0.08,
+        "h": 0.06
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 3,
+      "description": "This step details how to adjust the oven temperature using the touchpad, emphasizing the importance of consulting the owner's manual for specific instructions.",
+      "actions": [
+        "Consult the owner's manual for oven calibration instructions.",
+        "Locate the section about oven calibration or adjusting oven temperature in the manual.",
+        "Identify the button(s) to press and the duration to activate the calibration process.",
+        "For Kenmore C970, press the “Bake” button and set the temperature to 550°F (287°C), then press “Bake” again within two seconds.",
+        "Look for a double-digit display to confirm entering calibration mode.",
+        "Identify the displayed offset number (e.g., “00”, “SF”, “F TempOffset”).",
+        "Enter the temperature difference using the numeric touchpad or arrow buttons.",
+        "If using a numeric touchpad, press the “Flex Clean” button to add a plus or minus sign.",
+        "Confirm the selection by pressing the “Bake” button (or follow manual instructions for other models).",
+        "Test the calibration using steps 1.1 to 1.6."
+      ],
+      "tool": "Oven thermometer",
+      "part": "Touchpad",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    }
+  ]
+}

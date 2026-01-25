@@ -1,0 +1,221 @@
+{
+  "header": {
+    "title": "How to Create Wool Dryer Balls",
+    "description": "This guide provides step-by-step instructions on how to create reusable wool dryer balls as an eco-friendly alternative to dryer sheets. Learn to wrap, form, and finish your own dryer balls using simple materials and basic techniques.",
+    "toolbox": [
+      "Scissors",
+      "Crochet Needle"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "The initial step involves collecting all necessary materials for the project.",
+      "actions": [
+        "gather materials"
+      ],
+      "tool": "Scissors",
+      "part": "materials",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.1,
+        "w": 0.2,
+        "h": 0.2
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 2,
+      "description": "Wrap yarn around your fingers (excluding the thumb) ten times to create a foundation for a dryer ball.",
+      "actions": [
+        "Wrap yarn around all your fingers",
+        "Exclude your thumb from the wrapping",
+        "Repeat the wrapping ten times",
+        "Keep your fingers close together",
+        "Wrap tightly and securely"
+      ],
+      "tool": "Crochet Needle",
+      "part": "fingers",
+      "geometric_location": {
+        "x": 0.25,
+        "y": 0.167,
+        "w": 0.217,
+        "h": 0.216
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 3,
+      "description": "Gather the yarn together after removing it from your fingers.",
+      "actions": [
+        "remove yarn",
+        "gather yarn"
+      ],
+      "tool": "Crochet Needle",
+      "part": "yarn",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.6,
+        "w": 0.6,
+        "h": 0.35
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 4,
+      "description": "Continue wrapping yarn around the initial bunch, changing the wrapping direction periodically to form a spherical dryer ball.",
+      "actions": [
+        "Wrap more yarn around the initial bunch of yarn.",
+        "Change the wrapping direction per five to seven wraparounds.",
+        "Bring in all sides of the loose yarn.",
+        "Slowly form a spherical wool dryer ball."
+      ],
+      "tool": "Crochet Needle",
+      "part": "initial bunch of yarn",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.6,
+        "w": 0.6,
+        "h": 0.35
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 5,
+      "description": "Continue wrapping the yarn to form a tightly wrapped and compact sphere.",
+      "actions": [
+        "change direction regularly",
+        "create an evenly shaped sphere",
+        "wrap tightly",
+        "wrap compactly"
+      ],
+      "tool": "Crochet Needle",
+      "part": "yarn",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.6,
+        "w": 0.6,
+        "h": 0.35
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 6,
+      "description": "Cut the yarn to separate a ball of yarn from the skein after wrapping it to a tennis ball size.",
+      "actions": [
+        "Continue wrapping",
+        "Wrap until yarn is tennis ball size",
+        "Cut the yarn",
+        "Separate the ball from the skein"
+      ],
+      "tool": "Scissors",
+      "part": "yarn",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.6,
+        "w": 0.6,
+        "h": 0.35
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 7,
+      "description": "Secure the loose end of the yarn by wrapping it around another strand or tying it with a knot.",
+      "actions": [
+        "Take the end strand.",
+        "Wrap the end strand around another strand.",
+        "Use a crochet hook to help tuck away the end if needed.",
+        "Insert the yarn deeper into the ball using a crochet hook.",
+        "Try again and re-wrap if the ball comes apart.",
+        "Tie the end of the yarn onto another strand to secure it.",
+        "Use a tight double knot."
+      ],
+      "tool": "Crochet Needle",
+      "part": "end strand",
+      "geometric_location": {
+        "x": 0.01,
+        "y": 0.62,
+        "w": 0.57,
+        "h": 0.36
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 8,
+      "description": "Add essential oil to the wool dryer ball to impart a pleasant scent and eliminate the need for dryer sheets.",
+      "actions": [
+        "Add three to four drops of lavender essential oil directly to the ball.",
+        "Add five to six drops for a stronger scent.",
+        "Experiment with different essential oils or combine two for a unique scent.",
+        "Add a few drops of essential oil every one to two uses.",
+        "Add a few drops of vinegar for extra soft clothing."
+      ],
+      "tool": "Scissors",
+      "part": "wool dryer ball",
+      "geometric_location": {
+        "x": 0.388,
+        "y": 0.312,
+        "w": 0.126,
+        "h": 0.126
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 9,
+      "description": "Create additional wool dryer balls by repeating the previous steps to achieve the desired quantity for efficient drying.",
+      "actions": [
+        "Determine the number of dryer balls needed based on the load size.",
+        "Repeat steps 1-8 as many times as needed."
+      ],
+      "tool": "Crochet Needle",
+      "part": "Wool dryer balls",
+      "geometric_location": {
+        "x": 0.35,
+        "y": 0.23,
+        "w": 0.2,
+        "h": 0.22
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 10,
+      "description": "Insert all wool dryer balls into a leg of pantyhose, securing each with a tight knot.",
+      "actions": [
+        "Place the first wool dryer ball into one leg of pantyhose.",
+        "Tie a tight knot.",
+        "Insert the next wool dryer ball.",
+        "Repeat until all of them are in the pantyhose.",
+        "Make sure each knot is tied tightly."
+      ],
+      "tool": "Scissors",
+      "part": "pantyhose",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 11,
+      "description": "Wash and dry the wool dryer balls in a washing machine and dryer to fuse the yarn strands together.",
+      "actions": [
+        "Set washing machine to hottest setting.",
+        "Wash wool dryer balls for one cycle without laundry detergent.",
+        "Put wool dryer balls in the dryer.",
+        "Dry wool dryer balls for forty minutes (or longer if necessary) on the highest heat setting.",
+        "Remove wool dryer balls from pantyhose."
+      ],
+      "tool": "Scissors",
+      "part": "wool dryer balls",
+      "geometric_location": {
+        "x": 0.35,
+        "y": 0.28,
+        "w": 0.17,
+        "h": 0.15
+      },
+      "hands": 2
+    }
+  ]
+}

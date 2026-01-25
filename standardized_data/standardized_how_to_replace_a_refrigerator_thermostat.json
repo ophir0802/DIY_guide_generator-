@@ -1,0 +1,145 @@
+{
+  "header": {
+    "title": "How to Replace a Refrigerator Thermostat",
+    "description": "This guide provides step-by-step instructions on how to replace a malfunctioning refrigerator thermostat. Follow these instructions to safely remove the old thermostat and install a new one, restoring proper cooling function to your refrigerator.",
+    "toolbox": [
+      "Screwdriver",
+      "Pliers"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "Before replacing the thermostat, ensure the appliance is disconnected from the power source for safety.",
+      "actions": [
+        "Turn off the appliance from the mains",
+        "Locate the plug",
+        "Turn off the circuit breaker (if plug is hidden)"
+      ],
+      "tool": "Screwdriver",
+      "part": "Thermostat",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 2,
+      "description": "This step instructs the user to locate the thermostat within the refrigerator or freezer.",
+      "actions": [
+        "Find the thermostat",
+        "Determine the thermostat's position inside the refrigerator",
+        "Check the back of the fridge if it has a freezer on top",
+        "Check the roof of the fridge underneath the freezer panel if it has a freezer on top",
+        "Check the back of the freezer if the refrigerator is next to the freezer"
+      ],
+      "tool": "Screwdriver",
+      "part": "Thermostat",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 3,
+      "description": "Remove all frozen food and shelves from the workspace, potentially requiring loosening screws and removing clips.",
+      "actions": [
+        "Take out frozen food",
+        "Take out shelves",
+        "Loosen screws",
+        "Take out clips"
+      ],
+      "tool": "Screwdriver",
+      "part": "Shelves",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 4,
+      "description": "Gently detach wires connected to the thermostat using pliers, being careful not to break them.",
+      "actions": [
+        "Pull wires away gently",
+        "Use pliers",
+        "Be careful not to pull too hard",
+        "Avoid gripping the wires in the middle"
+      ],
+      "tool": "Pliers",
+      "part": "Thermostat",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 5,
+      "description": "Remove the old faulty thermostat from the refrigerator, being careful if it's near an evaporator tube.",
+      "actions": [
+        "Remove any remaining screws or clips",
+        "Take out the old faulty thermostat"
+      ],
+      "tool": "Screwdriver",
+      "part": "Thermostat",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 6,
+      "description": "Install the new thermostat into the refrigerator, reconnecting wires and securing the panel and shelving.",
+      "actions": [
+        "Install the new replacement thermostat into the refrigerator",
+        "Place the thermostat in the same location as the old one",
+        "Screw the thermostat into place",
+        "Reconnect all the wires",
+        "Put the panel back over the thermostat securely",
+        "Put back any shelving"
+      ],
+      "tool": "Screwdriver",
+      "part": "Thermostat",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 7,
+      "description": "Turn the refrigerator's power back on and monitor its temperature to ensure the new thermostat is functioning correctly.",
+      "actions": [
+        "Turn the power to the refrigerator back on",
+        "Wait for the refrigerator to cool down",
+        "Monitor the refrigerator temperature",
+        "Verify the thermostat maintains a steady temperature"
+      ],
+      "tool": "Screwdriver",
+      "part": "refrigerator",
+      "geometric_location": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+      },
+      "hands": 1
+    }
+  ]
+}

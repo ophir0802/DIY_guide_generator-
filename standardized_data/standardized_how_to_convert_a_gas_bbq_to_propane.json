@@ -1,0 +1,34 @@
+{
+  "header": {
+    "title": "How to Convert a Gas BBQ to Propane",
+    "description": "This guide details the process of converting a gas-powered barbecue grill to use propane fuel. It provides step-by-step instructions for modifying the regulator and connections to safely utilize propane.",
+    "toolbox": [
+      "Flathead Screwdriver",
+      "Screwdriver Set",
+      "Needle-Nose Pliers",
+      "Drill Bit Set",
+      "Wrench Set"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "Remove the cap on the pressure regulator using a flat-head screwdriver and ensure it's marked 'LP'.",
+      "actions": [
+        "Turn the cap on the pressure regulator",
+        "Remove the cap",
+        "Tighten the cap underneath",
+        "Ensure the cap reads LP"
+      ],
+      "tool": "Flathead Screwdriver",
+      "part": "pressure regulator",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    }
+  ]
+}

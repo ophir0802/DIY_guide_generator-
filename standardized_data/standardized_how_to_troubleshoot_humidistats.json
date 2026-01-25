@@ -1,0 +1,374 @@
+{
+  "header": {
+    "title": "How to Troubleshoot Humidistats",
+    "description": "This guide provides step-by-step instructions for diagnosing and troubleshooting issues with humidistats. Learn how to identify common problems and perform basic repairs to ensure proper humidity control.",
+    "toolbox": [
+      "Multimeter",
+      "Screwdriver",
+      "Wrench"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "Connect the unit to power and activate it.",
+      "actions": [
+        "Plug in the unit",
+        "Switch it on"
+      ],
+      "tool": "Multimeter",
+      "part": "unit",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 2,
+      "description": "Verify that the pilot light on the control panel is illuminated.",
+      "actions": [
+        "check pilot light",
+        "go to Step 5 if pilot light is on"
+      ],
+      "tool": "Screwdriver",
+      "part": "control panel",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 3,
+      "description": "Troubleshoot the appliance by checking the outlet and circuit breaker.",
+      "actions": [
+        "check outlet with an outlet tester",
+        "try plugging it into a different outlet",
+        "check the circuit breaker panel for a tripped breaker",
+        "reset the breaker"
+      ],
+      "tool": "Multimeter",
+      "part": "outlet",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 4,
+      "description": "Check the unit's fuse for continuity with a multimeter and replace it if burnt out.",
+      "actions": [
+        "check for power at the outlet",
+        "check for a fuse on the unit",
+        "test for continuity with a multimeter",
+        "replace the fuse if it is burnt out"
+      ],
+      "tool": "Multimeter",
+      "part": "fuse",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 5,
+      "description": "If the unit doesn't power on, adjust the humidistat and then unplug the unit if it still fails to turn on.",
+      "actions": [
+        "Turn on the power",
+        "Adjust the integrated humidistat for the maximum humidity setting (for a humidifier)",
+        "Adjust the integrated humidistat for the minimum setting (for a dehumidifier)",
+        "Unplug the unit from its outlet"
+      ],
+      "tool": "Screwdriver",
+      "part": "integrated humidistat",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 6,
+      "description": "This step involves accessing the float switch, testing the circuit by shorting the wires, and troubleshooting the unit's power.",
+      "actions": [
+        "Get access to the float switch",
+        "Unplug both wires from their connectors",
+        "Short the two wires together to close the circuit",
+        "Plug the unit back in",
+        "If it still doesn’t come on, unplug the unit from its outlet",
+        "Leave the float switch wires together"
+      ],
+      "tool": "Screwdriver",
+      "part": "float switch",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 7,
+      "description": "Remove covers from the unit to access the humidistat controller, exercising safety precautions.",
+      "actions": [
+        "Remove necessary covers",
+        "Gain access to the humidistat controller",
+        "Do not troubleshoot with the unit plugged in",
+        "Wear insulated gloves while taking electrical readings"
+      ],
+      "tool": "Screwdriver",
+      "part": "Humidistat controller",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 8,
+      "description": "Test the humidifier's connections for 120 VAC with a multimeter, and diagnose a defective humidistat if voltage is missing.",
+      "actions": [
+        "Set multimeter to at least 120 AC volts",
+        "Plug the humidifier back in",
+        "Touch the ground probe against the grounded metal chassis",
+        "Touch the red probe on each of the two connections",
+        "Set the humidifier humidity on maximum",
+        "Set the dehumidifier on the minimum setting",
+        "Check the readings",
+        "Assume the humidistat is defective and replace it with a new one if one connection has no voltage present"
+      ],
+      "tool": "Multimeter",
+      "part": "humidifier",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 9,
+      "description": "If readings are good for a humidifier, replace the fan motor; otherwise, proceed to the next step for a portable dehumidifier.",
+      "actions": [
+        "check readings",
+        "replace fan motor",
+        "proceed to Step 10"
+      ],
+      "tool": "Screwdriver",
+      "part": "fan motor",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 10,
+      "description": "If the compressor doesn't run with voltage present, it likely indicates a faulty compressor requiring professional repair and replacement.",
+      "actions": [
+        "Check for voltage at the humidistat",
+        "Observe if the compressor runs",
+        "Confirm a faulty compressor (requires certified repair shop)",
+        "Bring the compressor to a certified repair shop for confirmation and replacement"
+      ],
+      "tool": "Multimeter",
+      "part": "Compressor",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 11,
+      "description": "If the compressor motor is running but the condenser isn't refrigerating, test the time-delay relay by shorting its leads to see if the compressor engages.",
+      "actions": [
+        "Listen for the compressor motor running.",
+        "Observe if refrigeration is happening on the condenser.",
+        "Identify a potential refrigerant leak or defective time-delay relay.",
+        "Locate the time-delay relay.",
+        "Short the two leads of the time-delay relay with a jumper wire for a few seconds.",
+        "Listen for the compressor coming on."
+      ],
+      "tool": "Multimeter",
+      "part": "time-delay relay",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 12,
+      "description": "Reconnect the wires previously removed from the float switch to their terminals.",
+      "actions": [
+        "Plug the two wires removed from the float switch back into their respective terminals."
+      ],
+      "tool": "Screwdriver",
+      "part": "Float switch",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 13,
+      "description": "Open the water line valve by pushing down on the float.",
+      "actions": [
+        "push down on the float",
+        "open the valve"
+      ],
+      "tool": "Screwdriver",
+      "part": "float",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 14,
+      "description": "Troubleshoot water flow by checking the water line and ensuring all valves are open.",
+      "actions": [
+        "check water line",
+        "ensure valves are open"
+      ],
+      "tool": "Wrench",
+      "part": "water line valves",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 15,
+      "description": "This step involves troubleshooting a humidifier injector nozzle by checking for clogs and testing the solenoid valve.",
+      "actions": [
+        "Turn off the humidistat.",
+        "Verify if the injector’s nozzle tip is not plugged with some dirt or debris.",
+        "Unscrew and remove the nozzle tip.",
+        "Have someone turn the humidistat to its maximum setting briefly.",
+        "Check if water starts coming through.",
+        "Replace the spray nozzle with a new one (if water comes through).",
+        "Screw the nozzle tip back on (if no water comes through).",
+        "Check the solenoid valve."
+      ],
+      "tool": "Screwdriver",
+      "part": "injector’s nozzle tip",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 16,
+      "description": "This step involves locating the solenoid valve, disconnecting the water line, and briefly activating the humidistat to check water flow.",
+      "actions": [
+        "Follow the water line back from the spray nozzle to the solenoid valve.",
+        "Remove the water line from the injector’s side of the valve.",
+        "Have someone briefly turn the humidistat to its maximum.",
+        "Observe water flowing."
+      ],
+      "tool": "Wrench",
+      "part": "solenoid valve",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 17,
+      "description": "Troubleshoot a lack of water flow by checking the solenoid valve's electrical connections and coil.",
+      "actions": [
+        "Remove the cover from the solenoid",
+        "Expose the electrical connections",
+        "Turn the humidistat on maximum",
+        "Use a multimeter to check for 24 volts across the electromagnet"
+      ],
+      "tool": "Multimeter",
+      "part": "Solenoid valve",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 18,
+      "description": "Troubleshoot the humidistat by disconnecting its wires and testing for continuity with a multimeter.",
+      "actions": [
+        "Open up the humidistat",
+        "Disconnect the wires going to the control board",
+        "Set multimeter on continuity",
+        "Place probes on the humidifier’s terminals",
+        "Turn the humidity level to its maximum setting"
+      ],
+      "tool": "Multimeter",
+      "part": "Humidistat",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 19,
+      "description": "If continuity was detected in the previous step, the control board is likely defective and needs replacement.",
+      "actions": [
+        "Check for continuity",
+        "Identify defective control board",
+        "Replace control board"
+      ],
+      "tool": "Multimeter",
+      "part": "control board",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    }
+  ]
+}

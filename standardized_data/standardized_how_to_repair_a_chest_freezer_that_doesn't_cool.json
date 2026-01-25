@@ -1,0 +1,114 @@
+{
+  "header": {
+    "title": "How to Repair a Chest Freezer that Doesn't Cool",
+    "description": "This guide provides step-by-step instructions on diagnosing and repairing a chest freezer that has stopped cooling, covering common issues like thermostat problems, defrost failures, and compressor malfunctions.",
+    "toolbox": [
+      "Screwdriver",
+      "Meat thermometer",
+      "Flashlight",
+      "Vacuum cleaner"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "Inspect the chest freezer to identify the cause of the incorrect temperature.",
+      "actions": [
+        "Begin the process of repairing a chest freezer",
+        "Examine the freezer",
+        "Determine the cause",
+        "Look hard enough"
+      ],
+      "tool": "Flashlight",
+      "part": "chest freezer",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 2,
+      "description": "Check the freezer thermostat to ensure it's in the correct setting or replace it if defective.",
+      "actions": [
+        "Check the thermostat setting.",
+        "Return the thermostat to the correct level.",
+        "Leave the freezer for an hour to determine if the problem is corrected.",
+        "Unplug the freezer.",
+        "Use a flashlight to improve visibility.",
+        "Remove the temperature dial.",
+        "Use a screwdriver to remove the cover.",
+        "Expose the two wires connected to the thermostat.",
+        "Connect the two wires to a replacement thermostat."
+      ],
+      "tool": "Screwdriver",
+      "part": "Thermostat",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 3,
+      "description": "Defrost the freezer by removing items, turning off power, and allowing ice to melt, protecting the floor from water.",
+      "actions": [
+        "Clear out all items from the freezer",
+        "Switch off the power supply",
+        "Put down a drop cloth or newspapers",
+        "Leave the door open as the defrosting occurs"
+      ],
+      "tool": "Flashlight",
+      "part": "Chest freezer",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 4,
+      "description": "Check the self-defrost system of the freezer by following the defrost process and observing if the temperature returns to normal.",
+      "actions": [
+        "Follow the above defrost process",
+        "Determine whether the temperature returns to normal",
+        "Check your instruction manual",
+        "Find out whether it is possible to manually reset the defrost timer"
+      ],
+      "tool": "Meat thermometer",
+      "part": "self-defrost system",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 5,
+      "description": "Clean the compressor and condenser fan at the rear of the freezer to ensure proper cooling.",
+      "actions": [
+        "Locate the compressor at the rear of the chest freezer.",
+        "Locate the condenser fan.",
+        "Disconnect the freezer from the power receptacle.",
+        "Clean the compressor and condenser fan with a vacuum cleaner or cloth."
+      ],
+      "tool": "Vacuum cleaner",
+      "part": "Compressor",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    }
+  ]
+}

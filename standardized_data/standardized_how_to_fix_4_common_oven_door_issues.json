@@ -1,0 +1,224 @@
+{
+  "header": {
+    "title": "How to Fix 4 Common Oven Door Issues",
+    "description": "This guide provides step-by-step instructions on how to diagnose and repair common issues with your oven door, specifically focusing on hinge and latch problems. Learn to replace springs and latches to restore your oven door's functionality.",
+    "toolbox": [
+      "Screwdriver",
+      "Pliers"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "The first step involves opening the oven door and lifting it off the hinges.",
+      "actions": [
+        "Open oven door halfway",
+        "Hold onto the sides of the door",
+        "Pull the door upwards"
+      ],
+      "tool": "Screwdriver",
+      "part": "oven door",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.15,
+        "w": 0.75,
+        "h": 0.6
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 2,
+      "description": "This step instructs the user to locate the oven springs and access them by removing the inner door panel or opening the storage drawer.",
+      "actions": [
+        "Locate the oven springs",
+        "Determine whether the springs are functional",
+        "If springs are inside the oven door, unscrew the inner door panel",
+        "Remove the inner door panel",
+        "Expose the springs",
+        "If springs are on the frame, open the storage drawer at the bottom of your oven"
+      ],
+      "tool": "Screwdriver",
+      "part": "Inner door panel",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.2,
+        "w": 0.4,
+        "h": 0.2
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 3,
+      "description": "Inspect the springs for wear and check if they are unhooked.",
+      "actions": [
+        "Expose the springs",
+        "Inspect the springs",
+        "Observe the holes the springs are attached to",
+        "Observe the entire body of the spring",
+        "Check if any of the springs is unhooked at either end",
+        "Reattach the unhooked end (if applicable)"
+      ],
+      "tool": "Pliers",
+      "part": "Springs",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 4,
+      "description": "This step details how to remove old springs by marking their positions, wearing protective gear, and using pliers to unhook them.",
+      "actions": [
+        "Mark the holes where the springs are hooked on either end.",
+        "Wear protective gear such as goggles.",
+        "Note the position of each spring on a paper.",
+        "Use pliers to unhook the spring on one end.",
+        "Remove the spring on the remaining end."
+      ],
+      "tool": "Pliers",
+      "part": "Springs",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 5,
+      "description": "Replace the old springs with new ones, ensuring they are attached at the same position on both sides of the frame.",
+      "actions": [
+        "Remove the old springs",
+        "Wear protective gear",
+        "Locate the metal strip with holes on the frame",
+        "Attach new springs on the holes on the frame on either side",
+        "Ensure both springs are attached at the same position on either side"
+      ],
+      "tool": "Pliers",
+      "part": "Springs",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 6,
+      "description": "Reattach the oven door to the hinges and address any latching issues.",
+      "actions": [
+        "Place the door back to the hinges while at the half-open position",
+        "Push the door into the hinges to reattach it",
+        "Grease the latch contact point with a few drops of oil if it gets stuck",
+        "Try closing the door again",
+        "Replace the latch if it is broken or malfunctioning"
+      ],
+      "tool": "Screwdriver",
+      "part": "Door",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.15,
+        "w": 0.75,
+        "h": 0.6
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 7,
+      "description": "The first step involves disconnecting the oven from power and putting on safety gear.",
+      "actions": [
+        "Unplug oven from power",
+        "Get on protective gear",
+        "Wear gloves",
+        "Wear goggles"
+      ],
+      "tool": "Screwdriver",
+      "part": "oven",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 8,
+      "description": "Remove the rear access panel located on the top of the device.",
+      "actions": [
+        "Unscrew the panel",
+        "Gently pull the panel out of the groove"
+      ],
+      "tool": "Screwdriver",
+      "part": "rear access panel",
+      "geometric_location": {
+        "x": 0.01,
+        "y": 0.16,
+        "w": 0.1,
+        "h": 0.06
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 9,
+      "description": "Locate the latch motor assembly on the left side of the oven's interior.",
+      "actions": [
+        "Locate",
+        "Find the latch motor assembly",
+        "Check the left side of the oven's interior"
+      ],
+      "tool": "Screwdriver",
+      "part": "Latch motor assembly",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 10,
+      "description": "This step involves disconnecting a wire harness and detaching blue wires from a motor switch assembly.",
+      "actions": [
+        "Pull off the wire harness",
+        "Detach two blue wires from the motor switch assembly"
+      ],
+      "tool": "Pliers",
+      "part": "wire harness, motor switch assembly",
+      "geometric_location": {
+        "x": 0.25,
+        "y": 0.25,
+        "w": 0.4,
+        "h": 0.2
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 11,
+      "description": "Remove the latch unit from the oven frame, assess its condition, and either fix it or replace it if broken.",
+      "actions": [
+        "Loosen the bracket that holds the latch unit to the oven frame",
+        "Remove the entire latch unit",
+        "Assess the latch's condition",
+        "If possible, fix the latch manually and place it back",
+        "If the latch is completely broken, buy a new one",
+        "Replace the broken latch with a new one"
+      ],
+      "tool": "Screwdriver",
+      "part": "Latch unit",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "header": {
+    "title": "How to Troubleshoot a Dishwasher Door Latch",
+    "description": "This guide provides step-by-step instructions on how to diagnose and fix common issues with your dishwasher door latch. Learn to test, inspect, lubricate, and check the strike plate to restore proper latch function.",
+    "toolbox": [
+      "Rag",
+      "Screwdriver",
+      "Bolt Loosener Spray",
+      "Penetrating Lubricant Spray"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "Test the dishwasher door switch by turning off the water supply and depressing the switch to check for electrical activity.",
+      "actions": [
+        "TURN OFF THE WATER supply",
+        "find the switch location by looking at the type of latch used",
+        "look for the switch inside an opening at the top of the door opening",
+        "depress the switch with an object of similar size and shape",
+        "check if the dishwasher comes on"
+      ],
+      "tool": "Screwdriver",
+      "part": "dishwasher door switch",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 2,
+      "description": "Inspect the dishwasher door latch for any obstructions like food particles or debris.",
+      "actions": [
+        "Closely inspect the latch",
+        "Clean out any lodged debris",
+        "Test the dishwasher after cleaning"
+      ],
+      "tool": "Rag",
+      "part": "dishwasher door latch",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 3,
+      "description": "Lubricate the latch mechanism to ensure smooth movement and remove any accumulated dirt or obstructions.",
+      "actions": [
+        "Spray the latch area with bolt loosener.",
+        "Move the latch back and forth with a rag or fingers.",
+        "Spray the latch area with penetrating lubricant.",
+        "Move the latch back and forth with a rag or fingers."
+      ],
+      "tool": "Bolt Loosener Spray",
+      "part": "latch",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 4,
+      "description": "Inspect the dishwasher strike plate for alignment issues and readjust or replace it if necessary.",
+      "actions": [
+        "Locate the strike plate on the dishwasher.",
+        "Inspect the strike plate for abnormalities (bent, loose, or out of alignment).",
+        "Readjust the strike plate to its original shape and location within the door frame opening.",
+        "Straighten the strike plate with proper tools if bent.",
+        "Remove and reinstall the strike plate if straightening is not possible.",
+        "Replace the strike plate if defective.",
+        "Operate the door closed while watching the latch hit the plate to adjust as needed.",
+        "Tighten the strike plate into place."
+      ],
+      "tool": "Screwdriver",
+      "part": "Strike plate",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    }
+  ]
+}

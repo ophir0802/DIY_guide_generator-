@@ -1,7 +1,7 @@
 {
   "header": {
     "title": "How to Install a Chest Freezer",
-    "description": "This guide provides step-by-step instructions on how to safely install a chest freezer, including electrical work and proper placement.",
+    "description": "This guide provides step-by-step instructions on how to install a chest freezer, including electrical work and proper placement within your home.",
     "toolbox": [
       "Hand Truck",
       "Phillips Screwdriver",
@@ -11,7 +11,7 @@
       "Voltmeter",
       "Keyhole Saw",
       "Drywall Saw",
-      "Paddle Bit"
+      "1-inch Paddle Bit"
     ]
   },
   "steps": [
@@ -37,15 +37,16 @@
     },
     {
       "step_id": 2,
-      "description": "Determine the appropriate wiring, circuit breaker, and outlet specifications for the freezer based on its voltage requirements.",
+      "description": "This step involves determining the appropriate wiring, circuit breaker, and outlet specifications for the freezer based on its voltage requirements.",
       "actions": [
         "Determine if the freezer runs on 110V or 220V.",
-        "Select 12X2 electrical wiring and a 110V outlet if the freezer is 110V.",
-        "Select 12X3 electrical wiring and a 220V outlet if the freezer is 220V.",
-        "Determine the required amperage for the freezer.",
-        "Select a 30-amp breaker if the freezer is 220V.",
-        "Select a 15 or 20 amp breaker if the freezer is 110V.",
-        "Consult the freezer manual for amperage information."
+        "If 110V, select 12X2 electrical wiring and a 110V outlet.",
+        "If 220V, select 12X3 electrical wiring and a 220V outlet.",
+        "Determine the amperage draw for the freezer (refer to freezer manual).",
+        "Select a circuit breaker that supports the freezer's amperage draw.",
+        "For 220V freezers, consider a 30-amp breaker.",
+        "For 110V freezers, consider a 15 or 20 amp breaker.",
+        "Consult the freezer manual for specific information."
       ],
       "tool": "Measuring Tape",
       "part": "Freezer",
@@ -59,13 +60,13 @@
     },
     {
       "step_id": 3,
-      "description": "Measure the freezer and a desired location to ensure a proper fit for installation.",
+      "description": "This step involves measuring the chest freezer and selecting a suitable location for installation.",
       "actions": [
         "Measure the width of the chest freezer.",
         "Measure the depth of the chest freezer.",
         "Measure the height of the chest freezer with the lid fully open.",
-        "Pick a location in your home for the freezer.",
-        "Measure the location to ensure a good fit."
+        "Pick a location in your home for the chest freezer.",
+        "Measure the selected location to ensure a good fit."
       ],
       "tool": "Measuring Tape",
       "part": "chest freezer",
@@ -85,10 +86,10 @@
         "Trace the inside of the box on the wall",
         "Cut out the traced area using a saw",
         "Check if the box fits snugly",
-        "Trim the hole until the box fits"
+        "Trim the hole if necessary until the box fits"
       ],
       "tool": "Keyhole Saw",
-      "part": "drywall",
+      "part": "Drywall",
       "geometric_location": {
         "x": null,
         "y": null,
@@ -138,7 +139,7 @@
         "Connect the copper wire to the ground port",
         "Connect the black wire to the neutral port",
         "Connect the white wire to the hot port",
-        "Connect the red wire to the secondary hot port (if installing a 220V outlet)",
+        "If installing a 220V outlet, connect the red wire to the secondary hot port",
         "Snap the circuit breaker into place"
       ],
       "tool": "Flathead Screwdriver",
@@ -156,14 +157,13 @@
       "description": "This step details how to connect wires to an outlet based on whether it's 110V or 220V.",
       "actions": [
         "Identify the hot, neutral, and ground wires for a 110V outlet (black, white, and copper respectively).",
-        "Connect the hot wire to the hot screw (copper screw).",
-        "Connect the neutral wire to the neutral screw (silver screw).",
-        "Connect the ground wire to the ground screw (green screw).",
+        "Connect the hot wire to the green ground screw.",
+        "Connect the neutral wire to the silver neutral screw.",
+        "Connect the copper wire to the hot screw.",
         "Identify the red and white wires for a 220V receptacle.",
-        "Connect the red wire to one of the copper screws.",
-        "Connect the white wire to the other copper screw."
+        "Connect the red and white wires to the two copper screws."
       ],
-      "tool": "Flathead Screwdriver",
+      "tool": "Phillips Screwdriver",
       "part": "Outlet",
       "geometric_location": {
         "x": null,
@@ -175,11 +175,13 @@
     },
     {
       "step_id": 9,
-      "description": "Turn the breaker back on, activate the new breaker, and test the outlet with a voltmeter to verify voltage.",
+      "description": "Test the newly installed outlet by restoring power and verifying the voltage with a voltmeter.",
       "actions": [
         "Turn the breaker panel back on",
         "Turn on the new breaker",
-        "Test the outlet using a voltmeter"
+        "Test the outlet using a voltmeter",
+        "Verify voltage is either 110V or 220V",
+        "Check hot wire connections if only 110V is received"
       ],
       "tool": "Voltmeter",
       "part": "Outlet",

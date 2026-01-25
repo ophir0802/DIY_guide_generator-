@@ -1,0 +1,74 @@
+{
+  "header": {
+    "title": "How to Fix a Broken Coaxial Cable",
+    "description": "This guide explains how to repair a damaged coaxial cable by removing the broken section and using electrical tape and connectors to create a secure, functional connection.",
+    "toolbox": [
+      "Cable Cutters",
+      "Paint Brush"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "Repair minor cable damage by applying liquid electrical tape or replacing the cable end.",
+      "actions": [
+        "Check for minor cable damage.",
+        "If insulation is damaged but the line is intact, use a paintbrush to carefully spread liquid electrical tape over the damaged area.",
+        "Ensure the damaged area is sufficiently covered with liquid electrical tape.",
+        "Allow the liquid electrical tape ample time to dry.",
+        "If the cable end is damaged, disconnect the cable.",
+        "Twist off the damaged cable end.",
+        "Replace the end with a new end.",
+        "Twist the new end onto the cable in a counterclockwise fashion."
+      ],
+      "tool": "Paint Brush",
+      "part": "cable",
+      "geometric_location": {
+        "x": 0.0,
+        "y": 0.1,
+        "w": 1.0,
+        "h": 0.1
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 2,
+      "description": "Cut out the damaged area of the cable using cable cutters after ensuring the cable is disconnected.",
+      "actions": [
+        "Ensure the cable is safely disconnected",
+        "Cut out the damaged area"
+      ],
+      "tool": "Cable Cutters",
+      "part": "cable",
+      "geometric_location": {
+        "x": 0.0,
+        "y": 0.1,
+        "w": 1.0,
+        "h": 0.1
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 3,
+      "description": "This step involves connecting replacement ends to the shortened wires of the cable after removing the damaged portion.",
+      "actions": [
+        "Strip back half of the cable's black outer insulation.",
+        "Fold the cable's silver-braided wire over the outer insulation.",
+        "Strip back half of the cable's inner insulation and expose the copper wiring.",
+        "Twist the replacement ends on in a counterclockwise fashion.",
+        "Join the ends together with the coax cable joiner.",
+        "Apply a new protective layer of insulation with a paintbrush and liquid electrical tape.",
+        "Allow the liquid tape ample time to dry."
+      ],
+      "tool": "Paint Brush",
+      "part": "cable",
+      "geometric_location": {
+        "x": 0.0,
+        "y": 0.1,
+        "w": 1.0,
+        "h": 0.1
+      },
+      "hands": 2
+    }
+  ]
+}

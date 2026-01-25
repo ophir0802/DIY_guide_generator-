@@ -1,0 +1,125 @@
+{
+  "header": {
+    "title": "How to Wire a Light with Two Switches",
+    "description": "This guide provides step-by-step instructions on how to wire a light fixture using two 3-way switches, allowing you to control the light from two different locations.",
+    "toolbox": [
+      "Screwdriver",
+      "Insulated Pliers"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "This step involves ensuring switch boxes and lightboxes are securely mounted and running Romex cable between them according to amperage requirements.",
+      "actions": [
+        "Ensure plastic switch boxes and lightbox are properly affixed to studs or joist",
+        "Feed Romex cable through the boxes",
+        "Verify a cable comes up from the main power source in the lightbox",
+        "Determine cable type (14/2 or 12/2) based on circuit amperage",
+        "Run a length of 2-wire cable (black, white, and bare) between the lightbox and the first switch box",
+        "Run 3-wire Romex (red, black, white, and bare) between the first and second switch boxes",
+        "Ensure each cable extends at least 6 inches from the box"
+      ],
+      "tool": "Screwdriver",
+      "part": "Switch boxes, lightbox, Romex cable",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 2,
+      "description": "This step involves preparing and connecting wires within a lightbox, ensuring proper grounding and connections to the light fixture and switch box.",
+      "actions": [
+        "Check that the circuit is turned off at the breaker panel.",
+        "Double check with a voltmeter.",
+        "Strip off the insulation of both ends of Romex to free the 3 wires within.",
+        "Strip off 1 inch of insulation from each individual wire (2 black and 2 white) on both the cable from the source and that leading to the first switch box.",
+        "Connect the white wire from the source to the white wire or silver screw on the light fixture.",
+        "Twist the ground wires from both ends together.",
+        "Fasten the ground wires with a wire nut.",
+        "Wrap a small piece of black electrical tape at the end of the insulation on the white wire leading to the first switch.",
+        "Twist that wire and the black wire from the source together.",
+        "Fasten the twisted wires with a second wire nut.",
+        "Leave the black wire leading to the first switch alone for now."
+      ],
+      "tool": "Screwdriver",
+      "part": "Lightbox",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 3,
+      "description": "This step involves preparing and connecting wires within the first switch box to the switch and other wires.",
+      "actions": [
+        "Strip 1 inch of insulation off each of the 5 wires in the first switch box (not including the 2 ground wires).",
+        "Mark the other end of the white wire (marked with black tape in the lightbox) with black tape.",
+        "Attach the white wire (marked with black tape) to the lower brass screw on the right side of the first switch.",
+        "Connect the black wire from the lightbox with the black wire leading to the second switch by twisting their ends together.",
+        "Fasten the twisted black wires with a third wire nut.",
+        "Connect the 2 ground wires with a fourth wire nut.",
+        "Mark the end of the white wire leading to the second box with black tape.",
+        "Connect the white wire (marked with black tape) to the screw on the left side of the switch.",
+        "Connect the red wire leading to the second switch to the top brass screw on the right side."
+      ],
+      "tool": "Screwdriver",
+      "part": "First switch box",
+      "geometric_location": {
+        "x": 0.25,
+        "y": 0.25,
+        "w": 0.5,
+        "h": 0.5
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 4,
+      "description": "Connect the wires to the second switch box according to the specified connections.",
+      "actions": [
+        "Mark the other end of the white wire with black tape",
+        "Connect the white wire to the left side of the second switch",
+        "Connect the red wire to the top screw on the right side of the switch",
+        "Connect the ground wire to the screw attached to the switch box",
+        "Connect the black wire to the bottom screw on the right side"
+      ],
+      "tool": "Screwdriver",
+      "part": "second switch box",
+      "geometric_location": {
+        "x": 0.23,
+        "y": 0.23,
+        "w": 0.5,
+        "h": 0.4
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 5,
+      "description": "Connect the black wire from the first switch box to the light fixture and test the switches.",
+      "actions": [
+        "Connect the black wire leading to the first switch box to the light fixture",
+        "Turn the circuit back on",
+        "Check your work",
+        "Stuff the wire in the boxes",
+        "Secure the boxes inside",
+        "Install the faceplates"
+      ],
+      "tool": "Screwdriver",
+      "part": "Light fixture",
+      "geometric_location": {
+        "x": 0.2,
+        "y": 0.1,
+        "w": 0.2,
+        "h": 0.2
+      },
+      "hands": 1
+    }
+  ]
+}

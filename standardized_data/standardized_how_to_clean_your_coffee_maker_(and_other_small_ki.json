@@ -1,0 +1,133 @@
+{
+  "header": {
+    "title": "How to Clean Your Coffee Maker (And Other Small Kitchen Appliances)",
+    "description": "This guide provides a simple, step-by-step process for cleaning your coffee maker and other small kitchen appliances using vinegar. Follow these instructions to remove buildup and keep your appliances functioning properly.",
+    "toolbox": [
+      "Cloth",
+      "Screwdriver"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "This step involves removing and cleaning the coffee grounds basket and emptying the water reservoir.",
+      "actions": [
+        "Remove the basket",
+        "Dump the grounds into the compost bin",
+        "Rinse the basket thoroughly",
+        "Run the basket through the washer",
+        "Put the filter back into the machine",
+        "Empty the water reservoir"
+      ],
+      "tool": "Cloth",
+      "part": "Basket",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 2,
+      "description": "Combine vinegar and water in a 1:1 ratio and pour the resulting mixture into the water reservoir.",
+      "actions": [
+        "Mix one part vinegar with one part water",
+        "Pour the vinegar mixture into the empty water reservoir"
+      ],
+      "tool": "Cloth",
+      "part": "water reservoir",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 3,
+      "description": "Run a vinegar solution through the coffee machine to clean it, pausing midway for a soak.",
+      "actions": [
+        "Turn the machine on",
+        "Let the vinegar run through the first steps of the process",
+        "Stop the machine about halfway through the cycle",
+        "Allow it to sit for 30-60 minutes",
+        "Complete the cycle",
+        "Use the vinegar mixture and the clean setting (if available)"
+      ],
+      "tool": "Cloth",
+      "part": "coffee machine",
+      "geometric_location": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 4,
+      "description": "Rinse the vinegar from the carafe and run several water-only cycles through the coffee machine to remove the vinegar smell.",
+      "actions": [
+        "Rinse the carafe out",
+        "Clean the carafe with soap",
+        "Fill the carafe with water",
+        "Dump the water into the machine",
+        "Run the coffee machine through a complete cycle",
+        "Allow the water to cool for several minutes",
+        "Dump the water out",
+        "Repeat the process at least two more times",
+        "If, after three cycles, the water still smells like vinegar, run it through another time or two"
+      ],
+      "tool": "Cloth",
+      "part": "carafe",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 5,
+      "description": "Wipe down the exterior of the machine using a cleaning solution or soapy sponge, and clean the hot plate with vinegar if applicable.",
+      "actions": [
+        "Allow the machine to cool.",
+        "Wipe down the exterior of the machine with a standard kitchen and appliance spray.",
+        "Wipe down the exterior of the machine with a soft sponge and dish soap.",
+        "Wipe down stainless steel coffee makers with vinegar.",
+        "Clean the hot plate beneath the carafe with vinegar."
+      ],
+      "tool": "Cloth",
+      "part": "exterior of the machine",
+      "geometric_location": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 6,
+      "description": "Repeat the cleaning process at least twice annually, or when stains and buildup occur.",
+      "actions": [
+        "Repeat the cleaning process",
+        "Empty all coffee grounds out of the device",
+        "Rinse all parts"
+      ],
+      "tool": "Cloth",
+      "part": "Percolator",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    }
+  ]
+}

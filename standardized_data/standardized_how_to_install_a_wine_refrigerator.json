@@ -1,0 +1,100 @@
+{
+  "header": {
+    "title": "How to Install a Wine Refrigerator",
+    "description": "This guide provides step-by-step instructions on how to properly install a wine refrigerator, covering space measurement, electrical planning, and the final installation process.",
+    "toolbox": [
+      "Electric Drill",
+      "Measuring Tape",
+      "Nail Gun"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "Verify the wine refrigerator's suitability for under-counter installation and check for back ventilation.",
+      "actions": [
+        "Check manufacturer specifications for under-counter installation approval.",
+        "Inspect the wine refrigerator for back ventilation flow.",
+        "Locate the small vents on the underside of the wine fridge (front or back).",
+        "If back ventilation is present, identify the need for a front ventilation unit.",
+        "Source a front ventilation unit from refrigeration or electrical supply stores."
+      ],
+      "tool": "Measuring Tape",
+      "part": "Wine refrigerator",
+      "geometric_location": {
+        "x": 0.0,
+        "y": 0.16,
+        "w": 1.0,
+        "h": 0.676
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 2,
+      "description": "Measure the intended space for the wine refrigerator and compare it to the refrigerator's dimensions, adjusting the space if necessary.",
+      "actions": [
+        "Measure the length of the space",
+        "Measure the width of the space",
+        "Measure the height of the space",
+        "Measure the depth of the space",
+        "Compare measurements to the wine refrigerator's dimensions",
+        "Paint filler strips black (if needed)",
+        "Attach filler strips with nail gun (if needed)"
+      ],
+      "tool": "Nail Gun",
+      "part": "Filler strips",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 3,
+      "description": "This step instructs you to plan the electrical source for your wine fridge, either by using an extension cord or installing a new outlet.",
+      "actions": [
+        "Consider locating the wine fridge near the kitchen sink outlet.",
+        "Run an extension electrical cord to the outlet for the garbage disposal (if applicable).",
+        "Use a ground protector for safety.",
+        "Drill a small hole through the cabinets to fit the cord through.",
+        "Leave a small space at the back of the wine refrigerator to prevent pressure on the extension cord plug.",
+        "If necessary, wire a new 110 volt outlet (or 220 volt outlet for larger units).",
+        "Consult with an electrical contractor if wiring a new outlet."
+      ],
+      "tool": "Electric Drill",
+      "part": "Cabinets",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.1,
+        "w": 0.3,
+        "h": 0.3
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 4,
+      "description": "This step involves installing the wine refrigerator, plugging it in, checking the temperature, and ensuring it's level.",
+      "actions": [
+        "Carefully fit the wine refrigerator into the space",
+        "Fit the mounting plates into the provided slots",
+        "Plug in the extension cord on both ends",
+        "Give the unit a few minutes to start the cooling process",
+        "Check the temperature gauge",
+        "Ensure the settings are about 55 degrees Fahrenheit at 70 percent humidity",
+        "Make sure the feet are evenly attached (if applicable)",
+        "Ensure the wine chiller sits completely level on the floor"
+      ],
+      "tool": "Measuring Tape",
+      "part": "wine refrigerator",
+      "geometric_location": {
+        "x": 0.0,
+        "y": 0.17,
+        "w": 1.0,
+        "h": 0.66
+      },
+      "hands": 2
+    }
+  ]
+}

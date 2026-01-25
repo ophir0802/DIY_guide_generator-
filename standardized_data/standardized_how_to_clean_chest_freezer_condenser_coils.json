@@ -15,10 +15,10 @@
       "step_id": 1,
       "description": "This step instructs the user to disconnect the freezer from power and water sources.",
       "actions": [
-        "Unplug the freezer or turn off the circuit breaker",
-        "Slide the freezer away",
-        "Unplug the freezer from the wall outlet",
-        "Turn off the water supply lines (if freezer has an ice maker)"
+        "Unplug the freezer or turn off the circuit breaker.",
+        "Slide the freezer away.",
+        "Unplug the freezer from the wall outlet.",
+        "Turn off the water supply lines (if freezer has an ice maker)."
       ],
       "tool": "Torchlight",
       "part": "Freezer",

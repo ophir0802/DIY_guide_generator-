@@ -1,0 +1,283 @@
+{
+  "header": {
+    "title": "How To Make Your Own Battery",
+    "description": "This guide demonstrates how to create a simple battery using common household materials through two different methods: one using a plastic cup, water, and metal strips, and another using a soda can and aluminum.",
+    "toolbox": [
+      "Scissors",
+      "Sandpaper",
+      "Alligator clips",
+      "Voltage reader"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "Step 1 - Fill a Plastic Cup with Water",
+      "actions": [
+        "Fill a plastic cup three quarters of the way full with tap water. The cup for this doesn’t have to be plastic, but it must be non-metallic. A paper or foam cup would also work."
+      ],
+      "tool": "Scissors",
+      "part": "Unknown",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 2,
+      "description": "Add a tablespoon of salt to the water and stir it well.",
+      "actions": [
+        "Add a tablespoon of salt",
+        "Stir it well"
+      ],
+      "tool": "Scissors",
+      "part": "water",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 3,
+      "description": "Place two metal strips, one of zinc, aluminum, or copper, on opposite sides of the cup, ensuring the bottom of each strip touches the salt water and the top is folded over the rim.",
+      "actions": [
+        "Obtain two metal strips of different metals (zinc, aluminum, or copper).",
+        "Place one strip on each side of the cup.",
+        "Ensure the bottom of each strip is touching the salt water.",
+        "Fold the other end of each strip slightly over the rim."
+      ],
+      "tool": "Scissors",
+      "part": "cup",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 4,
+      "description": "Attach lead wires to the metal strips using alligator clips, ensuring the clips don't touch the water.",
+      "actions": [
+        "Attach a lead wire to one of the metal strips using an alligator clip.",
+        "Attach a different lead wire to the other strip, also using an alligator clip.",
+        "Don’t let the alligator clips touch the water."
+      ],
+      "tool": "Alligator clips",
+      "part": "Metal strips",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.1,
+        "w": 0.25,
+        "h": 0.15
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 5,
+      "description": "Connect lead wires to a voltage meter to test the battery's strength.",
+      "actions": [
+        "Connect the other ends of your lead wires to a voltage meter",
+        "Test the strength of your battery"
+      ],
+      "tool": "Voltage reader",
+      "part": "Battery",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 6,
+      "description": "Fill a plastic cup with soda until it's about three-quarters full.",
+      "actions": [
+        "Using a plastic cup",
+        "Fill it with soda",
+        "Until it’s approximately three-quarters of the way full"
+      ],
+      "tool": "Scissors",
+      "part": "Plastic cup",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 7,
+      "description": "Completely empty the can by discarding or consuming the excess soda.",
+      "actions": [
+        "Discard the excess soda",
+        "Drink the excess soda",
+        "Empty the can"
+      ],
+      "tool": "Scissors",
+      "part": "can",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 8,
+      "description": "Cut a strip of aluminum from the soda can, ensuring it's the correct width and length.",
+      "actions": [
+        "Cut a strip of aluminum",
+        "Make the strip three-quarters or an inch wide",
+        "Make the strip slightly longer than the height of the cup"
+      ],
+      "tool": "Scissors",
+      "part": "soda can",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 9,
+      "description": "Sand the coating off the sides of the aluminum strip.",
+      "actions": [
+        "Sand off the coating"
+      ],
+      "tool": "Sandpaper",
+      "part": "aluminum strip",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.1,
+        "w": 0.25,
+        "h": 0.15
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 10,
+      "description": "Place aluminum and copper strips into the soda, ensuring they don't touch each other and hang over the rim.",
+      "actions": [
+        "Place the aluminum strip into the soda",
+        "Place a copper strip into the soda across from the aluminum strip",
+        "Ensure each strip is touching the soda",
+        "Ensure each strip is hanging over the top of the rim",
+        "Don’t allow the strips to touch each other"
+      ],
+      "tool": "Scissors",
+      "part": "aluminum strip, copper strip, soda",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.1,
+        "w": 0.5,
+        "h": 0.2
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 11,
+      "description": "Connect lead wires to the aluminum and copper strips using alligator clips, ensuring the clips don't touch the soda.",
+      "actions": [
+        "Attach a lead wire to the aluminum strip",
+        "Connect the lead wire to the aluminum strip with an alligator clip",
+        "Attach a lead wire to the copper strip",
+        "Connect the lead wire to the copper strip with an alligator clip",
+        "Do not let the alligator clips touch the soda"
+      ],
+      "tool": "Alligator clips",
+      "part": "Aluminum strip, copper strip",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.1,
+        "w": 0.5,
+        "h": 0.2
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 12,
+      "description": "Use a voltage meter to check the battery's strength by connecting lead wires to it.",
+      "actions": [
+        "Attach the lead wires from each strip to a voltage meter",
+        "Read the voltage meter"
+      ],
+      "tool": "Voltage reader",
+      "part": "Battery",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 13,
+      "description": "Place an aluminum and copper plate on a non-metallic surface like wood or plastic.",
+      "actions": [
+        "Place an aluminum plate",
+        "Place a copper plate",
+        "Place plates next to each other",
+        "Place plates on a piece of wood (optional)",
+        "Place plates on a non-metallic surface (alternative)"
+      ],
+      "tool": "Scissors",
+      "part": "aluminum and copper plate",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.1,
+        "w": 0.3,
+        "h": 0.2
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 14,
+      "description": "Connect the sheets to a voltage meter using alligator clips.",
+      "actions": [
+        "Use alligator clips",
+        "Connect sheets to a voltage meter"
+      ],
+      "tool": "Alligator clips",
+      "part": "sheets",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 15,
+      "description": "Place your hands on the plates to generate a voltage reading.",
+      "actions": [
+        "Place your hands down flatly on each plate",
+        "Reverse your connections with the plates and wires (if no reading)",
+        "Clean the plates with a pencil eraser or steel wool (if no reading)"
+      ],
+      "tool": "Voltage reader",
+      "part": "plates",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.1,
+        "w": 0.25,
+        "h": 0.15
+      },
+      "hands": 2
+    }
+  ]
+}

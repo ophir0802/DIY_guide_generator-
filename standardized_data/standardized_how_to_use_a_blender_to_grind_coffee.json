@@ -1,0 +1,113 @@
+{
+  "header": {
+    "title": "How to Use a Blender to Grind Coffee",
+    "description": "This guide explains how to use a standard blender to grind coffee beans, covering setup, grind size selection, the grinding process, cleaning, and finally, making your coffee.",
+    "toolbox": [
+      "Blender",
+      "Dish Detergent"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "Place the blender on a flat counter surface and plug it in to ensure stability.",
+      "actions": [
+        "Put blender on a flat surface",
+        "Plug it in"
+      ],
+      "tool": "Blender",
+      "part": "blender",
+      "geometric_location": {
+        "x": 0.3,
+        "y": 0.1,
+        "w": 0.4,
+        "h": 0.8
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 2,
+      "description": "Determine the appropriate grind size for coffee beans based on the type of coffee maker being used.",
+      "actions": [
+        "Decide on coffee maker type (Drip, Espresso, or French Press).",
+        "Assess grind texture for Drip maker: some grounds should stick together, most should fall away.",
+        "Assess grind texture for Espresso maker: most grounds should stick together, individual grounds visible.",
+        "Assess grind texture for French Press maker: grounds should not stick together."
+      ],
+      "tool": "Blender",
+      "part": "coffee beans",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 3,
+      "description": "Grind coffee beans using a blender, starting with a small amount and monitoring the yield.",
+      "actions": [
+        "Start with a small amount of beans in the blender",
+        "Figure out how much ground coffee your beans will yield",
+        "Determine the right amount of coffee beans to put into your blender",
+        "Consider screwing on a Mason jar to the grinding attachment of your blender",
+        "Put your coffee beans in the Mason jar",
+        "Attach the Mason jar to the blade attachment",
+        "Screw the blade attachment onto your blender base",
+        "Make sure the blender top is firmly on",
+        "Start the blender on the pulse setting",
+        "Turn it off every ten seconds if no pulse setting is available",
+        "Do not put your hand in the blender while it is in use"
+      ],
+      "tool": "Blender",
+      "part": "Coffee beans",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 4,
+      "description": "This step details how to clean the blender by detaching the blade, rinsing the body, and washing the blade and top.",
+      "actions": [
+        "Twist the blade attachment off the blender body.",
+        "Rinse the blender in the sink.",
+        "Wash the blade attachment by hand.",
+        "Wash the blender top by hand.",
+        "Pay extra attention when you wash the blade attachment, so you do not get cut."
+      ],
+      "tool": "Blender",
+      "part": "blade attachment, blender body, blender top",
+      "geometric_location": {
+        "x": 0.3,
+        "y": 0.15,
+        "w": 0.4,
+        "h": 0.5
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 5,
+      "description": "Add coffee grounds to the coffee maker's filter and proceed with the usual coffee-making process.",
+      "actions": [
+        "Pour coffee grounds",
+        "Insert coffee grounds into filter",
+        "Follow normal procedure for making coffee",
+        "Enjoy"
+      ],
+      "tool": "Blender",
+      "part": "filter",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    }
+  ]
+}

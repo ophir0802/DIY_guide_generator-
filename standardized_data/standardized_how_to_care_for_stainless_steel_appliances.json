@@ -1,0 +1,117 @@
+{
+  "header": {
+    "title": "How to Care for Stainless Steel Appliances",
+    "description": "This guide provides a step-by-step approach to cleaning and maintaining the appearance of stainless steel appliances, covering everything from basic washing to removing stubborn marks.",
+    "toolbox": [
+      "Clean cloth",
+      "Clean sponge",
+      "Lint-free towel"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "Read the manufacturer's instruction manual before cleaning stainless steel products to understand specific cleaning instructions and approved products.",
+      "actions": [
+        "Take out the manufacturer’s instruction manual",
+        "Read through the guide",
+        "Ensure you are aware of any specific instructions",
+        "Identify approved cleaning products",
+        "Identify products that should not be used"
+      ],
+      "tool": "Clean cloth",
+      "part": "stainless steel products",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 2,
+      "description": "Wash the appliance's surface with a warm, wet cloth, following the grain of the steel and rinsing thoroughly.",
+      "actions": [
+        "Fill your kitchen sink with warm water",
+        "Immerse a cleaning cloth",
+        "Squeeze out any excess liquid",
+        "Use the warm wet cloth to remove any dirt or residue from the surface of the appliance",
+        "Rub the cloth over the surface following the grain of the steel",
+        "Add a drop of gentle liquid detergent to your water (if needed)",
+        "Rinse any detergent off the surface with clear warm water"
+      ],
+      "tool": "Clean cloth",
+      "part": "appliance",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 3,
+      "description": "Wipe the appliance surface with a lint-free towel to remove water residue and prevent mineral deposits.",
+      "actions": [
+        "Use a lint-free towel",
+        "Wipe the appliance surface",
+        "Remove any water residue",
+        "Prevent mineral deposits"
+      ],
+      "tool": "Lint-free towel",
+      "part": "appliance surface",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 4,
+      "description": "Polish the appliance's steel surface with vinegar or baking soda to brighten its shine.",
+      "actions": [
+        "Pour a small amount of vinegar into a bowl.",
+        "Dip a clean cloth into the vinegar.",
+        "Polish the steel in the direction of the steel grain.",
+        "Rinse the vinegar off with warm water.",
+        "Sprinkle baking soda onto a clean sponge.",
+        "Rub the steel gently with the sponge.",
+        "Rinse the area thoroughly with warm water."
+      ],
+      "tool": "Clean cloth",
+      "part": "steel",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 5,
+      "description": "Remove stubborn marks and stains from the stainless steel appliance using appropriate cleaning products and techniques.",
+      "actions": [
+        "Spray a small amount of glass cleaner onto a lint-free cloth.",
+        "Polish the surface in the direction of the steel grain to rub out marks.",
+        "Continue rubbing until the surface is shiny and all of the glass cleaner has been buffed off.",
+        "Use stainless steel cleaner to reduce staining and scratching and increase shine, following manufacturer's directions.",
+        "Wait until the appliance is cool.",
+        "Rub club soda onto heat stains with a cloth, following the grain direction."
+      ],
+      "tool": "Lint-free towel",
+      "part": "stainless steel appliance",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    }
+  ]
+}

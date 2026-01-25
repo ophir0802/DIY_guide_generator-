@@ -1,0 +1,142 @@
+{
+  "header": {
+    "title": "How to Clean a Griddle",
+    "description": "This guide provides a step-by-step process for thoroughly cleaning and re-seasoning a griddle, ensuring optimal cooking performance and longevity.",
+    "toolbox": [
+      "Spatula",
+      "Pumice Brick",
+      "Cloth"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "Allow the griddle to cool slightly after cooking, but not completely, to prevent injury and ease cleaning.",
+      "actions": [
+        "Stop cooking",
+        "Allow griddle to cool",
+        "Check griddle temperature",
+        "Ensure griddle is safely touchable"
+      ],
+      "tool": "Cloth",
+      "part": "Griddle",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.1,
+        "w": 0.8,
+        "h": 0.8
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 2,
+      "description": "Scrape the griddle surface to remove food and residue.",
+      "actions": [
+        "Scrape the griddle with a spatula",
+        "Get most of the food and residue",
+        "Scrape it thoroughly",
+        "Use a plastic scraper if the surface is non-stick",
+        "Use a more abrasive material for cast iron"
+      ],
+      "tool": "Spatula",
+      "part": "griddle",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.1,
+        "w": 0.8,
+        "h": 0.8
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 3,
+      "description": "Scrub the griddle surface with a pumice brick to remove remaining food, ensuring to follow the grain.",
+      "actions": [
+        "clean off food",
+        "scrub griddle surface",
+        "go with the grain"
+      ],
+      "tool": "Pumice Brick",
+      "part": "griddle surface",
+      "geometric_location": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 4,
+      "description": "Remove the tray from the griddle and clean it, potentially using a dishwasher or hand washing.",
+      "actions": [
+        "Take off the tray from the griddle",
+        "Clean the tray separately",
+        "Put the tray back into the griddle"
+      ],
+      "tool": "Cloth",
+      "part": "tray",
+      "geometric_location": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 5,
+      "description": "Wash the outer surface of the griddle with a mild detergent and warm water to remove food and oils.",
+      "actions": [
+        "Mix mild detergent with warm water",
+        "Wipe down the griddle"
+      ],
+      "tool": "Cloth",
+      "part": "Griddle",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.1,
+        "w": 0.8,
+        "h": 0.8
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 6,
+      "description": "Thoroughly dry the griddle surface using a clean rag or paper towels.",
+      "actions": [
+        "Use a clean rag",
+        "Dry the surface",
+        "Make sure it's completely dry"
+      ],
+      "tool": "Cloth",
+      "part": "Griddle",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.1,
+        "w": 0.8,
+        "h": 0.8
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 7,
+      "description": "Apply oil to the dry griddle surface to protect it and prepare it for future use.",
+      "actions": [
+        "Ensure the surface is dry",
+        "Apply oil to the surface",
+        "Season the cooking surface",
+        "Put the griddle away"
+      ],
+      "tool": "Cloth",
+      "part": "cooking surface",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.1,
+        "w": 0.8,
+        "h": 0.8
+      },
+      "hands": 1
+    }
+  ]
+}

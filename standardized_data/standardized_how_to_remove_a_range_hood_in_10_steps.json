@@ -1,0 +1,197 @@
+{
+  "header": {
+    "title": "How to Remove a Range Hood in 10 Steps",
+    "description": "This guide provides a step-by-step process for safely removing a range hood from a kitchen. Follow these instructions to disconnect power, remove wiring, and detach the hood, ensuring proper safety precautions are taken.",
+    "toolbox": [
+      "Wire cutters",
+      "Wire nuts"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "Disconnect the power to the range hood by identifying and turning off the correct circuit breaker.",
+      "actions": [
+        "Turn the fan and light from the range hood on",
+        "Have another person turn the circuits off and then on",
+        "Locate the circuit breaker that controls the fan and other hood components",
+        "Turn the circuit breaker off",
+        "Cut the main power source to the house (if circuit breaker cannot be located)"
+      ],
+      "tool": "Wire cutters",
+      "part": "Range hood",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.167,
+        "w": 0.733,
+        "h": 0.5
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 2,
+      "description": "This step instructs the user to clear space for work, potentially moving an electric range and identifying gas lines.",
+      "actions": [
+        "Check if it is possible to move the electric range.",
+        "If possible, slide the electric range out of the way.",
+        "Locate any flexible gas lines.",
+        "Do not move or disconnect gas lines.",
+        "If unable to move the range, leave it in place."
+      ],
+      "tool": "Wire cutters",
+      "part": "Cord sets, flexible gas lines, electric range",
+      "geometric_location": {
+        "x": 0.167,
+        "y": 0.167,
+        "w": 0.666,
+        "h": 0.5
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 3,
+      "description": "Inspect the cabinet above the hood and remove light bulbs, covers, and filters to access fasteners.",
+      "actions": [
+        "Inspect the cabinet above the hood",
+        "Observe how the cabinet is installed",
+        "Remove all light bulbs",
+        "Remove covers",
+        "Remove filters"
+      ],
+      "tool": "Wire cutters",
+      "part": "Hood",
+      "geometric_location": {
+        "x": 0.0,
+        "y": 0.1,
+        "w": 1.0,
+        "h": 0.5
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 4,
+      "description": "After removing covers, identify and label the wires within the hood's wiring.",
+      "actions": [
+        "Locate the hood's wiring",
+        "Label each wire using a number or identification on masking tape"
+      ],
+      "tool": "Wire cutters",
+      "part": "hood's wiring",
+      "geometric_location": {
+        "x": 0.35,
+        "y": 0.25,
+        "w": 0.1,
+        "h": 0.1
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 5,
+      "description": "Disconnect wiring by removing connectors and cutting wires with crimped connectors.",
+      "actions": [
+        "Unscrew the wire nuts",
+        "Cut off any wires that are using crimped connectors"
+      ],
+      "tool": "Wire cutters",
+      "part": "wires",
+      "geometric_location": {
+        "x": 0.2,
+        "y": 0.1,
+        "w": 0.1,
+        "h": 0.1
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 6,
+      "description": "Remove the lock nut securing the cable or conduit within the wiring compartment.",
+      "actions": [
+        "Take the lock nut off of the fitting",
+        "Remove the fitting securing the cable or conduit"
+      ],
+      "tool": "Wire cutters",
+      "part": "lock nut",
+      "geometric_location": {
+        "x": 0.723,
+        "y": 0.682,
+        "w": 0.02,
+        "h": 0.013
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 7,
+      "description": "While having someone support the hood, remove all fasteners except for two at opposite ends, which should be loosened but still holding the hood.",
+      "actions": [
+        "Have another person support the hood",
+        "Remove all of the fasteners",
+        "Leave two screws at opposite ends",
+        "Loosen the two screws"
+      ],
+      "tool": "Wire cutters",
+      "part": "hood",
+      "geometric_location": {
+        "x": 0.0,
+        "y": 0.1,
+        "w": 1.0,
+        "h": 0.5
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 8,
+      "description": "Remove the final screws and lower the hood with assistance, preparing a space to set it aside.",
+      "actions": [
+        "Remove the final two screws",
+        "Pull the hood down",
+        "Have an area set aside to place the hood"
+      ],
+      "tool": "Wire cutters",
+      "part": "hood",
+      "geometric_location": {
+        "x": 0.0,
+        "y": 0.1,
+        "w": 1.0,
+        "h": 0.5
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 9,
+      "description": "Disconnect the power line from the range hood by loosening a screw and optionally installing a terminal box for safety.",
+      "actions": [
+        "Access connectors and fittings",
+        "Remove the power line from the hood",
+        "Loosen the screw on the connector from the hood",
+        "Install an approved terminal box (optional)",
+        "Cap the wires with wire nuts (if terminal box is installed)"
+      ],
+      "tool": "Wire nuts",
+      "part": "connector",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 10,
+      "description": "Restore power to the hood if it was disconnected during the wiring process.",
+      "actions": [
+        "restore power",
+        "terminate wires safely"
+      ],
+      "tool": "Wire cutters",
+      "part": "hood",
+      "geometric_location": {
+        "x": 0.0,
+        "y": 0.1,
+        "w": 1.0,
+        "h": 0.5
+      },
+      "hands": 1
+    }
+  ]
+}

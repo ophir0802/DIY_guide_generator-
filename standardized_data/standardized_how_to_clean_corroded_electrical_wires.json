@@ -1,0 +1,79 @@
+{
+  "header": {
+    "title": "How to Clean Corroded Electrical Wires",
+    "description": "This guide provides step-by-step instructions on how to safely clean corroded electrical wires, restoring their conductivity and preventing potential hazards. It covers safety precautions, accessing the wires, and using appropriate cleaning techniques.",
+    "toolbox": [
+      "Rubber Gloves",
+      "Protective Glasses",
+      "Toothbrush",
+      "Wire Brush",
+      "Current Tester",
+      "Screwdriver"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "Prioritize safety by disconnecting power, verifying no electricity, and wearing protective gear when working with electrical wires.",
+      "actions": [
+        "Turn off the circuit breaker at the main panel",
+        "Use the current tester to make sure there is no power coming through",
+        "Wear rubber gloves",
+        "Wear safety glasses"
+      ],
+      "tool": "Current Tester",
+      "part": "electrical wires",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 2,
+      "description": "Remove the faceplate or cover to access the electrical wires within the outlet or electrical box.",
+      "actions": [
+        "Use screwdriver to remove the faceplate over the electrical outlet",
+        "Remove the cover to the electrical box",
+        "Remove the plastic covering to gain access to the electrical wires",
+        "Locate the screws",
+        "Remove all screws",
+        "Remove the covering",
+        "Determine if the electrical wires are corroded by their discoloration",
+        "Detach the wires from the contact points",
+        "Work one wire at a time"
+      ],
+      "tool": "Screwdriver",
+      "part": "faceplate, electrical outlet, electrical box, plastic covering, screws, electrical wires, contact points",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 3,
+      "description": "This step details cleaning electrical wires and connectors of corrosive material using a wire brush and a baking soda solution.",
+      "actions": [
+        "Use the wire brush over the electrical wires.",
+        "Scrub the electrical wire and the wire connected with it using a toothbrush dipped in a baking soda and warm water mixture.",
+        "Repeat scrubbing until the wire and connector do not produce fizzing.",
+        "Reattach the wires to their terminals using new connectors.",
+        "Close the electrical box."
+      ],
+      "tool": "Wire Brush",
+      "part": "Electrical wires and connectors",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "header": {
+    "title": "How to Replace a Refrigerator Start Relay",
+    "description": "This guide provides step-by-step instructions on how to replace a refrigerator start relay, ensuring your appliance can efficiently restart its compressor.",
+    "toolbox": [
+      "Screwdriver",
+      "Allen wrench",
+      "Needle-nose pliers"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "The first step is to disconnect the refrigerator from the power supply to prevent electrical shock.",
+      "actions": [
+        "Unplug the refrigerator from the wall",
+        "Turn off the circuit breaker for the refrigerator"
+      ],
+      "tool": "Screwdriver",
+      "part": "Refrigerator",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 2,
+      "description": "Wear safety gear like insulated gloves and safety glasses when working with electricity.",
+      "actions": [
+        "Wear insulated gloves",
+        "Wear safety glasses"
+      ],
+      "tool": "Screwdriver",
+      "part": "electricity",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 3,
+      "description": "Remove the refrigerator panel by loosening or removing screws.",
+      "actions": [
+        "Locate refrigerator panel",
+        "Loosen screws",
+        "Remove screws"
+      ],
+      "tool": "Screwdriver",
+      "part": "Refrigerator panel",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 4,
+      "description": "This step involves locating the refrigerator capacitor and safely disconnecting its leads to prevent electrical shock.",
+      "actions": [
+        "Confirm if a capacitor is present.",
+        "Locate the capacitor (tube-like part with wiring attachments to the compressor and relay).",
+        "Remove the leads from the resistor part.",
+        "Attach the leads onto the leads of the capacitor."
+      ],
+      "tool": "Needle-nose pliers",
+      "part": "Refrigerator capacitor",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 5,
+      "description": "This step involves locating and removing the relay terminal cover to access the start relay.",
+      "actions": [
+        "Determine the location of the relay terminal cover.",
+        "Locate the relay terminal cover by the lower interior part at the back portion of the refrigerator.",
+        "Identify a wire connecting to the cover from the compressor.",
+        "Take out the relay terminal cover.",
+        "Find the start relay directly underneath the cover.",
+        "Observe wires plugged into the relay terminals.",
+        "Observe a spool of copper wires wrapping the relay.",
+        "Take out the copper wires by pulling the connector attached to the relay."
+      ],
+      "tool": "Screwdriver",
+      "part": "Relay terminal cover",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 6,
+      "description": "This step involves replacing the start relay, connecting wires, and reinstalling components to restore refrigerator functionality.",
+      "actions": [
+        "Find a start relay at appliance or hardware stores.",
+        "Connect the wire back to the new starter relay.",
+        "Install the new relay back to the connectors.",
+        "Put the terminal cover back on.",
+        "Return the cover panel of the refrigerator back on.",
+        "Plug the refrigerator back in."
+      ],
+      "tool": "Screwdriver",
+      "part": "Start relay",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    }
+  ]
+}

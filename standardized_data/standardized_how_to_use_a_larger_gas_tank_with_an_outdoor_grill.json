@@ -1,0 +1,68 @@
+{
+  "header": {
+    "title": "How to Use a Larger Gas Tank with an Outdoor Grill",
+    "description": "This guide explains how to safely connect and use a larger gas tank with your existing outdoor grill. Follow these simple steps to enjoy extended grilling time without frequent tank refills.",
+    "toolbox": [
+      "Pliers"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "Locate a converter hose that is compatible with your grill, either from the manufacturer or a generic option.",
+      "actions": [
+        "Determine the appropriate size of converter hose for your grill.",
+        "Check the grill manufacturer's offerings for a converter hose.",
+        "Search for a generic converter hose that works with your gas grill.",
+        "Visit a home repair store to find a converter hose."
+      ],
+      "tool": "Pliers",
+      "part": "converter hose",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 2,
+      "description": "Disconnect the old gas tank, and connect the converter hose to both the grill and the new gas tank.",
+      "actions": [
+        "Disconnect the old gas tank using pliers.",
+        "Put the old gas tank aside, preventing gas spillage.",
+        "Attach the converter hose to the grill where the old gas tank was.",
+        "Attach the other end of the hose to the larger gas tank.",
+        "Ensure both ends are secure."
+      ],
+      "tool": "Pliers",
+      "part": "gas tank",
+      "geometric_location": {
+        "x": 0.0,
+        "y": 0.1,
+        "w": 0.9,
+        "h": 0.7
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 3,
+      "description": "Connect the gas tank and converter hose to the grill and then turn on the grill.",
+      "actions": [
+        "Connect gas tank to converter hose",
+        "Connect converter hose to grill",
+        "Turn on grill"
+      ],
+      "tool": "Pliers",
+      "part": "Grill",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "header": {
+    "title": "How To Fix An Upright Freezer",
+    "description": "This guide provides step-by-step instructions for diagnosing and resolving common issues with upright freezers, from simple fixes like defrosting to more involved troubleshooting of timers and thermostats.",
+    "toolbox": [
+      "Vacuum cleaner"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "Step 1 – Quick Troubleshooting",
+      "actions": [
+        "First, determine the problem. It may be simple, like the light staying on when the door closes or a need for defrosting. Many cooling problems for freezers come from faulty door gaskets or doors that no longer seat properly and do not close correctly. Once you’ve determined the cause of the malfunction, then proceed seeking its solution."
+      ],
+      "tool": "Vacuum cleaner",
+      "part": "Unknown",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 2,
+      "description": "This step instructs the user to troubleshoot a non-running upright freezer by checking the power connection and circuit breaker.",
+      "actions": [
+        "Check the power connection",
+        "Ensure the cord is firmly plugged into the wall outlet",
+        "Check if the circuit breaker switch has been tripped",
+        "Check for tears in the cord",
+        "Check for improper or loose connection to the unit"
+      ],
+      "tool": "Vacuum cleaner",
+      "part": "power cord",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 3,
+      "description": "Defrost the freezer if it's not getting cold enough and check the temperature and door closure.",
+      "actions": [
+        "Defrost the unit",
+        "Check the temperature",
+        "Check if the door is properly closed",
+        "Check if the door closes properly",
+        "Remove items preventing proper door closure"
+      ],
+      "tool": "Vacuum cleaner",
+      "part": "Freezer",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 4,
+      "description": "Reset the thermostat if the freezer temperature is incorrect, and replace it if resetting doesn't resolve the issue.",
+      "actions": [
+        "reset the thermostat",
+        "calibrate the thermostat",
+        "replace it"
+      ],
+      "tool": "Vacuum cleaner",
+      "part": "thermostat",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 5,
+      "description": "Test the timer functionality, specifically checking for a clicking sound and proper defrost operation.",
+      "actions": [
+        "Check if the unit has an automatic defrost.",
+        "Turn the dial.",
+        "Listen for a clicking sound.",
+        "Observe if the unit is defrosting correctly.",
+        "Observe if the fan or compressor kicks off when turning the dial.",
+        "Replace the timer component if necessary."
+      ],
+      "tool": "Vacuum cleaner",
+      "part": "timer component",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 6,
+      "description": "Clean the condenser coils at the rear of the freezer unit to ensure proper operation.",
+      "actions": [
+        "Pull the freezer away from the wall.",
+        "Unplug the power cord.",
+        "Remove any protective panel.",
+        "Use a vacuum with a narrow extension attachment to suck out any dust and debris.",
+        "Replace the protective cover.",
+        "Allow the freezer ample time to properly reach its operating temperature."
+      ],
+      "tool": "Vacuum cleaner",
+      "part": "Condenser coils",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    }
+  ]
+}

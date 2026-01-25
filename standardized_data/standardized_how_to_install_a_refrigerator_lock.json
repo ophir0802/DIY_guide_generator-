@@ -1,0 +1,71 @@
+{
+  "header": {
+    "title": "How to Install a Refrigerator Lock",
+    "description": "This guide provides instructions on how to secure your refrigerator with a lock, preventing unauthorized access. It covers cleaning the fridge, attaching lock hinges, and installing a lockset with a padlock.",
+    "toolbox": [
+      "Clean rag",
+      "Rubbing alcohol"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "Clean the front and side of the fridge where the lock will be installed to ensure proper adhesion.",
+      "actions": [
+        "Clean the front and side of the fridge where the lock will be.",
+        "Apply rubbing alcohol to a clean rag.",
+        "Scrub off any dirt or grime from the fridge’s surface.",
+        "Use a Clorox magic eraser for extreme grime (optional)."
+      ],
+      "tool": "Clean rag",
+      "part": "fridge",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 2,
+      "description": "Apply the fridge lock hinges to the fridge and door, ensuring a firm adhesive bond.",
+      "actions": [
+        "Allow rubbing alcohol to completely dry.",
+        "Apply fridge lock hinges, preferably at the top of the fridge.",
+        "Place one hinge on the side of the fridge.",
+        "Place one hinge on the fridge door.",
+        "Apply as much pressure as possible to ensure the lock sets firmly.",
+        "Allow the hinge adhesive to settle for about an hour.",
+        "Give the new addition a few firm tugs to ensure it's firmly in place."
+      ],
+      "tool": "Clean rag",
+      "part": "fridge lock hinges",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 3,
+      "description": "This step involves selecting and applying a lockset to secure the refrigerator.",
+      "actions": [
+        "Choose a lockset",
+        "Scramble the code after every entry (if using a code entry padlock)",
+        "Protect the key (if using a key-locked fridge)"
+      ],
+      "tool": "Clean rag",
+      "part": "fridge",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    }
+  ]
+}

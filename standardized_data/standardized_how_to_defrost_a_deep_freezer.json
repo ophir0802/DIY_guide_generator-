@@ -1,0 +1,96 @@
+{
+  "header": {
+    "title": "How to Defrost a Deep Freezer",
+    "description": "This guide provides step-by-step instructions on how to safely and effectively defrost a deep freezer, minimizing food spoilage and preventing water damage.",
+    "toolbox": [
+      "Plastic Spatula",
+      "Tape"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "This step involves unplugging the deep freezer and removing its contents and shelves to prepare it for defrosting.",
+      "actions": [
+        "Unplug the deep freezer",
+        "Remove all contents from the deep freezer",
+        "Place items inside a cooler with ice packs",
+        "Remove shelves from the deep freezer"
+      ],
+      "tool": "Plastic Spatula",
+      "part": "shelves",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 2,
+      "description": "This step involves preparing the deep freezer for defrosting by lining it with towels and baking sheets to contain melting ice and water.",
+      "actions": [
+        "Take several towels and fold them in half.",
+        "Place one of the folded towels in the bottom of the deep freezer.",
+        "Use as many towels as you need in order to cover the bottom.",
+        "Fold the towels more than one time, if needed, depending on the size of the freezer.",
+        "Put the aluminum baking sheets on top of the folded towels.",
+        "Place two or more baking sheets side by side, depending on the size of the deep freezer."
+      ],
+      "tool": "Plastic Spatula",
+      "part": "deep freezer",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 3,
+      "description": "Protect the floor from water seepage by placing a plastic sheet and towels under the deep freezer.",
+      "actions": [
+        "Cut a large garbage bag along its seam.",
+        "Place the plastic under the deep freezer.",
+        "Remove the contents from the freezer.",
+        "Place towels on top of the plastic sheet."
+      ],
+      "tool": "Plastic Spatula",
+      "part": "Deep freezer",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 4,
+      "description": "Remove ice from the freezer walls by scraping and allowing it to fall into pans, then wipe down the interior.",
+      "actions": [
+        "Allow the deep freezer to defrost with the power off and contents removed.",
+        "Wait for ice to drop from the walls or loosen.",
+        "Dump the aluminum pans when ice falls freely.",
+        "Scrape off the sides of the deep freezer with a plastic spatula.",
+        "Allow loose ice to fall into the pan.",
+        "Continue scraping until all ice is removed.",
+        "Wipe down the inside of the deep freezer.",
+        "Remove the bag.",
+        "Plug the deep freezer in.",
+        "Load the freezer back up with its contents."
+      ],
+      "tool": "Plastic Spatula",
+      "part": "deep freezer walls",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    }
+  ]
+}

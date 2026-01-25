@@ -1,0 +1,88 @@
+{
+  "header": {
+    "title": "How to Repair a Washing Machine that Doesn't Spin",
+    "description": "This guide provides basic troubleshooting steps for a washing machine that fails to spin, starting with simple checks and escalating to professional assistance.",
+    "toolbox": [
+      "Screwdriver"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "Check the clothes load in the washing machine and reposition it if it's unbalanced.",
+      "actions": [
+        "Check the load of clothes.",
+        "Open the lid carefully.",
+        "Reposition the load of clothes.",
+        "Close back the lid."
+      ],
+      "tool": "Screwdriver",
+      "part": "washing machine lid",
+      "geometric_location": {
+        "x": 0.15,
+        "y": 0.15,
+        "w": 0.7,
+        "h": 0.7
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 2,
+      "description": "This step instructs the user to examine the lid tab and lid switch for damage or malfunction.",
+      "actions": [
+        "Examine the tab on the lid.",
+        "Press and release the lid switch.",
+        "Check if the switch clicks when pressed and released.",
+        "Remove the switch (if confident).",
+        "Test the switch (if removed).",
+        "Replace the switch (if tested and necessary)."
+      ],
+      "tool": "Screwdriver",
+      "part": "lid tab",
+      "geometric_location": {
+        "x": 0.73,
+        "y": 0.17,
+        "w": 0.25,
+        "h": 0.66
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 3,
+      "description": "This step involves inspecting the washing machine belt for looseness, wear, or breakage, and potentially tightening or replacing it.",
+      "actions": [
+        "Check the washing machine belt",
+        "Tighten the belt (if experienced)",
+        "Replace the belt (requires disassembly and assembly)"
+      ],
+      "tool": "Screwdriver",
+      "part": "Washing Machine Belt",
+      "geometric_location": {
+        "x": 0.3,
+        "y": 0.2,
+        "w": 0.3,
+        "h": 0.3
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 4,
+      "description": "If previous steps don't resolve the issue, contact a professional repairman due to the complexity of the washing machine's electronic controls.",
+      "actions": [
+        "Assess if all previous steps are in order.",
+        "Recognize the problem may be in the electronic controls.",
+        "Do not attempt to repair the electronics.",
+        "Call a professional repairman."
+      ],
+      "tool": "Screwdriver",
+      "part": "washing machine",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.1,
+        "w": 0.8,
+        "h": 0.8
+      },
+      "hands": 1
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "header": {
+    "title": "How to Replace a Refrigerator Seal",
+    "description": "This guide provides step-by-step instructions on how to replace a refrigerator door seal (gasket) to improve energy efficiency and prevent air leaks. It covers removing the old gasket, cleaning, installing the new one, and ensuring a proper seal.",
+    "toolbox": [
+      "Flathead Screwdriver"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "Remove the old refrigerator gasket by carefully prying it away from the door after loosening any fasteners.",
+      "actions": [
+        "Prepare a flathead screwdriver for prying.",
+        "Loosen fasteners or screws.",
+        "Pry the gasket away from the door carefully.",
+        "Save any fasteners.",
+        "Place fasteners in a bowl.",
+        "Cover fasteners with baking soda.",
+        "Pour white vinegar over the fasteners.",
+        "Allow fasteners to soak.",
+        "Rinse fasteners well in water."
+      ],
+      "tool": "Flathead Screwdriver",
+      "part": "refrigerator gasket",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.1,
+        "w": 0.7,
+        "h": 0.5
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 2,
+      "description": "Clean the inside of the door after removing the old gasket, using appropriate cleaning agents based on the level of grime or mold present.",
+      "actions": [
+        "Give the inside of the door a good cleaning.",
+        "Use vinegar and water for cleaning.",
+        "Use a de-greaser if there's a lot of built-up gunk.",
+        "Use a toothbrush and bleach to clean mold.",
+        "Dry the area well when finished."
+      ],
+      "tool": "Flathead Screwdriver",
+      "part": "Inside of the door",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.1,
+        "w": 0.8,
+        "h": 0.8
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 3,
+      "description": "Straighten the new gasket by laying it in the sun, pulling it straight, or using heat to increase its flexibility before installation.",
+      "actions": [
+        "Straighten the gasket",
+        "Lay the gasket in the sun",
+        "Pull the gasket straight",
+        "Lay the gasket on your car hood",
+        "Lay the gasket on the deck",
+        "Place the gasket in hot water"
+      ],
+      "tool": "Flathead Screwdriver",
+      "part": "gasket",
+      "geometric_location": {
+        "x": 0.2,
+        "y": 0.1,
+        "w": 0.5,
+        "h": 0.4
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 4,
+      "description": "Install the new gasket onto the door, starting from the center and working towards the corners, ensuring a tight fit.",
+      "actions": [
+        "Start installing the new gasket in the center at the top of the door.",
+        "Press the gasket in.",
+        "Fasten the gasket with screws or other fasteners.",
+        "Work your way toward each corner.",
+        "Ensure there are no gaps or twists.",
+        "Pull the gasket back out if there are gaps or twists.",
+        "Start over if there are gaps or twists.",
+        "Finish pushing and fastening the gasket down the sides.",
+        "Finish pushing and fastening the gasket along the bottom.",
+        "Ensure the gasket is completely installed."
+      ],
+      "tool": "Flathead Screwdriver",
+      "part": "gasket",
+      "geometric_location": {
+        "x": 0.2,
+        "y": 0.1,
+        "w": 0.5,
+        "h": 0.4
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 5,
+      "description": "Verify the gasket installation by checking door closure and seal integrity, and tighten fasteners if necessary.",
+      "actions": [
+        "Close the doors",
+        "Ensure that they shut properly",
+        "Check for any gaps in the seal",
+        "Go back over all your fasteners or screws",
+        "Make sure they are properly tightened"
+      ],
+      "tool": "Flathead Screwdriver",
+      "part": "Fasteners or screws",
+      "geometric_location": {
+        "x": 0.35,
+        "y": 0.68,
+        "w": 0.03,
+        "h": 0.02
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 6,
+      "description": "Apply mineral, lemon, or olive oil to the new gasket to prevent drying and cracking, and maintain it with regular cleaning and oiling.",
+      "actions": [
+        "Rub the entire new gasket down with mineral oil, lemon oil, or olive oil.",
+        "Wash down the gasket with bleach water once a month.",
+        "Dry the gasket.",
+        "Wipe the gasket with oil (not too much)."
+      ],
+      "tool": "Flathead Screwdriver",
+      "part": "gasket",
+      "geometric_location": {
+        "x": 0.2,
+        "y": 0.1,
+        "w": 0.5,
+        "h": 0.4
+      },
+      "hands": 1
+    }
+  ]
+}

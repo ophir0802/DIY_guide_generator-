@@ -1,0 +1,100 @@
+{
+  "header": {
+    "title": "How to Clean a Frying Basket",
+    "description": "This guide provides instructions on how to effectively clean a frying basket, including creating a simple homemade degreaser to remove grease and grime.",
+    "toolbox": [
+      "Bowl",
+      "Cloth",
+      "Sink",
+      "Hose"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "Prepare the deep fryer for cleaning by unplugging it, allowing it to cool, and removing the frying basket.",
+      "actions": [
+        "Unplug your deep fryer.",
+        "Allow it to cool down completely.",
+        "Ensure the deep fryer has cooled down to room temperature.",
+        "Verify the deep fryer is perfectly safe to touch.",
+        "Remove your frying basket.",
+        "Set the frying basket aside.",
+        "Gather your materials."
+      ],
+      "tool": "Bowl",
+      "part": "Deep fryer",
+      "geometric_location": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 2,
+      "description": "Clean the basket using a vinegar and water solution, wiping it down and then rinsing it off.",
+      "actions": [
+        "Mix a solution that is 9/10 vinegar and 1/10 water.",
+        "Dip your cloth in the mixture.",
+        "Wipe down the basket.",
+        "Rinse off the basket.",
+        "Wash the basket in a sink or tub (if available).",
+        "Take the basket outside (if necessary).",
+        "Rinse the basket with a hose (if outside)."
+      ],
+      "tool": "Cloth",
+      "part": "Basket",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.1,
+        "w": 0.8,
+        "h": 0.8
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 3,
+      "description": "This step describes how to create a homemade degreaser using baking soda and water.",
+      "actions": [
+        "Get a bowl.",
+        "Put baking soda in the bowl.",
+        "Gradually add water to the baking soda.",
+        "Mix as you add water.",
+        "Stop adding water when the baking soda has the consistency of toothpaste.",
+        "Stir thoroughly to ensure no pockets of pure water or baking soda remain."
+      ],
+      "tool": "Bowl",
+      "part": "baking soda",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 4,
+      "description": "Apply a grease-removing mixture to the fryer basket, let it sit, scrub, and rinse.",
+      "actions": [
+        "Apply grease removing mixture to the basket",
+        "Cover the entire basket with the mixture",
+        "Allow the mixture to sit",
+        "Wipe off the mixture",
+        "Scrub the basket",
+        "Rinse the basket"
+      ],
+      "tool": "Cloth",
+      "part": "Basket",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.1,
+        "w": 0.8,
+        "h": 0.8
+      },
+      "hands": 1
+    }
+  ]
+}

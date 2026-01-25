@@ -1,0 +1,194 @@
+{
+  "header": {
+    "title": "How to Repair a Broken, Old Refrigerator",
+    "description": "This guide details how to repurpose a broken, old refrigerator into a custom, insulated enclosure, potentially for a project like a cold storage unit or DIY incubator. It involves removing existing components, building a supporting platform, and reassembling key mechanical parts.",
+    "toolbox": [
+      "Power Drill",
+      "Circular Saw",
+      "Screwdriver",
+      "Pliers",
+      "Chalk"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "This step involves removing the fridge doors and internal components for access and salvage of parts.",
+      "actions": [
+        "Remove the doors",
+        "Set aside shelves or drawers",
+        "Find the wire leading to the door light",
+        "Separate the door light wire from the unit",
+        "Remove mechanical parts including wires, fans, compressor, evaporator, and dehumidifiers"
+      ],
+      "tool": "Screwdriver",
+      "part": "Doors, shelves, drawers, door light wire, wires, fans, compressor, evaporator, dehumidifiers",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.1,
+        "w": 0.7,
+        "h": 0.7
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 2,
+      "description": "Cut away the freezer compartment from the DIY fridge unit using a circular saw.",
+      "actions": [
+        "Draw a line around the outside of the unit, just above the freezer storage compartment.",
+        "Saw through the line to cut away the freezer compartment.",
+        "Ensure you cut through all layers to completely separate it from the bottom half."
+      ],
+      "tool": "Circular Saw",
+      "part": "Freezer compartment",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 3,
+      "description": "Construct a platform from 2x4 studs to elevate the refrigerator and provide storage space.",
+      "actions": [
+        "Remove the freezer compartment",
+        "Create a platform with 2x4 studs",
+        "Secure the unit to the platform",
+        "Raise the platform at least 12 inches off the floor",
+        "Place two sheets of foam insulation on the platform"
+      ],
+      "tool": "Power Drill",
+      "part": "fridge",
+      "geometric_location": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 4,
+      "description": "Apply foam insulation to the fridge compartment, including the top and door, and route the door light wire through it.",
+      "actions": [
+        "Glue sheets of foam insulation on each side of the fridge compartment",
+        "Apply insulation to the top of the fridge compartment",
+        "Apply insulation to the door of the fridge compartment",
+        "Run the wire for the door light through the insulation",
+        "Keep the wire available and ready to connect to power"
+      ],
+      "tool": "Power Drill",
+      "part": "Fridge compartment",
+      "geometric_location": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 5,
+      "description": "Install the condensing unit in a well-ventilated area, ideally in a basement below the refrigerator and connect wiring through the floor.",
+      "actions": [
+        "Place condensing unit in a well-ventilated area",
+        "Position condensing unit away from the refrigerator",
+        "Connect wiring through the floor",
+        "Mount condensing unit to rafters"
+      ],
+      "tool": "Power Drill",
+      "part": "Condensing unit",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.1,
+        "w": 0.8,
+        "h": 0.8
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 6,
+      "description": "Install the evaporator and thermostat, drill a hole for the refrigerant tube, connect the tube, mount the thermostat, and seal the hole.",
+      "actions": [
+        "Install evaporator and thermostat inside",
+        "Drill from inside, through the insulating foam to the outside with a 1 ½-inch bit",
+        "Push refrigerant tube through hole",
+        "Attaching refrigerant tube to the evaporator tube as specified by the manufacturer",
+        "Mount the thermostat on the evaporator",
+        "Plug thermostat into thermostat plug located on evaporator",
+        "Use putty to seal the hole"
+      ],
+      "tool": "Power Drill",
+      "part": "evaporator",
+      "geometric_location": {
+        "x": 0.15,
+        "y": 0.15,
+        "w": 0.7,
+        "h": 0.7
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 7,
+      "description": "Connect the tube from the evaporator to the condensing unit using a clamp.",
+      "actions": [
+        "Connect the tube running from the evaporator",
+        "Slip the tube over a receiving port",
+        "Screw a clamp over the tube to secure it",
+        "Consult the manufacturer specifications if necessary"
+      ],
+      "tool": "Pliers",
+      "part": "Condensing unit",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.1,
+        "w": 0.8,
+        "h": 0.8
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 8,
+      "description": "Connect the power supply to the components, following manufacturer's instructions if using a kit.",
+      "actions": [
+        "Connect the power supply to the components",
+        "Follow manufacturer directions (if using a kit)",
+        "Connect to a DC unit",
+        "Recharge the car battery occasionally with a battery charger"
+      ],
+      "tool": "Pliers",
+      "part": "power supply",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 9,
+      "description": "This step allows the user to optionally improve the aesthetic appearance of the finished refrigerator by applying veneer and finish.",
+      "actions": [
+        "Consider if aesthetics are important.",
+        "If aesthetics are not important, enjoy your finished project.",
+        "If aesthetics are important and you have woodworking skills, apply a 1/4-inch veneer of oak plywood.",
+        "Apply construction strength adhesive.",
+        "Stain or varnish the veneer to protect the finish.",
+        "Admire your work.",
+        "Order groceries online."
+      ],
+      "tool": "Circular Saw",
+      "part": "refrigerator",
+      "geometric_location": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+      },
+      "hands": 2
+    }
+  ]
+}

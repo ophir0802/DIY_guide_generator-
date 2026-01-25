@@ -1,0 +1,186 @@
+{
+  "header": {
+    "title": "How to Install a Refrigerator Compressor",
+    "description": "This guide provides step-by-step instructions on how to replace a refrigerator compressor, covering removal of the old unit and installation of the new one.",
+    "toolbox": [
+      "Socket wrench",
+      "Wire cutters"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "Remove all items from the refrigerator and store them in coolers with ice packs to preserve them during the appliance's power-off period.",
+      "actions": [
+        "Clean out the fridge",
+        "Take everything out of the fridge",
+        "Put items into coolers",
+        "Use ice packs"
+      ],
+      "tool": "Socket wrench",
+      "part": "fridge",
+      "geometric_location": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 2,
+      "description": "Pull the refrigerator away from the wall to access the back for compressor work.",
+      "actions": [
+        "Pull the fridge out",
+        "Get help if needed",
+        "Pull the fridge away from the wall",
+        "Ensure sufficient space for access and work"
+      ],
+      "tool": "Socket wrench",
+      "part": "fridge",
+      "geometric_location": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 3,
+      "description": "Remove the guard plate located behind the refrigerator to access the internal mechanism.",
+      "actions": [
+        "Remove the guard plate",
+        "Set the guard plate to the side",
+        "Wait about 20 minutes for the machinery to cool off"
+      ],
+      "tool": "Socket wrench",
+      "part": "Guard plate",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.63,
+        "w": 0.25,
+        "h": 0.15
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 4,
+      "description": "This step instructs the user to locate and carefully remove the compressor from the refrigerator.",
+      "actions": [
+        "Find the compressor.",
+        "Remove the cover plate (if present).",
+        "Use a socket wrench to remove the nuts securing the cover plate.",
+        "Stop and assess the connections before removing the compressor."
+      ],
+      "tool": "Socket wrench",
+      "part": "Compressor",
+      "geometric_location": {
+        "x": 0.35,
+        "y": 0.42,
+        "w": 0.3,
+        "h": 0.13
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 5,
+      "description": "Photograph the existing compressor and its wiring connections before disassembly to use as a visual reference during reinstallation.",
+      "actions": [
+        "Take several pictures of your compressor as it sits.",
+        "Take photos of all the connections where the wires meet the compressor.",
+        "Work slowly and detach these wires one at a time.",
+        "Stop to take pictures after every wire you remove.",
+        "Squeeze clips to pull wires off the compressor (if applicable).",
+        "Remove wires with wire cutters (if applicable).",
+        "Set the old compressor off to the side."
+      ],
+      "tool": "Wire cutters",
+      "part": "compressor",
+      "geometric_location": {
+        "x": 0.35,
+        "y": 0.42,
+        "w": 0.2,
+        "h": 0.13
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 6,
+      "description": "Reattach the wires to the new compressor, using photos as a reference if needed.",
+      "actions": [
+        "Attach the wires",
+        "Set the new compressor into position",
+        "Hold it in place",
+        "Carefully re-attach the wires",
+        "Use photos as a reference if needed"
+      ],
+      "tool": "Socket wrench",
+      "part": "new compressor",
+      "geometric_location": {
+        "x": 0.35,
+        "y": 0.42,
+        "w": 0.3,
+        "h": 0.13
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 7,
+      "description": "Add refrigerant to the refrigerator, following instructions provided with the refrigerant and the refrigerator's manufacturer information.",
+      "actions": [
+        "Add the refrigerant.",
+        "Refer to the refrigerant instructions.",
+        "Refer to the manufacturer’s information about your fridge.",
+        "Determine the correct type of refrigerant needed."
+      ],
+      "tool": "Socket wrench",
+      "part": "refrigerator",
+      "geometric_location": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 8,
+      "description": "Connect the valves to the new compressor, ensuring they are properly attached.",
+      "actions": [
+        "Connect the valves",
+        "no connect these to your new compressor"
+      ],
+      "tool": "Socket wrench",
+      "part": "valves",
+      "geometric_location": {
+        "x": 0.45,
+        "y": 0.38,
+        "w": 0.1,
+        "h": 0.17
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 9,
+      "description": "This step involves testing the newly installed compressor by replacing the guard panel, plugging in the fridge, and observing its cooling performance.",
+      "actions": [
+        "Replace the guard panel on the back of the fridge",
+        "Plug the fridge back in",
+        "Listen for the hum of the compressor",
+        "Open the fridge",
+        "Check if the fridge is getting cooler",
+        "Wait about 30 minutes to an hour"
+      ],
+      "tool": "Socket wrench",
+      "part": "guard panel",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    }
+  ]
+}

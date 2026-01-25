@@ -1,0 +1,181 @@
+{
+  "header": {
+    "title": "How to Change a Washing Machine Belt",
+    "description": "This guide provides step-by-step instructions on how to replace a worn or damaged washing machine belt. Follow these instructions to safely diagnose, remove, and install a new belt to restore your washing machine's functionality.",
+    "toolbox": [
+      "Philips Screwdriver",
+      "Flathead Screwdriver",
+      "Wrench"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "This step involves preparing the washing machine for repair by disconnecting utilities, clearing obstructions, and positioning it for access to the belt assembly.",
+      "actions": [
+        "Unplug the washing machine from the outlet.",
+        "Disconnect the water supply and hoses.",
+        "Turn off the water by closing the supply shut-off valves.",
+        "Remove the hoses (have a bucket nearby).",
+        "Remove the drain hose from where it feeds into.",
+        "Unclog any articles of clothing from the drum.",
+        "Remove any clothing inside the machine.",
+        "Drain the machine (refer to manual for proper procedure).",
+        "Move the washing machine back, forward, or on its side to access the panel.",
+        "Locate the panel access first.",
+        "Lay an old blanket, towels, or cardboard down to protect the floor or machine feet.",
+        "Tilt the machine to get a visual.",
+        "Use bricks, paint cans, or sturdy objects to lift the machine for a quick look."
+      ],
+      "tool": "Wrench",
+      "part": "Washing machine",
+      "geometric_location": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 2,
+      "description": "This step instructs the user to remove the access panel from the machine, potentially requiring access from the bottom.",
+      "actions": [
+        "Find the access panel",
+        "Remove the cover from the unit",
+        "Check for screws holding the cover",
+        "Check for latches holding the cover",
+        "If necessary, lay the machine on its side",
+        "Remove the bottom panel"
+      ],
+      "tool": "Philips Screwdriver",
+      "part": "Access panel",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.68,
+        "w": 0.08,
+        "h": 0.07
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 3,
+      "description": "Locate the washing machine belt, noting its placement and condition, and documenting the access steps for reinstallation.",
+      "actions": [
+        "Remove the access panel.",
+        "Locate the belt (check back for front-loading machines, bottom for top-loading machines).",
+        "Consult your manual or contact the manufacturer if no belt is found.",
+        "Make a mental note or draw a diagram of the belt's placement.",
+        "Write down the steps you took to access the belt.",
+        "Inspect the belt for damage (stretched, frayed, cracked, melted).",
+        "If the belt is damaged, replace it.",
+        "If the belt has slipped off its housing, try pushing it back into place."
+      ],
+      "tool": "Philips Screwdriver",
+      "part": "Belt",
+      "geometric_location": {
+        "x": 0.2,
+        "y": 0.1,
+        "w": 0.75,
+        "h": 0.7
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 4,
+      "description": "Re-attach the belt by removing the pump coupling, slipping off the old belt, and replacing it on the pulleys, potentially loosening motor mount bolts for slack.",
+      "actions": [
+        "Locate the pump coupling.",
+        "Remove the pump coupling.",
+        "Slip off the existing belt.",
+        "Replace the belt on the pulleys.",
+        "Loosen the bolts of the motor mount (if needed)."
+      ],
+      "tool": "Philips Screwdriver",
+      "part": "pump coupling",
+      "geometric_location": {
+        "x": 0.3,
+        "y": 0.2,
+        "w": 0.3,
+        "h": 0.3
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 5,
+      "description": "This step involves sourcing a replacement washing machine belt and installing it according to the manufacturer's specifications, ensuring proper tension and alignment.",
+      "actions": [
+        "Source a new washing machine belt online or at an appliance parts supplier.",
+        "Verify the replacement belt is manufactured for older models, if applicable.",
+        "Consult the manufacturer or appliance manual to source the exact belt specified.",
+        "Put the new belt on following the diagram pattern or reversing the removal process.",
+        "Ensure the flat side of the belt faces out and the grooved side faces in.",
+        "Place part of the belt on the drum pulley so that it fits into the grooves.",
+        "Attach the other end to the motor pulley.",
+        "Have someone turn the drum by hand to help work the belt into the proper position.",
+        "Rotate the drum at least one full rotation to secure the belt.",
+        "Adjust the belt to have no more than ½ inch of slack.",
+        "Replace the pump coupling.",
+        "Re-tighten the motor mount bolts.",
+        "Apply light pressure on the belt with the handle of a hammer if adjustment is difficult."
+      ],
+      "tool": "Wrench",
+      "part": "Washing machine belt",
+      "geometric_location": {
+        "x": 0.2,
+        "y": 0.15,
+        "w": 0.75,
+        "h": 0.65
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 6,
+      "description": "This step involves reassembling the washing machine, connecting water lines, and restoring electrical power.",
+      "actions": [
+        "Put the access panel back on with the screws or latches",
+        "Move the machine back to where you can restore the electrical and water supplies",
+        "Remove any paint cans or wedges",
+        "Get it level with the floor again",
+        "Attach the water supply hoses",
+        "Put the drain hose back into position",
+        "Turn the water supply back on",
+        "Check for leaks",
+        "Plug the electrical cord back into the wall",
+        "Position the washing machine in its permanent place"
+      ],
+      "tool": "Wrench",
+      "part": "water supply hoses",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.18,
+        "w": 0.25,
+        "h": 0.27
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 7,
+      "description": "Test the washing machine to ensure it is functioning correctly after repairs.",
+      "actions": [
+        "Consult the manual for test run instructions.",
+        "Put in a small load of clothing.",
+        "Do a regular cycle.",
+        "Listen closely to the machine.",
+        "Stop the machine immediately if it shakes excessively or smells burning.",
+        "Let the cycle finish while observing the machine.",
+        "Check the clothes for cleanliness and dryness.",
+        "Call a professional if clothes are wet, soapy, or not cleaned properly."
+      ],
+      "tool": "Philips Screwdriver",
+      "part": "washing machine",
+      "geometric_location": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+      },
+      "hands": 1
+    }
+  ]
+}

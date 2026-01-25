@@ -1,0 +1,95 @@
+{
+  "header": {
+    "title": "How to Unclog a Dishwasher Drain",
+    "description": "This guide provides step-by-step instructions on how to diagnose and clear common clogs in a dishwasher drain. Follow these steps to restore your dishwasher's functionality and prevent future drainage issues.",
+    "toolbox": [
+      "Screwdriver",
+      "Drain Snake"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "Ensure the dishwasher, garbage disposal, and their respective electrical circuits are completely shut off at the breaker panel before proceeding.",
+      "actions": [
+        "Shut off dishwasher",
+        "Shut off garbage disposal",
+        "Turn off electricity to dishwasher at the breaker",
+        "Turn off electricity to garbage disposal at the breaker",
+        "Confirm everything is turned off"
+      ],
+      "tool": "Screwdriver",
+      "part": "Breaker(s) in the main electric panel",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 2,
+      "description": "This step involves checking the dishwasher's drain hose for clogs by disconnecting it, snaking it, and reconnecting it.",
+      "actions": [
+        "Locate the dishwasher's drain hose connection to the sink or garbage disposal drain pipe.",
+        "Pull the dishwasher out or locate the hose under the sink.",
+        "Loosen the pipe clamp.",
+        "Disconnect the hose.",
+        "Insert a drain snake into the hose.",
+        "Dislodge and extract the source of the clog.",
+        "Reconnect the hose.",
+        "Re-fasten the clamp."
+      ],
+      "tool": "Drain Snake",
+      "part": "Dishwasher's drain hose",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 3,
+      "description": "Check the dishwasher drain for clogs by removing filters and extracting foreign objects, and if necessary, use baking soda and vinegar to dislodge them.",
+      "actions": [
+        "Consult dishwasher's owner's manual to locate the drain.",
+        "Remove the drain catch and filters.",
+        "Use a plastic spoon or non-metallic blade to dig around inside the drain.",
+        "Extract any foreign objects lodged in and obstructing the drain pathway.",
+        "Pour one tablespoon of baking soda down the dishwasher's drain.",
+        "Pour two tablespoons of vinegar down the dishwasher's drain."
+      ],
+      "tool": "Screwdriver",
+      "part": "Dishwasher drain",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 4,
+      "description": "Reconnect the drain catch and filters, then turn the dishwasher and garbage disposal power back on.",
+      "actions": [
+        "Reconnect drain catch",
+        "Reconnect filters",
+        "Turn on dishwasher power",
+        "Turn on garbage disposal power"
+      ],
+      "tool": "Screwdriver",
+      "part": "drain catch and filters",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "header": {
+    "title": "How to Install LED Recessed Lights",
+    "description": "This guide provides step-by-step instructions on how to safely install LED recessed lights in your ceiling. Learn the necessary preparations and electrical connections to achieve a professional lighting upgrade.",
+    "toolbox": [
+      "Long-nose pliers",
+      "Jigsaw",
+      "Stud Finder",
+      "Screwdriver",
+      "Drywall circle cutter",
+      "Drywall saw",
+      "Wire strippers",
+      "Wire connectors"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "Ensure electrical safety by turning off the circuit breaker, verifying insulation, and placing the junction box in an accessible location.",
+      "actions": [
+        "Turn off the circuit breaker at the main panel",
+        "Verify that insulation doesn't touch the light trim",
+        "Verify that insulation doesn't touch the housing unit",
+        "Verify that insulation doesn't touch the light bulb",
+        "Place the junction box in an easy to access location"
+      ],
+      "tool": "Wire strippers",
+      "part": "circuit breaker, insulation, light trim, housing unit, light bulb, junction box",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.1,
+        "w": 0.1,
+        "h": 0.1
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 2,
+      "description": "Locate ceiling joists, trace the fixture shape, and cut the hole in the ceiling.",
+      "actions": [
+        "Turn off the circuit breaker at the main electrical panel",
+        "Use a stud finder to find ceiling joists",
+        "Trace an appropriate shape and size for the lighting fixture",
+        "Place a trap for debris directly underneath the tracing",
+        "Cut the tracing with a drywall saw, drywall circle cutter, or a jigsaw"
+      ],
+      "tool": "Stud Finder",
+      "part": "ceiling joists",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.1,
+        "w": 0.2,
+        "h": 0.1
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 3,
+      "description": "This step involves connecting the electrical cable from the previous fixture to the new LED fixture, ensuring proper wire connections and grounding.",
+      "actions": [
+        "Bring an electrical feed cable from the previous light fixture's electrical box to the newly cut opening location",
+        "Pass the cable through a knockout inside the LED fixture box",
+        "Secure the electrical cable in place with a cable clamp, leaving 6 to 8\" of wire inside the box",
+        "Remove the jacket from the cable",
+        "Strip 3/4\" of insulation from the infeed wires",
+        "Connect the black wire of the fixture to the black wire of the 110V feed cable using wire connectors",
+        "Connect the white wire of the fixture to the white wire of the 110V feed cable using wire connectors",
+        "Connect the green wire (ground) of the fixture to the green wire (ground) of the 110V feed cable, ensuring it is grounded to the box",
+        "Fasten the electrical cable into the fixture’s junction box with the cable clamp",
+        "Connect the fixture’s black wire to the black wire of the house",
+        "Connect the fixture’s white wire to the white wire of the house",
+        "Connect the fixture’s green wire (ground) to the ground or green wire of the house",
+        "Put the wires into the box",
+        "Fasten the cover"
+      ],
+      "tool": "Wire strippers",
+      "part": "Electrical cable",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.1,
+        "w": 0.3,
+        "h": 0.2
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 4,
+      "description": "Secure the fixture cover, engage the mounting tabs, and test the lights after restoring power.",
+      "actions": [
+        "Push the wires into the box",
+        "Fasten the cover",
+        "Rotate the fixture into place",
+        "Engage the mounting tabs",
+        "Follow the fixture's manual",
+        "Restore power",
+        "Test the lights"
+      ],
+      "tool": "Screwdriver",
+      "part": "fixture cover",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.167,
+        "w": 0.891,
+        "h": 0.666
+      },
+      "hands": 2
+    }
+  ]
+}

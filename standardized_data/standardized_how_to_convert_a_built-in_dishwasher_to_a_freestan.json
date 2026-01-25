@@ -1,0 +1,91 @@
+{
+  "header": {
+    "title": "How to Convert a Built-in Dishwasher to a Freestanding One",
+    "description": "This guide details the process of transforming a built-in dishwasher into a freestanding unit. It covers hose conversion, platform construction, and optional cabinet additions to create a mobile dishwasher.",
+    "toolbox": [
+      "Adaptors",
+      "Tools (for hose installation)"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "This step involves removing the dishwasher from its storage space and disconnecting it from the power source.",
+      "actions": [
+        "Remove dishwasher from storage space",
+        "Disconnect dishwasher from power source",
+        "Remove plug from socket (if plug-in unit)",
+        "Shut off power from breaker panel (if hard-wired)",
+        "Disconnect all wires from power source"
+      ],
+      "tool": "Tools (for hose installation)",
+      "part": "dishwasher",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 2,
+      "description": "This step involves attaching two hoses (water supply and discharge) to the dishwasher, potentially extending them and ensuring they are the proper grade.",
+      "actions": [
+        "Attach a water supply hose to the dishwasher.",
+        "Attach a discharge hose to the dishwasher.",
+        "Extend the hoses if necessary.",
+        "Hook the discharge line onto a sink or draining system.",
+        "Check with the appliance store for specific adapters and tools."
+      ],
+      "tool": "Adaptors",
+      "part": "dishwasher",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 3,
+      "description": "Construct a mobile platform for the dishwasher, ensuring secure mounting and stability.",
+      "actions": [
+        "Build a platform out of lumber",
+        "Measure the dimensions of the dishwasher",
+        "Add casters to the platform",
+        "Attach the dishwasher with mounting screws",
+        "Install a 1-by-6 foot board for tipping prevention",
+        "Build a post for the dishwasher door to rest on"
+      ],
+      "tool": "Tools (for hose installation)",
+      "part": "dishwasher",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 4,
+      "description": "This step involves constructing a cabinet, either wooden or metal, around the converted unit to create a kitchen island.",
+      "actions": [
+        "Build a complete, freestanding cabinet",
+        "Consider using wood as a material",
+        "Consider using metal panels for a modern look"
+      ],
+      "tool": "Tools (for hose installation)",
+      "part": "Converted unit",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "header": {
+    "title": "How to Clean the Filter in a Dishwasher",
+    "description": "This guide provides simple steps to effectively clean your dishwasher filter, removing debris and sanitizing to maintain optimal performance. Learn how to locate, remove, and clean the filter using common household ingredients.",
+    "toolbox": [
+      "Baking Soda",
+      "Salt",
+      "Bleach"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "Begin by ensuring the dishwasher is empty and removing the bottom rack to access the filter.",
+      "actions": [
+        "Start with an empty dishwasher",
+        "Remove the bottom rack",
+        "Locate the filter"
+      ],
+      "tool": "Baking Soda",
+      "part": "filter",
+      "geometric_location": {
+        "x": 0.25,
+        "y": 0.63,
+        "w": 0.2,
+        "h": 0.12
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 2,
+      "description": "Clean around the filter area and remove any debris, potentially unscrewing and removing a closed filter.",
+      "actions": [
+        "Locate the filter",
+        "Clean around the area with a damp cloth",
+        "Remove all debris",
+        "Unscrew the filter (if dishwasher has a closed filter)",
+        "Remove the debris located inside (if dishwasher has a closed filter)"
+      ],
+      "tool": "Baking Soda",
+      "part": "Filter",
+      "geometric_location": {
+        "x": 0.25,
+        "y": 0.667,
+        "w": 0.175,
+        "h": 0.108
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 3,
+      "description": "Sanitize the dishwasher by creating a cleaning mixture and running an empty cycle.",
+      "actions": [
+        "Mix ½ cup of baking soda, ½ cup of salt and one cup of bleach.",
+        "Pour the mixture into the bottom of the dishwasher.",
+        "Allow the mixture to sit overnight.",
+        "Set the dishwasher to run a normal wash.",
+        "Ensure no dishes are in the dishwasher during the wash cycle."
+      ],
+      "tool": "Bleach",
+      "part": "dishwasher",
+      "geometric_location": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+      },
+      "hands": 2
+    }
+  ]
+}

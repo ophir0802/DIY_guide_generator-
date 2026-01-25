@@ -1,0 +1,98 @@
+{
+  "header": {
+    "title": "How to Test a Refrigerator Start Relay",
+    "description": "This guide provides step-by-step instructions on how to diagnose a faulty refrigerator start relay. Learn how to safely disconnect power, locate the relay, access it, and use a multimeter to test its functionality.",
+    "toolbox": [
+      "Screwdriver",
+      "Multimeter",
+      "Needle-nose Pliers"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "Disconnect the refrigerator from the electrical source to prevent electrical shock and ensure accurate testing.",
+      "actions": [
+        "Turn off the circuit breaker",
+        "Unplug the unit"
+      ],
+      "tool": "Screwdriver",
+      "part": "Refrigerator",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 2,
+      "description": "Locate the start relay by finding the compressor and identifying the box with wires connected to it.",
+      "actions": [
+        "Locate the start relay.",
+        "Find the compressor.",
+        "Remove the refrigerator from the wall.",
+        "Protect the kitchen flooring with cardboard if necessary.",
+        "Look for a large cylinder-shaped object with copper tubings connected to it (the compressor).",
+        "Move to the right side of the compressor.",
+        "Look for a box with wires jutting out of it.",
+        "Identify the start relay inside the box."
+      ],
+      "tool": "Screwdriver",
+      "part": "Start relay",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 3,
+      "description": "Remove the start relay from inside the control box by first accessing the box and then carefully pulling out the relay.",
+      "actions": [
+        "Loosen the box cover with a screwdriver, if necessary.",
+        "Manually loosen tension clips or retaining clips to remove the box cover.",
+        "Locate the start relay inside the box.",
+        "Pull off the wire-wound relay with needle-nose pliers."
+      ],
+      "tool": "Needle-nose Pliers",
+      "part": "Start Relay",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 4,
+      "description": "This step describes how to test the functionality of a relay using a multimeter by checking continuity between its terminals.",
+      "actions": [
+        "Find the \"s\" and \"m\" plug-type terminals and the \"L\" slip-on terminal.",
+        "Position the relay on the floor, counter or table so the \"s\" and \"m\" terminal are facing down.",
+        "Insert the multi-tester with one probe on each of the \"s\" and \"m\" terminals.",
+        "Set the tester to zero ohms.",
+        "Turn over the relay.",
+        "Observe for a clicking sound.",
+        "Check the reading should change to \"infinity\".",
+        "Turn the unit over again.",
+        "Place one probe from the \"s\" terminal to the \"L\" terminal.",
+        "Check the tester should read \"zero\" again.",
+        "Observe for no change in the reading."
+      ],
+      "tool": "Multimeter",
+      "part": "Relay",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    }
+  ]
+}

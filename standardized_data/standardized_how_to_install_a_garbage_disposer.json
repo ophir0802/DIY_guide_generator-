@@ -1,0 +1,120 @@
+{
+  "header": {
+    "title": "How to Install a Garbage Disposer",
+    "description": "This guide provides step-by-step instructions on how to install a garbage disposer, covering everything from removing the old strainer to connecting the wiring.",
+    "toolbox": [
+      "Channel-locks",
+      "Pipe wrench",
+      "Phillips screwdriver",
+      "Flathead screwdriver",
+      "Hammer"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "Remove the strainer body from the sink by unscrewing a nut and pushing it upwards.",
+      "actions": [
+        "Remove the strainer body from the sink",
+        "Unscrew the large nut that holds it in place underneath the sink",
+        "Push the strainer body up through the sink hole",
+        "Clean off the old plumber’s putty that surrounds the edge of the drain opening"
+      ],
+      "tool": "Channel-locks",
+      "part": "strainer body",
+      "geometric_location": {
+        "x": 0.25,
+        "y": 0.22,
+        "w": 0.5,
+        "h": 0.56
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 2,
+      "description": "This step involves installing the new sink flange and mounting assembly components into the sink drain opening.",
+      "actions": [
+        "Separate the parts of the mounting assembly from the disposer",
+        "Loosen the screws of the mounting assembly",
+        "Remove the snap ring",
+        "Place a 1/4-inch bead of plumber’s putty around the drain opening in the sink",
+        "Drop the new sink flange into the drain opening",
+        "Press the sink flange into place",
+        "Slide the fiber gasket and backup ring onto the sleeve",
+        "Hold the fiber gasket and backup ring in place",
+        "Slip on the mounting ring",
+        "Slip on the snap ring"
+      ],
+      "tool": "Phillips screwdriver",
+      "part": "mounting assembly, sink flange, drain opening, sleeve, fiber gasket, backup ring, mounting ring, snap ring",
+      "geometric_location": {
+        "x": 0.15,
+        "y": 0.15,
+        "w": 0.7,
+        "h": 0.7
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 3,
+      "description": "Tighten the mounting screws in an alternating pattern until the mounting assembly is securely seated against the sink bottom.",
+      "actions": [
+        "Tighten the three mounting screws.",
+        "Alternate tightening each screw a few turns at a time.",
+        "Ensure the mounting assembly is evenly seated.",
+        "Ensure the mounting assembly is tightly seated against the bottom of the sink."
+      ],
+      "tool": "Phillips screwdriver",
+      "part": "mounting assembly",
+      "geometric_location": {
+        "x": 0.2,
+        "y": 0.2,
+        "w": 0.6,
+        "h": 0.6
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 4,
+      "description": "Remove the dishwasher knockout plug from inside the disposer by tapping it out with a screwdriver and hammer.",
+      "actions": [
+        "Lay the disposal unit on its side",
+        "Tap out the dishwasher knockout plug"
+      ],
+      "tool": "Hammer",
+      "part": "dishwasher knockout plug",
+      "geometric_location": {
+        "x": 0.25,
+        "y": 0.22,
+        "w": 0.5,
+        "h": 0.56
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 5,
+      "description": "This step details how to connect the electrical wiring to the disposer unit, emphasizing safety precautions and proper grounding.",
+      "actions": [
+        "Lay the disposer on its side under the sink.",
+        "Check local building codes regarding electrical connections.",
+        "Turn off electrical power at the fuse box or circuit breaker.",
+        "Remove the electrical cover plate.",
+        "Ensure the disposer is grounded.",
+        "Remove the plate on the bottom of the disposer to expose the wiring.",
+        "Connect the white wire from the disposer unit with the white wire from the power supply using wire nuts.",
+        "Connect the black wire from the disposer unit with the black wire from the power supply using wire nuts.",
+        "Connect the ground wire from the supply to the ground on the disposer unit.",
+        "Replace the plate to cover the wires."
+      ],
+      "tool": "Channel-locks",
+      "part": "disposer unit",
+      "geometric_location": {
+        "x": 0.2,
+        "y": 0.2,
+        "w": 0.6,
+        "h": 0.6
+      },
+      "hands": 2
+    }
+  ]
+}

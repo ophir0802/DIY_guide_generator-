@@ -1,0 +1,147 @@
+{
+  "header": {
+    "title": "How to Install a Gas Dryer Vent",
+    "description": "This guide provides step-by-step instructions on how to safely install a gas dryer vent, ensuring proper ventilation and preventing potential hazards.",
+    "toolbox": [
+      "Tape Measure",
+      "Electric Drill",
+      "Hole Saw (4-inch)",
+      "Caulking Gun",
+      "Level"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "Select either a flexible plastic hose or a rigid sheet metal pipe for the vent, and choose appropriate hardware and drilling tools based on the material being drilled.",
+      "actions": [
+        "Choose between a flexible plastic hose and a rigid sheet metal pipe.",
+        "Consider the sagging tendency of flexible plastic hoses.",
+        "Assess the potential fire hazard of lint accumulation in flexible hoses.",
+        "Select hardware and drilling tools based on the material (wood, metal, or brick)."
+      ],
+      "tool": "Tape Measure",
+      "part": "Pipe (flexible plastic hose or rigid sheet metal pipe)",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 2,
+      "description": "This step involves selecting and marking a location for the dryer vent, both inside and outside the house, ensuring it's free of obstructions.",
+      "actions": [
+        "Decide where you want your dryer vent to be located.",
+        "Check outside to make sure the location isn’t blocked by bushes or fencing.",
+        "Measure from the corner of the foundation or a window inside.",
+        "Relocate the spot outside using the same marker."
+      ],
+      "tool": "Tape Measure",
+      "part": "Dryer vent location",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 3,
+      "description": "Drill a guide hole inside the house for the dryer vent, ensuring to drill through the sill plate in the basement or checking for obstructions on the main floor.",
+      "actions": [
+        "Drill a small guide hole inside the house",
+        "Locate the wood sill plate (if in the basement)",
+        "Drill through the sill plate (if in the basement)",
+        "Ensure there's nothing in the wall when drilling (if on the main floor)"
+      ],
+      "tool": "Electric Drill",
+      "part": "wood sill plate or wall",
+      "geometric_location": {
+        "x": 0.0,
+        "y": 0.1,
+        "w": 0.15,
+        "h": 0.12
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 4,
+      "description": "Cut a 4-inch hole where the vent will be located, ensuring the previous guide hole is centered.",
+      "actions": [
+        "Cut a larger hole outside",
+        "Center the 4-inch hole around the guide hole"
+      ],
+      "tool": "Hole Saw (4-inch)",
+      "part": "vent",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 5,
+      "description": "Attach the vent hood to the side of the house, secure it with screws, and seal around the shroud and pipe to prevent drafts and rodents.",
+      "actions": [
+        "Install the vent hood on the side of the house",
+        "Use wood screws to secure the vent hood",
+        "Caulk around the shroud",
+        "Caulk around the pipe"
+      ],
+      "tool": "Electric Drill",
+      "part": "Vent hood",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 6,
+      "description": "Connect a 90-degree elbow to the vent pipe at both the dryer and existing vent locations, and seal the joints with foil tape.",
+      "actions": [
+        "Go inside the house.",
+        "Fasten a 90-degree elbow to the end of the vent pipe using hose clamps.",
+        "Run the vent pipe back to the dryer.",
+        "Install another elbow at the point where the exhaust comes out of the dryer.",
+        "Hook up the vent pipe to that elbow.",
+        "Use foil tape to seal the joints connecting the pipe segments."
+      ],
+      "tool": "Tape Measure",
+      "part": "Vent pipe",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 7,
+      "description": "Return the dryer to its original location and ensure it is level, avoiding any kinks in the vent piping.",
+      "actions": [
+        "Move the dryer back into place.",
+        "Make adjustments to ensure the dryer is level.",
+        "Ensure the vent piping is not kinked."
+      ],
+      "tool": "Level",
+      "part": "Dryer",
+      "geometric_location": {
+        "x": 0.0,
+        "y": 0.1,
+        "w": 1.0,
+        "h": 0.8
+      },
+      "hands": 2
+    }
+  ]
+}

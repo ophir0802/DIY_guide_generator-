@@ -1,0 +1,142 @@
+{
+  "header": {
+    "title": "How to Wire a Three Pronged Dryer Plug",
+    "description": "This guide provides step-by-step instructions on how to replace a dryer cord with a three-prong plug, ensuring a safe and functional connection for your dryer.",
+    "toolbox": [
+      "Phillips Screwdriver",
+      "Socket Wrench"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "Select a new three-prong cord that is compatible with the existing outlet.",
+      "actions": [
+        "Identify the pattern of the outlet",
+        "Select a matching three-prong cord",
+        "Refer to Figure 4 to ensure correct cord selection"
+      ],
+      "tool": "Phillips Screwdriver",
+      "part": "three-prong cord",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.1,
+        "w": 0.5,
+        "h": 0.3
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 2,
+      "description": "The dryer's electrical access panel is removed to expose the terminal block and wire connections.",
+      "actions": [
+        "Confirm the right cord was picked.",
+        "Remove the dryer’s electrical access panel.",
+        "Examine the four wire cable.",
+        "Observe the black, red, white, and green wires inside.",
+        "Identify the green wire connections to the chassis/case for grounding.",
+        "Note the difference in green wire connections after cord replacement."
+      ],
+      "tool": "Phillips Screwdriver",
+      "part": "dryer’s electrical access panel",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 3,
+      "description": "Remove screws securing wires to the chassis and terminal block, noting the location of each color.",
+      "actions": [
+        "Remove screws securing the green wires to the chassis",
+        "Remove the three wires to the terminal block",
+        "Take care not to lose any of the screws",
+        "Make note of where each color goes"
+      ],
+      "tool": "Phillips Screwdriver",
+      "part": "chassis and terminal block",
+      "geometric_location": {
+        "x": 0.2,
+        "y": 0.1,
+        "w": 0.45,
+        "h": 0.25
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 4,
+      "description": "The four wire cable is removed from the dryer after loosening the cable clamp.",
+      "actions": [
+        "loosen the cable clamp",
+        "remove the four wire cable from the dryer"
+      ],
+      "tool": "Phillips Screwdriver",
+      "part": "four wire cable",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.1,
+        "w": 0.2,
+        "h": 0.15
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 5,
+      "description": "The new cord is inserted into the freed knockout opening without the cable clamp.",
+      "actions": [
+        "Insert the new cord",
+        "Insert into the knockout opening",
+        "Do not use the cable clamp at this time"
+      ],
+      "tool": "Phillips Screwdriver",
+      "part": "new cord",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.1,
+        "w": 0.8,
+        "h": 0.8
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 6,
+      "description": "Connect the wires from the new three-prong cable to the terminal block, ensuring color matching or proper placement for uncolored cables, and connect the grounding strap.",
+      "actions": [
+        "Attach wires to the terminal block to match the same colored wires from the dryer (if colored).",
+        "Connect the grounding strap between the center terminal and the dryer case.",
+        "Connect the center wire to the middle terminal screw (if the new cord is a flat cable without color-coding).",
+        "Attach the outside wires to each of the outside terminals on the terminal block (if the new cord is a flat cable without color-coding)."
+      ],
+      "tool": "Phillips Screwdriver",
+      "part": "terminal block",
+      "geometric_location": {
+        "x": 0.2,
+        "y": 0.2,
+        "w": 0.6,
+        "h": 0.4
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 7,
+      "description": "Secure the cable and access cover to finalize the system setup.",
+      "actions": [
+        "tighten the cable clamp",
+        "put back the access cover",
+        "screw in the access cover"
+      ],
+      "tool": "Phillips Screwdriver",
+      "part": "access cover",
+      "geometric_location": {
+        "x": 0.2,
+        "y": 0.28,
+        "w": 0.08,
+        "h": 0.07
+      },
+      "hands": 1
+    }
+  ]
+}

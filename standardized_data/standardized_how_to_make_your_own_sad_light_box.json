@@ -1,0 +1,129 @@
+{
+  "header": {
+    "title": "How to Make Your Own SAD Light Box",
+    "description": "This guide provides instructions on building a simple Seasonal Affective Disorder (SAD) light box using readily available materials. Follow these steps to construct a DIY light box that can help combat the effects of winter blues.",
+    "toolbox": [
+      "Power Drill",
+      "Hole Saw"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "Determine the placement of bulbs within a box, aiming for approximately 10 lights, by measuring lamp bases and marking the box.",
+      "actions": [
+        "Figure out where you want to place the bulbs inside of a box.",
+        "Measure the circumference of one of the lamp bases.",
+        "Create small cutouts.",
+        "Lay the cutouts on the outside bottom of the box.",
+        "Mark the cutouts with a pencil.",
+        "Leave a little bit of space around each light."
+      ],
+      "tool": "Power Drill",
+      "part": "box",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.1,
+        "w": 0.7,
+        "h": 0.5
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 2,
+      "description": "Drill holes in the box using a hole saw bit after determining the layout.",
+      "actions": [
+        "Clamp down the box to a sturdy table",
+        "Drill the holes",
+        "Double check that the lamps fit inside the hole"
+      ],
+      "tool": "Power Drill",
+      "part": "box",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.1,
+        "w": 0.7,
+        "h": 0.5
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 3,
+      "description": "Apply reflective material (aluminum foil or mirrors) to the inside of the box and cut out holes.",
+      "actions": [
+        "Apply aluminum foil around all sides and bottom of the box",
+        "Secure the aluminum foil in place with glue",
+        "Wait for the glue to dry",
+        "Cut out the holes in the aluminum foil"
+      ],
+      "tool": "Power Drill",
+      "part": "box",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.1,
+        "w": 0.7,
+        "h": 0.5
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 4,
+      "description": "Secure the lamps to the box with silicone, manage cables, and connect the bulbs in parallel.",
+      "actions": [
+        "Secure the lamps to the back of the box with silicone.",
+        "Ensure the epoxy is non-shrinking.",
+        "Wait for the glue to dry.",
+        "Tidy up the cables with organizers.",
+        "Connect the bulbs in parallel."
+      ],
+      "tool": "Power Drill",
+      "part": "lamps",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 5,
+      "description": "Inspect the assembled box for imperfections, test its functionality for 30 minutes, and ensure it doesn't overheat.",
+      "actions": [
+        "Inspect the box for imperfections",
+        "Inspect the box for exposed wires",
+        "Plug the unit in",
+        "Test the unit for 30 minutes",
+        "Monitor the box for excessive heat"
+      ],
+      "tool": "Power Drill",
+      "part": "box",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.1,
+        "w": 0.7,
+        "h": 0.5
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 6,
+      "description": "Complete the project by concealing cables and optionally staining the box.",
+      "actions": [
+        "Attach the top of the box on the rear.",
+        "Ensure enough space for the main cable to get through.",
+        "Stain the box to your liking (optional).",
+        "Leave the box in its original color (optional)."
+      ],
+      "tool": "Power Drill",
+      "part": "box",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.1,
+        "w": 0.7,
+        "h": 0.5
+      },
+      "hands": 2
+    }
+  ]
+}

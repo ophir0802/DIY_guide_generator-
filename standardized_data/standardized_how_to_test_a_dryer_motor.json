@@ -1,0 +1,101 @@
+{
+  "header": {
+    "title": "How to Test a Dryer Motor",
+    "description": "This guide provides instructions on how to diagnose a faulty dryer motor by performing a series of tests, including checking for obstructions and manually rotating the motor shaft.",
+    "toolbox": [
+      "Screwdriver"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "Disconnect the power supply to the dryer by unplugging it or turning off the circuit breaker.",
+      "actions": [
+        "disconnect power supply",
+        "unplug dryer",
+        "turn off circuit breaker"
+      ],
+      "tool": "Screwdriver",
+      "part": "dryer",
+      "geometric_location": {
+        "x": 0.15,
+        "y": 0.43,
+        "w": 0.3,
+        "h": 0.22
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 2,
+      "description": "The dryer needs to be turned on its side to access the motor.",
+      "actions": [
+        "turn dryer",
+        "place on side"
+      ],
+      "tool": "Screwdriver",
+      "part": "dryer",
+      "geometric_location": {
+        "x": 0.15,
+        "y": 0.43,
+        "w": 0.3,
+        "h": 0.24
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 3,
+      "description": "Remove the rubber belt from the dryer motor using hands or a screwdriver.",
+      "actions": [
+        "locate the dryer motor",
+        "remove the rubber belt from the motor"
+      ],
+      "tool": "Screwdriver",
+      "part": "dryer motor",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 4,
+      "description": "Inspect the blower fan housing for any visible obstructions and remove them if found.",
+      "actions": [
+        "Look inside the housing for the blower fan.",
+        "If there are any obvious obstructions, remove them."
+      ],
+      "tool": "Screwdriver",
+      "part": "blower fan housing",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 5,
+      "description": "Manually rotate the motor shaft to check for grinding or resistance, and then test the motor's operation with and without the belt.",
+      "actions": [
+        "manually rotate the shaft of the motor",
+        "check if the shaft is grinding or hard to turn",
+        "plug the dryer back in",
+        "run the motor without the belt on",
+        "check if the motor runs fine without the belt",
+        "replace the motor"
+      ],
+      "tool": "Screwdriver",
+      "part": "motor shaft",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    }
+  ]
+}

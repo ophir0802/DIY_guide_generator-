@@ -1,0 +1,136 @@
+{
+  "header": {
+    "title": "How to Clean a Deep Fryer",
+    "description": "This guide provides step-by-step instructions on how to thoroughly clean a deep fryer, from initial setup to removing lingering odors and cleaning the exterior.",
+    "toolbox": [
+      "Sponge",
+      "Plastic gloves",
+      "Soft-bristled brush",
+      "Paintbrush",
+      "Paper towels"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "This step involves initial safety precautions and preparing the deep fryer for cleaning, including inspecting and disposing of the oil.",
+      "actions": [
+        "Unplug the deep fryer.",
+        "Wrap the connecting wire with a piece of dry cloth.",
+        "Inspect the oil inside the fryer.",
+        "If the oil is rancid, empty it into a bowl.",
+        "Allow the oil to cool.",
+        "Pour the cooled oil into a disposal bag.",
+        "Pour out the oil from the fryer over the sink.",
+        "Remove the basket or filter of the fryer."
+      ],
+      "tool": "Paper towels",
+      "part": "connecting wire, oil, basket or filter",
+      "geometric_location": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 2,
+      "description": "Wipe the inside of the deep fryer with paper towels to remove excess oil residue.",
+      "actions": [
+        "Wipe off traces of oil along the inner surface of the fryer",
+        "Spread paper towel sheets within the fryer",
+        "Leave paper towel sheets for a few minutes",
+        "Remove the oil-soaked paper towels",
+        "Repeatedly wipe and mildly scrape the oil crusting in the fryer"
+      ],
+      "tool": "Paper towels",
+      "part": "inner surface of the fryer",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.1,
+        "w": 0.8,
+        "h": 0.8
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 3,
+      "description": "Clean the deep fryer with a soapy water solution using a sponge, being careful to avoid electrical connections.",
+      "actions": [
+        "Prepare a lukewarm cleaning solution from water and dishwashing soap.",
+        "Dip a sponge in the cleaning solution.",
+        "Clean the fryer with the soaked sponge.",
+        "Ensure that you don’t spill water around the fryer’s outer, electrical connections."
+      ],
+      "tool": "Sponge",
+      "part": "Fryer's outer, electrical connections",
+      "geometric_location": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 4,
+      "description": "Clean the deep fryer filter using high-pressure water or a soft-bristled brush and cleaning solution.",
+      "actions": [
+        "Wash the filter separately with high-pressured water.",
+        "Ensure water pressure is not too harsh to avoid damage.",
+        "If unsure, wash the filter with a soft-bristled brush.",
+        "Use the cleaning solution."
+      ],
+      "tool": "Soft-bristled brush",
+      "part": "Filter",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 5,
+      "description": "This step describes how to remove a deep fryer smell by using a water and vinegar solution.",
+      "actions": [
+        "Prepare a solution containing water and vinegar in a ratio of 1:9",
+        "Fill the fryer with this solution",
+        "Pour-out the vinegar solution",
+        "Rinse the fryer"
+      ],
+      "tool": "Sponge",
+      "part": "deep fryer",
+      "geometric_location": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 6,
+      "description": "Clean the exterior surface of the deep fryer using a degreaser or baking soda paste to remove any crust or grime.",
+      "actions": [
+        "Apply paste or degreasing compound liberally over the fryer.",
+        "Apply the paste using your finger or a paintbrush.",
+        "Allow the paste to act upon the grime for about 10 minutes.",
+        "Wipe the deep fryer repeatedly with paper towels.",
+        "Rinse the deep fryer.",
+        "Dry the deep fryer."
+      ],
+      "tool": "Paper towels",
+      "part": "outside surface of deep fryer",
+      "geometric_location": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+      },
+      "hands": 1
+    }
+  ]
+}

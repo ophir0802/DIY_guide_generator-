@@ -1,0 +1,171 @@
+{
+  "header": {
+    "title": "How to Repair a Dryer",
+    "description": "This guide provides step-by-step instructions on diagnosing and repairing common issues with household dryers, from simple power cord checks to more complex component testing and motor troubleshooting.",
+    "toolbox": [
+      "Screwdriver",
+      "Multimeter"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "This initial step involves identifying the source of the dryer problem through investigative work.",
+      "actions": [
+        "Identify the problem",
+        "Narrow the possibilities"
+      ],
+      "tool": "Screwdriver",
+      "part": "dryer",
+      "geometric_location": {
+        "x": 0.0,
+        "y": 0.1,
+        "w": 1.0,
+        "h": 0.85
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 2,
+      "description": "Check the dryer's power cord for secure connection and damage, and reset the circuit breaker.",
+      "actions": [
+        "Check if the power cord is plugged firmly into the wall.",
+        "Inspect the power cord for damage.",
+        "Turn off the circuit to the dryer at the main circuit panel.",
+        "Turn the circuit back on."
+      ],
+      "tool": "Screwdriver",
+      "part": "Power cord",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 3,
+      "description": "Test the dryer timer by wiggling it and changing settings to check for malfunctions.",
+      "actions": [
+        "Wiggle the timer",
+        "Try different settings",
+        "Push/pull the timer"
+      ],
+      "tool": "Screwdriver",
+      "part": "Timer",
+      "geometric_location": {
+        "x": 0.35,
+        "y": 0.28,
+        "w": 0.1,
+        "h": 0.07
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 4,
+      "description": "This step involves testing the door switch to ensure it's functioning correctly and not obstructed.",
+      "actions": [
+        "Manually push on the door switch",
+        "Attempt to run the machine",
+        "Pull the door switch",
+        "Test for continuity with a multimeter"
+      ],
+      "tool": "Multimeter",
+      "part": "Door switch",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 5,
+      "description": "This step details how to dismantle a dryer, offering options for accessing internal components.",
+      "actions": [
+        "Release the top of the dryer using small screws inside the door.",
+        "Remove screws inside the top of the dryer.",
+        "Remove the front of the dryer, being mindful of connected wires.",
+        "Lay the dryer on its back.",
+        "Place the dryer on wooden blocks to protect the exhaust flange.",
+        "Remove the back panel to access the fuse and thermostats (optional)."
+      ],
+      "tool": "Screwdriver",
+      "part": "Dryer",
+      "geometric_location": {
+        "x": 0.0,
+        "y": 0.1,
+        "w": 1.0,
+        "h": 0.85
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 6,
+      "description": "This step involves using a multimeter to test the main thermostat, secondary thermostat, and fuse to identify any faulty components.",
+      "actions": [
+        "Grab a multimeter",
+        "Put the probes on either side of the main thermostat",
+        "Look for a reading or listen for a beep",
+        "Test the secondary thermostat",
+        "Test the fuse",
+        "Replace the faulty part"
+      ],
+      "tool": "Multimeter",
+      "part": "Main thermostat, secondary thermostat, fuse",
+      "geometric_location": {
+        "x": 0.35,
+        "y": 0.17,
+        "w": 0.1,
+        "h": 0.08
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 7,
+      "description": "This step involves checking for lint buildup and testing the heating element's continuity using a multimeter.",
+      "actions": [
+        "Check for lint build up inside the casing",
+        "Check for lint build up inside the drum",
+        "Check for lint build up inside the engine components",
+        "Blow out all dust",
+        "Make sure there isn’t any foreign material inside the machine",
+        "Unplug the large red wire on the timer",
+        "Connect one probe to the unplugged unit",
+        "Connect the other probe to the red wire on the heating element terminal",
+        "Check continuity",
+        "Test one element at a time to find the culprit"
+      ],
+      "tool": "Multimeter",
+      "part": "Heating element",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 8,
+      "description": "If electrical components are working, investigate the dryer motor as a potential cause of the problem.",
+      "actions": [
+        "Check electrical components",
+        "Assess repair or replacement cost and effort",
+        "Verify drum rotation",
+        "Replace dryer if motor is faulty"
+      ],
+      "tool": "Screwdriver",
+      "part": "dryer motor",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    }
+  ]
+}

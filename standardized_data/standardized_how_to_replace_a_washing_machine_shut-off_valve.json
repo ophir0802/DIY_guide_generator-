@@ -1,0 +1,188 @@
+{
+  "header": {
+    "title": "How to Replace a Washing Machine Shut-off Valve",
+    "description": "This guide provides step-by-step instructions on how to safely replace a washing machine shut-off valve. It covers disconnecting the water supply, removing the old valve, preparing the pipes, and installing a new one.",
+    "toolbox": [
+      "Pliers",
+      "Screwdriver"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "Disconnect the washing machine from the power source to prevent potential hazards and create workspace.",
+      "actions": [
+        "Unplug the washing machine",
+        "Move the washing machine"
+      ],
+      "tool": "Pliers",
+      "part": "Washing Machine Power Cord",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 2,
+      "description": "Shut off the water supply to the laundry room before starting plumbing work.",
+      "actions": [
+        "Locate the water shut-off valve",
+        "Shut down the water supply"
+      ],
+      "tool": "Pliers",
+      "part": "water shut-off valve",
+      "geometric_location": {
+        "x": 0.35,
+        "y": 0.25,
+        "w": 0.1,
+        "h": 0.1
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 3,
+      "description": "This step instructs the user to locate and evaluate the shut-off valves behind the washing machine, and drain water from the lines.",
+      "actions": [
+        "Locate the shut-off valve behind the washing machine.",
+        "Identify cold water and hot water valves.",
+        "Check if hoses are attached to the valves.",
+        "Determine if the valves are recessed within the wall.",
+        "Turn the valves on (if they’re not already).",
+        "Drain water from the lines."
+      ],
+      "tool": "Pliers",
+      "part": "Shut-off valve",
+      "geometric_location": {
+        "x": 0.45,
+        "y": 0.32,
+        "w": 0.1,
+        "h": 0.11
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 4,
+      "description": "Remove the water hoses from the water valve by turning them counterclockwise while catching any residual water.",
+      "actions": [
+        "Remove the water hoses",
+        "Turn the hoses counterclockwise",
+        "Place one end of the water supply hose inside a bucket"
+      ],
+      "tool": "Pliers",
+      "part": "Water hoses",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 5,
+      "description": "This step details how to remove the washing machine shut-off valve, addressing potential difficulties like corrosion or hidden locations.",
+      "actions": [
+        "Loosen the shut-off valve with a wrench.",
+        "Remove the shut-off valve.",
+        "Attach a pipe to the wrench for added leverage (if needed).",
+        "Apply penetrating lubricant (if needed).",
+        "Look for screws holding the shut-off valve in place.",
+        "Cut the wall material away to access the shut-off valve (if hidden).",
+        "Use a drywall saw for sheetrock (if cutting wall).",
+        "Use a keyhole saw for wood (if cutting wall).",
+        "Make a clean cut.",
+        "Save the removed wall piece for later repair."
+      ],
+      "tool": "Pliers",
+      "part": "Shut-off valve",
+      "geometric_location": {
+        "x": 0.4,
+        "y": 0.33,
+        "w": 0.13,
+        "h": 0.1
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 6,
+      "description": "If the valve won't release, cut out a section of pipe including the valve and use replacement parts to reconnect the pipes.",
+      "actions": [
+        "try everything",
+        "cut out a section of pipe",
+        "use replacement parts",
+        "attach replacement parts to the pipes at the top",
+        "attach replacement parts to the pipes at the bottom"
+      ],
+      "tool": "Pliers",
+      "part": "pipe",
+      "geometric_location": {
+        "x": 0.35,
+        "y": 0.25,
+        "w": 0.1,
+        "h": 0.1
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 7,
+      "description": "Clean the pipe threads and apply plumber's tape to prevent water leaks after removing the shut-off valve.",
+      "actions": [
+        "Remove the old shut-off valve",
+        "Clean the pipe threads",
+        "Apply plumber’s tape to the pipe threads"
+      ],
+      "tool": "Pliers",
+      "part": "pipe threads",
+      "geometric_location": {
+        "x": 0.45,
+        "y": 0.38,
+        "w": 0.07,
+        "h": 0.04
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 8,
+      "description": "Install the new shut-off valve(s) by reversing the removal technique.",
+      "actions": [
+        "Twist",
+        "Screw"
+      ],
+      "tool": "Pliers",
+      "part": "shut-off valve or valves",
+      "geometric_location": {
+        "x": 0.45,
+        "y": 0.38,
+        "w": 0.13,
+        "h": 0.14
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 9,
+      "description": "Reconnect the water hose to the washer and slowly turn the water supply back on, checking for leaks.",
+      "actions": [
+        "Replace the water hose from the back of your washer to the water supply.",
+        "Ensure the valve is in the off position.",
+        "Turn the water back on at the main.",
+        "Slowly turn on the shut-off valve.",
+        "Watch for leaks.",
+        "If you find leaks, remove the parts.",
+        "Apply more plumber’s tape.",
+        "Reassemble."
+      ],
+      "tool": "Pliers",
+      "part": "water hose",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    }
+  ]
+}

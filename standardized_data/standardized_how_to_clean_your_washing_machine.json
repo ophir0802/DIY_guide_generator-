@@ -1,0 +1,149 @@
+{
+  "header": {
+    "title": "How to Clean Your Washing Machine",
+    "description": "This guide provides step-by-step instructions on how to thoroughly clean your washing machine, removing residue and odors for optimal performance. It utilizes a combination of vinegar, baking soda, and manual cleaning techniques.",
+    "toolbox": [
+      "Old toothbrush",
+      "Cleaning cloth",
+      "Microfiber cloth"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "Fill the washing machine basin with hot water using the hottest water temperature and longest cycle.",
+      "actions": [
+        "Turn the washing machine on",
+        "Select the hottest water temperature",
+        "Select the longest cycle"
+      ],
+      "tool": "Cleaning cloth",
+      "part": "Basin",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.1,
+        "w": 0.25,
+        "h": 0.25
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 2,
+      "description": "Add 2 to 4 cups of white vinegar to the washer filled with water and let it sit for 30-60 minutes.",
+      "actions": [
+        "Fill the washer with water",
+        "Add 2 to 4 cups of white vinegar",
+        "Let the solution sit in the washer for 30 minutes to an hour",
+        "Pour vinegar or bleach into the dispenser (if available)",
+        "Run a cycle with vinegar (for front loaders)"
+      ],
+      "tool": "Cleaning cloth",
+      "part": "Washer",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 3,
+      "description": "After agitating the vinegar, add baking soda to the mix and allow the solution to sit for 30 minutes to loosen dirt and grime.",
+      "actions": [
+        "Allow the vinegar to agitate for a few minutes.",
+        "Open the lid.",
+        "Add about a cup of baking soda to the mix.",
+        "Stop the washer (if possible).",
+        "Allow the solution to sit for 30 minutes."
+      ],
+      "tool": "Cleaning cloth",
+      "part": "Mix",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.1,
+        "w": 0.3,
+        "h": 0.2
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 4,
+      "description": "While the cleaning solution works, remove removable parts and clean the exterior of the washing machine.",
+      "actions": [
+        "Remove any loose parts, like fabric softener dispensers",
+        "Place removed parts in a soapy solution",
+        "Clean fabric softener dispensers with an old toothbrush",
+        "Clean the space along the top of the agitator with an old toothbrush",
+        "Clean any other accessible areas with an old toothbrush",
+        "Clean the outside of the machine"
+      ],
+      "tool": "Old toothbrush",
+      "part": "Fabric softener dispensers, agitator, exterior of the machine",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.1,
+        "w": 0.3,
+        "h": 0.2
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 5,
+      "description": "Start the washing machine cycle after the cleaning solution has soaked for 30 minutes and clean the machine's surfaces with vinegar and water or bleach.",
+      "actions": [
+        "Close the lid",
+        "Start the cycle",
+        "Clean the lid",
+        "Clean the top console",
+        "Clean the dials"
+      ],
+      "tool": "Cleaning cloth",
+      "part": "lid, top console, dials",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.1,
+        "w": 0.3,
+        "h": 0.2
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 6,
+      "description": "Run a second washing machine cycle with 2 to 4 cups of vinegar to remove remaining grime.",
+      "actions": [
+        "Run another cycle",
+        "Add 2 to 4 cups of vinegar",
+        "Hit the center agitator with a cleaning cloth (optional)"
+      ],
+      "tool": "Cleaning cloth",
+      "part": "center agitator",
+      "geometric_location": {
+        "x": 0.3,
+        "y": 0.1,
+        "w": 0.4,
+        "h": 0.5
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 7,
+      "description": "Clean the washing machine basin with a microfiber cloth, optionally using a vinegar solution to remove stubborn stains.",
+      "actions": [
+        "Clean away the last bits of residue",
+        "Use a vinegar solution to remove stubborn stains",
+        "Replace any parts you removed",
+        "Run a short cycle to filter any remaining vinegar"
+      ],
+      "tool": "Microfiber cloth",
+      "part": "Basin",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.1,
+        "w": 0.25,
+        "h": 0.25
+      },
+      "hands": 1
+    }
+  ]
+}

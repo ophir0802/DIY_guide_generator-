@@ -1,0 +1,162 @@
+{
+  "header": {
+    "title": "How to Replace a Washing Machine Timer",
+    "description": "This guide provides step-by-step instructions on how to replace a washing machine timer. Follow these instructions to safely remove the old timer and install a new one.",
+    "toolbox": [
+      "Screwdriver"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "The first step is to disconnect the power supply to the washing machine to prevent electric shock.",
+      "actions": [
+        "turn off the power",
+        "unplug it from the socket",
+        "turn off the circuit in your breaker box"
+      ],
+      "tool": "Screwdriver",
+      "part": "washer",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 2,
+      "description": "Protect the machine's finish by covering the top with a cloth or plastic sheet.",
+      "actions": [
+        "cover the top",
+        "use a thick cloth",
+        "use a plastic sheet"
+      ],
+      "tool": "Screwdriver",
+      "part": "top of the machine",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 3,
+      "description": "Remove the timer knob by pulling it off the shaft without using tools.",
+      "actions": [
+        "Take off the timer knob",
+        "Pull it off of the shaft"
+      ],
+      "tool": "Screwdriver",
+      "part": "timer knob",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 4,
+      "description": "Remove the control panel cover to access the washer's timer.",
+      "actions": [
+        "Loosen and remove the screws attaching the front to the back panel.",
+        "Pull the cover out of place.",
+        "Rotate the cover forward."
+      ],
+      "tool": "Screwdriver",
+      "part": "Control panel cover",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 5,
+      "description": "This step involves removing the existing timer from the control panel by removing screws, disconnecting the wiring harness, and releasing the mounting tab.",
+      "actions": [
+        "Locate the timer",
+        "Remove screws holding the timer in place",
+        "Set screws aside in a safe place",
+        "Disconnect the wiring harness by pressing the tab",
+        "Pull out the wiring harness",
+        "Press the mounting tab below the timer",
+        "Take the timer out of the control panel"
+      ],
+      "tool": "Screwdriver",
+      "part": "Timer",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 6,
+      "description": "Replace the old washing machine timer with a compatible new one, ensuring it's properly mounted.",
+      "actions": [
+        "purchase a replacement timer compatible with your washing machine model",
+        "consult your manufacturer if unsure about timer compatibility",
+        "replace the old timer with the new timer",
+        "place the new timer in its spot",
+        "snap the mounting tab back into position"
+      ],
+      "tool": "Screwdriver",
+      "part": "timer",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 7,
+      "description": "Reconnect the wiring harness to the new timer, secure it, and fasten the mounting screws.",
+      "actions": [
+        "Reconnect the harness to the new timer",
+        "Snap the harness back into its original position",
+        "Screw in the mounting screws"
+      ],
+      "tool": "Screwdriver",
+      "part": "Wiring harness",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 8,
+      "description": "Reassemble the washer, restore power, and test the replacement timer.",
+      "actions": [
+        "Reattach the face of the control panel",
+        "Reattach the knob",
+        "Plug the washer back in",
+        "Turn the breaker back on",
+        "Test the machine"
+      ],
+      "tool": "Screwdriver",
+      "part": "control panel face, knob",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    }
+  ]
+}

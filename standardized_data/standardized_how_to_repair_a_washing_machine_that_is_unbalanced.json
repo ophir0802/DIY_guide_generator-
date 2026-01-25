@@ -1,0 +1,84 @@
+{
+  "header": {
+    "title": "How to Repair a Washing Machine that Is Unbalanced",
+    "description": "This guide provides simple steps to troubleshoot and fix a washing machine that's experiencing balance issues. By checking the level, adjusting the legs, and ensuring proper drum tightness, you can often resolve the problem.",
+    "toolbox": [
+      "Torpedo Level",
+      "Adjustable Wrench"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "Use a level to determine if the washing machine is off balance.",
+      "actions": [
+        "Place a straight level",
+        "on top of the washer",
+        "to see how much off balance the washing machine is"
+      ],
+      "tool": "Torpedo Level",
+      "part": "washer",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 2,
+      "description": "Adjust the washing machine's legs to ensure it is level.",
+      "actions": [
+        "Adjust front legs by screwing them in or out.",
+        "Lift the back end of the washing machine.",
+        "Allow the back legs to reset.",
+        "Lower the back end of the washing machine."
+      ],
+      "tool": "Torpedo Level",
+      "part": "Washing machine legs",
+      "geometric_location": {
+        "x": 0.222,
+        "y": 0.666,
+        "w": 0.111,
+        "h": 0.067
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 3,
+      "description": "If the washing machine drum is loose, tighten it to prevent it from walking.",
+      "actions": [
+        "check the drum",
+        "tighten it"
+      ],
+      "tool": "Adjustable Wrench",
+      "part": "drum",
+      "geometric_location": {
+        "x": 0.333,
+        "y": 0.267,
+        "w": 0.233,
+        "h": 0.166
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 4,
+      "description": "Avoid spinning large items in the machine to prevent noise and shaking.",
+      "actions": [
+        "Keep large items out",
+        "Hand wash large items",
+        "Dry clean large items"
+      ],
+      "tool": "Torpedo Level",
+      "part": "machine",
+      "geometric_location": {
+        "x": 0.25,
+        "y": 0.25,
+        "w": 0.5,
+        "h": 0.4
+      },
+      "hands": 1
+    }
+  ]
+}

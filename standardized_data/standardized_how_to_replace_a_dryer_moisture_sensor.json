@@ -1,0 +1,201 @@
+{
+  "header": {
+    "title": "How to Replace a Dryer Moisture Sensor",
+    "description": "This guide provides step-by-step instructions on how to safely replace a faulty moisture sensor in your dryer. Follow these instructions to diagnose and resolve dryer issues related to improper drying.",
+    "toolbox": [
+      "Nut Driver",
+      "Screwdriver"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "The first step is to unplug the dryer and create enough workspace behind it.",
+      "actions": [
+        "Unplug the dryer",
+        "Pull the dryer away from the wall"
+      ],
+      "tool": "Screwdriver",
+      "part": "Dryer",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 2,
+      "description": "Remove the top panel of the dryer by removing two nuts and sliding the panel off.",
+      "actions": [
+        "Locate the two nuts securing the top panel to the rear panel on the back of the dryer.",
+        "Remove the two nuts using a nut driver.",
+        "Slide the top panel off the dryer.",
+        "Set the top panel aside."
+      ],
+      "tool": "Nut Driver",
+      "part": "Top panel",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 3,
+      "description": "This step involves disconnecting the control console from the dryer by removing screws and a wiring harness.",
+      "actions": [
+        "Undo the screws with your screwdriver.",
+        "Unplug the wiring harness.",
+        "Unscrew the four screws connecting the control console to the dryer.",
+        "Gently lift the console.",
+        "Place the console onto the drum.",
+        "Place all screws in a safe place."
+      ],
+      "tool": "Screwdriver",
+      "part": "Control console",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 4,
+      "description": "This step involves removing the front panel of the dryer by unscrewing six screws and then lifting the panel away.",
+      "actions": [
+        "Locate the 6 screws holding the front panel.",
+        "Unscrew the four screws on the top of the dryer.",
+        "Open the dryer door.",
+        "Unscrew the two screws inside the dryer at the bottom of the door lip.",
+        "Place all screws with the other screws.",
+        "Gently lift the front panel up.",
+        "Remove the front panel from the dryer.",
+        "Place the front panel out of the way with the top panel."
+      ],
+      "tool": "Screwdriver",
+      "part": "front panel",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 5,
+      "description": "This step details how to remove the dryer moisture sensor by disconnecting the wiring harness and unscrewing it from the dryer.",
+      "actions": [
+        "Locate the dryer moisture sensor on the front bulkhead.",
+        "Unplug the wire harness.",
+        "Undo the single screw.",
+        "Place the screw with the others.",
+        "Pull the dryer moisture sensor out of the dryer.",
+        "Set the dryer moisture sensor aside."
+      ],
+      "tool": "Screwdriver",
+      "part": "Dryer moisture sensor",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 6,
+      "description": "Attach the new dryer moisture sensor to the drum and reconnect the wiring.",
+      "actions": [
+        "Screw the new dryer moisture sensor onto the drum",
+        "Reattach the wiring harness"
+      ],
+      "tool": "Screwdriver",
+      "part": "dryer moisture sensor",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 7,
+      "description": "Reattach the front panel of the dryer by securing screws in the door lip and on top.",
+      "actions": [
+        "Slide the front panel back into place.",
+        "Screw back in the two screws in the door lip.",
+        "Reattach the four screws on top."
+      ],
+      "tool": "Screwdriver",
+      "part": "front panel",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 8,
+      "description": "Reinstall the control console by securing it with screws, plugging in the wiring harness, and tightening the final screws.",
+      "actions": [
+        "Move the control console back into place",
+        "Return the four screws attaching the console to the dryer",
+        "Plug the wiring harness back in",
+        "Screw in the final two screws"
+      ],
+      "tool": "Screwdriver",
+      "part": "control console",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 9,
+      "description": "Slide the top panel back into place and secure it with nuts.",
+      "actions": [
+        "slide top panel into place",
+        "secure top panel with nuts"
+      ],
+      "tool": "Nut Driver",
+      "part": "top panel",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 10,
+      "description": "Slide the dryer back into its original position and ensure it is plugged in.",
+      "actions": [
+        "Slide the dryer back against the wall",
+        "Plug it in"
+      ],
+      "tool": "Screwdriver",
+      "part": "dryer",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "header": {
+    "title": "How to Replace Freon in a Leaky Refrigerator",
+    "description": "This guide provides instructions on how to identify a refrigerant leak in a refrigerator and subsequently replace the lost Freon. It covers the process from diagnosis to adding refrigerant and oil, enabling a DIY repair.",
+    "toolbox": [
+      "Fill Hose",
+      "Saddle Valve"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "This step involves diagnosing potential issues causing a refrigerator to not cool properly before assuming a refrigerant leak.",
+      "actions": [
+        "Inspect the air intake grill to ensure it is free of debris.",
+        "Check the vents on the back of the freezer compartment for blockages.",
+        "Clean the coil behind or under the fridge.",
+        "Verify the thermostat is working properly.",
+        "Look for an oily substance at the bottom of the appliance to detect a refrigerant leak.",
+        "Consider if the appliance has been punctured, which could indicate a refrigerant leak."
+      ],
+      "tool": "Fill Hose",
+      "part": "air intake grill, vents, coil, thermostat, bottom of the appliance",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 2,
+      "description": "This step instructs the user to purchase the correct type of refrigerant to repair and replenish a coolant leak, considering potential restrictions and refrigerant types based on the refrigerator's manufacturing date.",
+      "actions": [
+        "Determine if the problem is a coolant leak.",
+        "Identify the type of refrigerant needed (R-12 or R-134a).",
+        "Purchase the correct refrigerant based on the refrigerator's manufacturing date and local regulations.",
+        "Ensure the refrigerant type is correct to avoid damaging the compressor."
+      ],
+      "tool": "Fill Hose",
+      "part": "refrigerant",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 3,
+      "description": "Install a saddle valve on the large copper pipe coming from the refrigerator's compressor to allow for future coolant addition.",
+      "actions": [
+        "Determine Freon system location using owner's manual.",
+        "Locate the compressor.",
+        "Install a saddle valve on the large copper pipe coming from the compressor.",
+        "Fasten the valve with two screws while it punctures the copper pipe."
+      ],
+      "tool": "Saddle Valve",
+      "part": "Large copper pipe",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 4,
+      "description": "Vacuum air from the system using a specialized pump.",
+      "actions": [
+        "open system",
+        "vacuum air",
+        "use special pump"
+      ],
+      "tool": "Fill Hose",
+      "part": "system",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 5,
+      "description": "This step involves adding refrigerant (Freon) to the system using a hose connected to a saddle valve.",
+      "actions": [
+        "Locate the proper refrigerant type in the owner’s manual.",
+        "Place a hose onto the saddle valve."
+      ],
+      "tool": "Fill Hose",
+      "part": "Saddle Valve",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 6,
+      "description": "Add a few tablespoons of PAG oil to lubricate the compressor.",
+      "actions": [
+        "Add PAG oil",
+        "Refer to manual for exact amount",
+        "Add about five tablespoons"
+      ],
+      "tool": "Fill Hose",
+      "part": "Compressor",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "header": {
+    "title": "How to Replace a Ceramic Stove Top",
+    "description": "This guide provides a simple walkthrough on how to replace a damaged ceramic stove top with a new one. Follow these steps to safely remove the old top and install the replacement.",
+    "toolbox": [
+      "Screwdriver",
+      "Hammer"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "Contact the stove manufacturer to purchase a replacement ceramic stovetop for a guaranteed fit.",
+      "actions": [
+        "Contact the manufacturer directly.",
+        "Check if your stove is in the warranty period."
+      ],
+      "tool": "Screwdriver",
+      "part": "Ceramic stovetop",
+      "geometric_location": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 0.733
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 2,
+      "description": "This step involves carefully removing the damaged stovetop by unscrewing it and handling the broken pieces with caution.",
+      "actions": [
+        "Locate the four screws in the corners of the ceramic stovetop.",
+        "Unscrew the damaged stovetop very carefully.",
+        "Hold the broken part.",
+        "Remove the fragmented section by unscrewing the necessary screws.",
+        "Unmount the entire top.",
+        "Be careful about the broken edges."
+      ],
+      "tool": "Screwdriver",
+      "part": "ceramic stovetop",
+      "geometric_location": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 0.666
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 3,
+      "description": "Break the ceramic stovetop into smaller pieces and wrap them for disposal.",
+      "actions": [
+        "Break the large ceramic stovetop slab into small pieces.",
+        "Wrap the small pieces in an old towel or rag.",
+        "Throw the wrapped pieces away."
+      ],
+      "tool": "Hammer",
+      "part": "ceramic stovetop",
+      "geometric_location": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 0.666
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 4,
+      "description": "This step involves cleaning the frame, aligning, and securing the new stovetop using screws.",
+      "actions": [
+        "Clean the frame properly",
+        "Place the new ceramic stovetop in place",
+        "Align the stovetop",
+        "Use the screwdriver to screw it in place",
+        "Clean the top with a dry piece of cloth or sponge"
+      ],
+      "tool": "Screwdriver",
+      "part": "New ceramic stovetop",
+      "geometric_location": {
+        "x": 0.1,
+        "y": 0.1,
+        "w": 0.75,
+        "h": 0.65
+      },
+      "hands": 2
+    }
+  ]
+}

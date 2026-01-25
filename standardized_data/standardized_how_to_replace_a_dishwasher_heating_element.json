@@ -1,0 +1,146 @@
+{
+  "header": {
+    "title": "How to Replace a Dishwasher Heating Element",
+    "description": "This guide provides step-by-step instructions on how to safely replace a faulty heating element in a dishwasher. Follow these instructions to restore your dishwasher's heating function.",
+    "toolbox": [
+      "Phillips Screwdriver",
+      "Flathead Screwdriver",
+      "Needle-nose Pliers",
+      "Crescent Wrench",
+      "Box Wrench"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "This step instructs you to find the heating element in the dishwasher tub, potentially removing a cover to access it.",
+      "actions": [
+        "Locate the heating element in the tub of the dishwasher beneath the lower dish rack.",
+        "Recognize the heating element by its thin circular shape.",
+        "If a cover is present beneath the lower dish rack, remove it.",
+        "Use a screwdriver to remove the cover."
+      ],
+      "tool": "Phillips Screwdriver",
+      "part": "Heating element",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 2,
+      "description": "This step involves accessing the dishwasher's wiring by removing the kick plate and marking the wires before disconnection.",
+      "actions": [
+        "Locate the heating element.",
+        "Remove the kick plate.",
+        "Remove the retaining screws.",
+        "Look for the area where wires are connected to the terminals.",
+        "Mark the wires with sticky labels."
+      ],
+      "tool": "Phillips Screwdriver",
+      "part": "kick plate",
+      "geometric_location": {
+        "x": 0.0,
+        "y": 0.75,
+        "w": 0.2,
+        "h": 0.05
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 3,
+      "description": "Remove wires from terminals using needle-nose pliers to avoid damaging the wires or connectors.",
+      "actions": [
+        "Grasp the slip-on connectors with needle-nose pliers",
+        "Remove the wires from each terminal"
+      ],
+      "tool": "Needle-nose Pliers",
+      "part": "slip-on connectors",
+      "geometric_location": {
+        "x": 0.7,
+        "y": 0.75,
+        "w": 0.1,
+        "h": 0.1
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 4,
+      "description": "Disconnect the wires from the heating element by removing the lock nuts securing the eyelet wire connectors.",
+      "actions": [
+        "Remove lock nuts",
+        "Remove wires from heating element's terminal"
+      ],
+      "tool": "Crescent Wrench",
+      "part": "heating element",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 5,
+      "description": "After disconnecting the wires, carefully remove the heating element from the dishwasher.",
+      "actions": [
+        "Remove heating element wires from terminals",
+        "Lift heating element out of the dishwasher",
+        "Dispose of the heating element properly"
+      ],
+      "tool": "Needle-nose Pliers",
+      "part": "Heating element",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 6,
+      "description": "Secure the new heating element into its position and attach the wires using lock nuts.",
+      "actions": [
+        "Put the wires through their appropriate openings in the dishwasher",
+        "Secure the heating element into its position",
+        "Attach the wires to the heating element using the lock nuts",
+        "Tighten the lock nuts into place"
+      ],
+      "tool": "Crescent Wrench",
+      "part": "heating element",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 7,
+      "description": "This step involves securing the kick plate, placing a cover over the heating element, and testing the dishwasher.",
+      "actions": [
+        "Secure the kick plate onto the dishwasher",
+        "Open the door of your dishwasher",
+        "Place the cover over the heating element",
+        "Place the lower dishwasher rack back in position",
+        "Restore the power to your unit",
+        "Conduct a test run"
+      ],
+      "tool": "Phillips Screwdriver",
+      "part": "kick plate",
+      "geometric_location": {
+        "x": 0.0,
+        "y": 0.75,
+        "w": 1.0,
+        "h": 0.05
+      },
+      "hands": 2
+    }
+  ]
+}

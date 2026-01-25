@@ -1,0 +1,57 @@
+{
+  "header": {
+    "title": "How to Test an Ice Maker Shut-Off Arm",
+    "description": "This guide explains how to diagnose and potentially resolve issues with your ice maker's shut-off arm, including checking the control module and determining if replacement is necessary.",
+    "toolbox": []
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "Step 1 - Determine the Problem",
+      "actions": [
+        "You'll want to test your shut-off arm before replacing any parts. The shut-off arm lifts up and down. As ice is made, the arm is pushed up as ice is made and falls when the ice is dropped. First, check the setting of your ice maker to be sure that you have it set at the proper level for making ice. If it is set too high, you may just just have it set to make too much ice for your needs. Next, push the swing-arm in the up position until it clicks. This will make it stay in this position so that it makes no ice. Leave it for several hours, then check to see if it has made no ice. If not, your shut-off arm is fine. If it continues making ice, you will need to replace the control module."
+      ],
+      "tool": "Unknown",
+      "part": "Unknown",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 2,
+      "description": "Step 2 - Control Module",
+      "actions": [
+        "If you find it necessary to remove the old control module for replacement, be sure to unplug the freezer or refrigerator before unscrewing the part. Follow the manufacturer's instructions for replacement part numbers."
+      ],
+      "tool": "Unknown",
+      "part": "Unknown",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 3,
+      "description": "Step 3 - Replace Your Ice Maker",
+      "actions": [
+        "If all other troubleshooting attempts fail, it may be time to replace the entire ice maker, particularly if the rest of your refrigerator is still working fine."
+      ],
+      "tool": "Unknown",
+      "part": "Unknown",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    }
+  ]
+}

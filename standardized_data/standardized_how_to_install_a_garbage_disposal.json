@@ -1,0 +1,261 @@
+{
+  "header": {
+    "title": "How to Install a Garbage Disposal",
+    "description": "This guide provides step-by-step instructions on how to safely install a new garbage disposal unit. It covers plumbing, electrical, and mechanical aspects of the installation process.",
+    "toolbox": [
+      "Slotted screwdriver",
+      "Adjustable pliers",
+      "Wire connectors",
+      "Safety glasses"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "description": "The first step is to turn off the electricity by switching off the circuit breaker.",
+      "actions": [
+        "Turn off the circuit breaker"
+      ],
+      "tool": "Slotted screwdriver",
+      "part": "circuit breaker",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 2,
+      "description": "Disconnect the electrical and dishwasher connections from the appliances.",
+      "actions": [
+        "Disconnect electrical connections",
+        "Disconnect dishwasher connections"
+      ],
+      "tool": "Adjustable pliers",
+      "part": "Appliances",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 3,
+      "description": "Disconnect the drainpipe and strainer from the p-trap and sink.",
+      "actions": [
+        "Disconnect the down drainpipe coming from the sink",
+        "Disconnect the connection that attaches the down drainpipe to the p-trap",
+        "Remove the parts",
+        "Unscrew the large nut that holds the strainer in place",
+        "Remove the strainer body"
+      ],
+      "tool": "Adjustable pliers",
+      "part": "down drainpipe, p-trap, strainer",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 4,
+      "description": "Remove old plumber's putty from around the drain opening.",
+      "actions": [
+        "Clean off the old plumber’s putty"
+      ],
+      "tool": "Slotted screwdriver",
+      "part": "drain opening",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 5,
+      "description": "Apply plumber's putty, insert the sink flange, and secure it in place.",
+      "actions": [
+        "Place a ½” bead of new plumber’s putty around the drain opening in the sink.",
+        "Drop the new sink flange into the drain opening.",
+        "Press the sink flange into place.",
+        "Place a weight on top of the sink flange.",
+        "Place a towel between the sink surface and the weight."
+      ],
+      "tool": "Slotted screwdriver",
+      "part": "Sink flange",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 6,
+      "description": "Slide the fiber gasket, backup flange, and mounting flange over the sink flange and hold them in place.",
+      "actions": [
+        "Slide the fiber gasket over the sink flange",
+        "Slide the backup flange over the sink flange",
+        "Slide the mounting flange over the sink flange",
+        "Hold these pieces in place"
+      ],
+      "tool": "Adjustable pliers",
+      "part": "Sink flange",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 7,
+      "description": "Attach the mounting ring and snap ring to the sink, then tighten the mounting screws.",
+      "actions": [
+        "Slip on the mounting ring",
+        "Snap on the snap ring",
+        "Tighten the three mounting screws",
+        "Alternate tightening each screw a few turns at a time",
+        "Ensure the mounting assembly is evenly and tightly seated against the bottom of the sink"
+      ],
+      "tool": "Slotted screwdriver",
+      "part": "Mounting assembly",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    },
+    {
+      "step_id": 8,
+      "description": "If installing a dishwasher, tap out the dishwasher knockout plug from the disposer.",
+      "actions": [
+        "Lay the disposer on its side",
+        "Use a screwdriver and hammer to tap out the dishwasher knockout plug",
+        "Remove the loose knockout plug from inside the disposer"
+      ],
+      "tool": "Slotted screwdriver",
+      "part": "dishwasher knockout plug",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 9,
+      "description": "Connect the electrical wiring of the disposer to the power supply under the sink.",
+      "actions": [
+        "Lay the disposer on its side under the sink",
+        "Make sure the circuit breaker is off",
+        "Remove the plate on the bottom of the disposer",
+        "Expose the wiring",
+        "Connect the wires from the disposer to the matching wires for the power supply using wire nuts",
+        "Secure the power cord to the bottom of the disposer",
+        "Replace the plate to cover the wires"
+      ],
+      "tool": "Wire connectors",
+      "part": "disposer",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 10,
+      "description": "Hang the disposer by aligning mounting tabs with the mounting ring and locking them into place.",
+      "actions": [
+        "Align the three mounting tabs with the slide-up ramps on the mounting ring.",
+        "Hold the disposer in place.",
+        "Turn the lower mounting ring until all three tabs are locked into the mounting assembly."
+      ],
+      "tool": "Slotted screwdriver",
+      "part": "disposer",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 11,
+      "description": "Attach the discharge tube to the discharge coupler and secure it with a clamp on the rubber tailpipe coupler.",
+      "actions": [
+        "Insert the discharge tube into the discharge coupler",
+        "Slide the clamp over the discharge tube",
+        "Position the clamp in the groove on the rubber tailpipe coupler"
+      ],
+      "tool": "Adjustable pliers",
+      "part": "Discharge tube, discharge coupler, clamp, rubber tailpipe coupler",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 12,
+      "description": "Connect the disposer's drain hose to the drain trap, adjusting the hose length if needed, and connecting to a dishwasher if applicable.",
+      "actions": [
+        "Rotate the disposer so that the discharge tube is aligned with the drain trap.",
+        "Cut off excess length of the discharge tube if it is too long.",
+        "Purchase an extension if the discharge tube is too short.",
+        "Connect the disposer to a dishwasher through an air gap if necessary.",
+        "Attach the drain hose to the dishwasher inlet using a hose clamp."
+      ],
+      "tool": "Adjustable pliers",
+      "part": "Drain hose",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 2
+    },
+    {
+      "step_id": 13,
+      "description": "This step involves locking the disposer, installing a sink baffle, testing for leaks, and testing the disposer's operation.",
+      "actions": [
+        "Lock the disposer to the sink mounting assembly using the special wrench.",
+        "Insert the Quiet Collar® Sink Baffle into the sink opening.",
+        "Press the Quiet Collar® Sink Baffle into the sink until it snaps into place.",
+        "Test for leaks at the sink flange.",
+        "Test for leaks at the dishwasher connection.",
+        "Test for leaks at the tail-pipe connection.",
+        "Test for leaks at the mounting assembly connections.",
+        "Turn on the electrical breaker to test its operation."
+      ],
+      "tool": "Adjustable pliers",
+      "part": "disposer, sink mounting assembly, Quiet Collar® Sink Baffle, sink flange, dishwasher, tail-pipe, mounting assembly",
+      "geometric_location": {
+        "x": null,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "hands": 1
+    }
+  ]
+}
